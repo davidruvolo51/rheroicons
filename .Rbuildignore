@@ -1,0 +1,6 @@
+src/
+scripts/
+rheroicons.code-workspace
+package.json
+README.md
+.gitignore

@@ -1,0 +1,16 @@
+{
+  "name": "rheroicons",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "davidruvolo51 <davidruvolo51@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean" : "rm -rf R/*",
+    "convert" : "Rscript -e \"source('scripts/icons_0_source.R')\"",
+    "document" : "RScript -e 'devtools::document()'",
+    "uninstall" : "RScript -e 'devtools::uninstall()'",
+    "install" : "RScript -e 'devtools::install()'",
+    "build" : "Rscript -e 'devtols::build()'",
+    "package" : "yarn uninstall && yarn build && yarn install"
+  }
+}

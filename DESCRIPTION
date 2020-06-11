@@ -1,0 +1,13 @@
+Package: rheroicons
+Type: Package
+Title: Heroicons for use in Shiny applications
+Version: 0.1.0
+Author: dcruvolo
+Maintainer: dcruvolo <yourself@somewhere.net>
+Description: Heroicons for use in Shiny applications
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/davidruvolo51/rheroicons
+BugReports: https://github.com/davidruvolo51/rheroicons/issues
+RoxygenNote: 7.1.0
