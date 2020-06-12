@@ -12,6 +12,33 @@
 #'      file indentation is supported using the formatR package.
 #'////////////////////////////////////////////////////////////////////////////
 
+
+#'//////////////////////////////////////
+
+#' FOR TESTING
+
+# define node for sample icon
+# node <- readLines("src/heroicons/outline/camera.svg") %>%
+#     paste0(., collapse = "") %>%
+#     XML::htmlParse(.) %>%
+#     XML::getNodeSet("/html/body/*") %>%
+#     `[[`(1)
+
+# render node to R string
+# node_string <- renderNode(node)
+
+# render R string into R package function
+# node_func <- makeFunc(node_string, "camera", "outline")
+
+# style text
+# node_styled <- cleanFunc(node_func)
+
+# write to test
+# write(node_styled, "~/Desktop/test.R", append = FALSE)
+
+#'//////////////////////////////////////
+
+
 #' @name makeAttrs
 #' @details
 #'      Modified from the original function "makeAttrs", this function
@@ -42,21 +69,14 @@ Keep <- function(fun, xs) Map(fun, xs) %>% Filter(Negate(is.null), .)
 #' @details renders svg elements into R code
 #' @importFrom XML xmlName xmlChildren
 #' @importFrom purrr partial
-#' @importFrom stringr str_pad
 #' @references \url{https://github.com/alandipert/html2r/blob/master/app.R}
 renderNode <- function(node, indent = 0) {
-    tagName <- paste0("`_tag_name` = ", "\"", XML::xmlName(node), "\",\n")
+    tagName <- paste0("`_tag_name` = ", "\"", XML::xmlName(node), "\", ")
     newIndent <- indent + length(tagName) + 1
     XML::xmlChildren(node) %>%
        Keep(purrr::partial(renderNode, indent = newIndent), .) %>%
        append(makeAttrs(node), .) %>%
-       paste(
-           collapse = stringr::str_pad(
-               string = ",\n",
-               width = newIndent,
-               side = c("right")
-            )
-        ) %>%
+       paste(collapse = ", ") %>%
        trimws(which = c("left")) %>%
        paste0("tag(", tagName, "list(", ., "))")
 }
@@ -75,16 +95,15 @@ makeFunc <- function(string, icon, type) {
 
     # string to inject input arguments into <svg> element
     optional_args <- paste0(
-        "list\\(\n",
+        "list\\(",
         "\"class\" = \"",
-        paste0("r-heriocons r-", icon), "\",\n",
-        "`aria_hidden` = aria_hidden,"
+        paste0("r-heriocons r-", icon), "\", ",
+        "\"aria_hidden` = aria_hidden\", "
         )
 
     # add optional arguments R code
     svg <- stringr::str_replace(string, "list\\(", optional_args) %>%
-        paste0("svg <- ", ., "\n")
-    body <- formatR::tidy_source(text = svg, output = FALSE)
+        paste0("svg <- ", .)
 
     # build url for reference
     url <- paste0(
@@ -94,26 +113,38 @@ makeFunc <- function(string, icon, type) {
 
     # build function
     out <- paste0(
+        "#' \\code{", type, "$", icon, "}\n",
         "#' @name ", icon, "\n",
         "#' @return create a SVG icon of ", icon, "\n",
         "#' @usage ", type, "$", icon, "()\n",
-        "#' @keywords rheroicons heroicons ", icon, "\n",
-        "#' @references \\url{", url, "}\n",
+        "#' @param id a unique ID to be applied to the svg icon\n",
+        "#' @param class a css class to be applied to the svg icon\n",
+        "#' @param aria_hidden should the icon be readable by screen readers\n",
+        "#' @keywords rheroicons heroicons ", type, " ", icon, "\n",
+        "#' @references\n",
+        "#' \\url{", url, "}\n",
+        "#' \\url{https://heroicons.dev}\n",
         "#' @export\n",
         type, "$", icon,
         " <- function (id = NULL, class = NULL, aria_hidden = FALSE) {\n",
         "  stopifnot(is.logical(aria_hidden))\n",
-        "  ", body, "\n",
-        "  if (!is.null(id) svg$attribs$id <- id\n",
-        "  if (!is.null(class) {\n",
+        "  ", svg, "\n",
+        "  if (!is.null(id)) { svg$attribs$id <- id }\n",
+        "  if (!is.null(class)) {\n",
         "    svg$attribs$class <- paste0(svg$attribs$class, \" \", class)\n",
         "  }\n",
         "  return(svg)\n",
-        "}\n\n"
+        "}\n"
     )
+    return(out)
+}
 
-    return(out[2])
-
+#' @name cleanFunc
+#' @details formats R code
+#' @importFrom formatR tidy_source
+cleanFunc <- function(string) {
+    string_formatted <- formatR::tidy_source(text = string, output = FALSE)
+    return(string_formatted$text.tidy)
 }
 
 #' @name html2R
@@ -126,7 +157,8 @@ html2R <- function(html, icon, type = "outline") {
       XML::getNodeSet("/html/body/*") %>%
       `[[`(1) %>%
       renderNode() %>%
-      makeFunc(string = ., icon = icon, type = type)
+      makeFunc(string = ., icon = icon, type = type) %>%
+      cleanFunc(.)
 }
 
 #' @name get_files
@@ -163,6 +195,7 @@ get_files <- function(path) {
 init_file <- function(path, type) {
     file.create(path)
     header <- paste0(
+        "#' ", toupper(type), " SVG Icons\n",
         "#' @name ", type, "\n",
         "#' @keywords rheroicons ", type, "\n",
         "#' @details ", type, " icons from heroicons\n",
@@ -171,8 +204,8 @@ init_file <- function(path, type) {
         "#' @param class a css class to be applied to the svg icon\n",
         "#' @param aria_hidden should the icon be readable by screen readers\n",
         "#' @references\n",
-        "#' \\url(https://github.com/refactoringui/heroicons)\n",
-        "#' \\url(https://heroicons.dev)\n",
+        "#' \\url{https://github.com/refactoringui/heroicons}\n",
+        "#' \\url{https://heroicons.dev}\n",
         "#' @examples\n",
         "#' reheroicons::", type, "$book_open()\n",
         "#' reheroicons::", type, "$book_open(id = 'myBookIcon')\n",
