@@ -10,7 +10,7 @@
     "document" : "RScript -e 'devtools::document()'",
     "uninstall" : "RScript -e 'devtools::uninstall()'",
     "install" : "RScript -e 'devtools::install()'",
-    "build" : "Rscript -e 'devtols::build()'",
-    "package" : "yarn uninstall && yarn build && yarn install"
+    "build" : "Rscript -e 'devtools::build()'",
+    "package" : "yarn build && yarn install"
   }
 }
