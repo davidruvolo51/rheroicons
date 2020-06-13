@@ -21,6 +21,9 @@ source("scripts/icons_99_utils.R")
 # clone source icons
 #' system("cd src/ && git clone 'https://github.com/refactoringui/heroicons/'")
 
+#' remove extra dirs
+# system("cd src/heroicons && rm -rf .github react scripts src vue *.yaml *.json *.lock *.md")
+
 #'//////////////////////////////////////
 
 #' ~ 1 ~
