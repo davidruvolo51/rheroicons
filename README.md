@@ -1,6 +1,6 @@
 # rheroicons
 
-rheroicons provides the fantastic SVG icon collection [heroicons](https://github.com/refactoringui/heroicons), developed by [adamwathan](https://github.com/adamwathan) and [sschoger](https://github.com/sschoger), as inline R functions for use in your R-based web projects (i.e., shiny, Rmarkdown, etc.). This package requires no html, css, or javascript dependencies as all SVG icons are rendered inline.
+rheroicons gives access to the fantastic SVG icon collection [heroicons](https://github.com/refactoringui/heroicons), developed by [adamwathan](https://github.com/adamwathan) and [sschoger](https://github.com/sschoger), as R functions for use in your R-based web projects (i.e., shiny, Rmarkdown, etc.). This package requires no html, css, or javascript dependencies as all SVG icons are rendered inline.
 
 ## Install
 
@@ -10,17 +10,18 @@ devtools::install_github("davidruvolo51/rheroicons")
 
 ## Use
 
-There are well over a hundred icons in total. Each icon has two styles: outline and solid. To create an icon, type `style$icon()`.
+There are well over a hundred icons in the collection and each icon has two styles (outline and solid). To create an icon, use the following formula: `set$icon()`.
 
-- `set` : choose either `outline` or `solid`.
-- `icon` : an icon name, e.g., `puzzle`, `volume_up`, `code`, etc.
+- `set`: choose either `outline` or `solid`.
+- `icon`: an icon name, e.g., `puzzle`, `volume_up`, `code`, etc. Use [heroicons.dev](https://heroicons.dev) to search for icons.
 
-Use the heroicons site to search for icons: [https://heroicons.dev](https://heroicons.dev).
+**NOTE**
 
-**NOTE**: Icon names with a dash `-` were rewritten with an underscore `_`.
+All icon names that had a dash (`-`) in the name were renamed using an underscore (`_`).
 
-- Source: `arrow-circle-down`
-- rheroicons: `arrow_circle_down`
+| Source              | rheroicons 
+| :------------------ | :-----
+| `arrow-circle-down` | `arrow_circle_down`
 
 ### Arguments
 
