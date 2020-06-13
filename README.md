@@ -2,6 +2,12 @@
 
 rheroicons provides the fantastic SVG icon collection [heroicons](https://github.com/refactoringui/heroicons), developed by [adamwathan](https://github.com/adamwathan) and [sschoger](https://github.com/sschoger), as inline R functions for use in your R-based web projects (i.e., shiny, Rmarkdown, etc.). This package requires no html, css, or javascript dependencies as all SVG icons are rendered inline.
 
+## Install
+
+```r
+devtools::install_github("davidruvolo51/rheroicons")
+```
+
 ## Use
 
 There are well over a hundred icons in total. Each icon has two styles: outline and solid. To create an icon, type `style$icon()`.
