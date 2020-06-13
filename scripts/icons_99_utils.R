@@ -2,39 +2,44 @@
 #' FILE: icons_99_utils.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-06-11
-#' MODIFIED: 2020-06-11
+#' MODIFIED: 2020-06-13
 #' PURPOSE: functions for parsing svg markup into R functions
 #' STATUS: complete
-#' PACKAGES: XML, purrr, stringr, formatR
+#' PACKAGES: XML, purrr, stringr, formatR, dplyr
 #' COMMENTS:
 #'      These utils are used to parse SVG strings to R functions. These
 #'      functions were adapted from Alan Dipert's html2r example app. Some
 #'      file indentation is supported using the formatR package.
 #'////////////////////////////////////////////////////////////////////////////
 
-
-#'//////////////////////////////////////
-
 #' FOR TESTING
 
 # define node for sample icon
-# node <- readLines("src/heroicons/outline/camera.svg") %>%
+# library(dplyr)
+# node <- readLines("src/heroicons/outline/ban.svg") %>%
 #     paste0(., collapse = "") %>%
 #     XML::htmlParse(.) %>%
 #     XML::getNodeSet("/html/body/*") %>%
 #     `[[`(1)
-
-# render node to R string
 # node_string <- renderNode(node)
-
-# render R string into R package function
 # node_func <- makeFunc(node_string, "camera", "outline")
-
-# style text
 # node_styled <- cleanFunc(node_func)
-
-# write to test
 # write(node_styled, "~/Desktop/test.R", append = FALSE)
+
+#'//////////////////////////////////////
+
+# define a function that extracts viewBox values and converts it to R string
+viewbox_string <- function(string) {
+    l <- stringr::str_extract(string, '"viewbox" = "(.*?)"') %>%
+        gsub(pattern = "[^0-9]+", replacement = " ", x = .) %>%
+        trimws(., "both") %>%
+        stringr::str_split(string = ., pattern = "[[:space:]]") %>%
+        `[[`(1) %>%
+        .[c(3, 4)] %>%
+        as.list()
+    names(l) <- c("width", "height")
+    paste0("\"", names(l), "\" = \"", l, "\"", collapse = ", ")
+}
 
 #'//////////////////////////////////////
 
@@ -97,13 +102,22 @@ makeFunc <- function(string, icon, type) {
     optional_args <- paste0(
         "list\\(",
         "\"class\" = \"",
-        paste0("r-heriocons r-", icon), "\", ",
-        "\"aria_hidden` = aria_hidden\", "
-        )
+        paste0(
+            "rheroicons", # global class
+            " rheroicons-", type, # icon style class
+            " rheroicons-", icon  # icon class
+        ),
+        "\", ",
+        "\"aria_hidden\" = aria_hidden, ",
+        viewbox_string(string), ", "
+    )
 
     # add optional arguments R code
     svg <- stringr::str_replace(string, "list\\(", optional_args) %>%
         paste0("svg <- ", .)
+
+    # fix viewbox
+    svg <- stringr::str_replace(svg, "viewbox", "viewBox")
 
     # build url for reference
     url <- paste0(
@@ -113,14 +127,15 @@ makeFunc <- function(string, icon, type) {
 
     # build function
     out <- paste0(
-        "#' \\code{", type, "$", icon, "}\n",
+        "#'", icon, "\n",
         "#' @name ", icon, "\n",
-        "#' @return create a SVG icon of ", icon, "\n",
+        "#' @return create a solid or outline SVG icon of a ", icon, "\n",
         "#' @usage ", type, "$", icon, "()\n",
         "#' @param id a unique ID to be applied to the svg icon\n",
         "#' @param class a css class to be applied to the svg icon\n",
-        "#' @param aria_hidden should the icon be readable by screen readers\n",
-        "#' @keywords rheroicons heroicons ", type, " ", icon, "\n",
+        "#' @param aria_hidden should the icon be readable by screen readers",
+        " (default: false)\n",
+        "#' @keywords rheroicons ", type, " ", icon, "\n",
         "#' @references\n",
         "#' \\url{", url, "}\n",
         "#' \\url{https://heroicons.dev}\n",
