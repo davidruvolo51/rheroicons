@@ -16,9 +16,9 @@ solid$zoom_in()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a zoom_in
+Returns the svg markup for the heroicon ''zoom_in'
 
-create a solid or outline SVG icon of a zoom_in
+Returns the svg markup for the heroicon ''zoom_in'
 }
 \description{
 zoom_in
@@ -27,10 +27,8 @@ zoom_in
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/zoom_in.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/zoom_in.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

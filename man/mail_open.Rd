@@ -16,9 +16,9 @@ solid$mail_open()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a mail_open
+Returns the svg markup for the heroicon ''mail_open'
 
-create a solid or outline SVG icon of a mail_open
+Returns the svg markup for the heroicon ''mail_open'
 }
 \description{
 mail_open
@@ -27,10 +27,8 @@ mail_open
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/mail_open.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/mail_open.svg}
-\url{https://heroicons.dev}
 }
 \keyword{mail_open}
 \keyword{outline}

@@ -16,9 +16,9 @@ solid$arrow_narrow_up()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a arrow_narrow_up
+Returns the svg markup for the heroicon ''arrow_narrow_up'
 
-create a solid or outline SVG icon of a arrow_narrow_up
+Returns the svg markup for the heroicon ''arrow_narrow_up'
 }
 \description{
 arrow_narrow_up
@@ -27,10 +27,8 @@ arrow_narrow_up
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/arrow_narrow_up.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/arrow_narrow_up.svg}
-\url{https://heroicons.dev}
 }
 \keyword{arrow_narrow_up}
 \keyword{outline}

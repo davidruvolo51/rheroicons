@@ -16,9 +16,9 @@ solid$document_remove()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a document_remove
+Returns the svg markup for the heroicon ''document_remove'
 
-create a solid or outline SVG icon of a document_remove
+Returns the svg markup for the heroicon ''document_remove'
 }
 \description{
 document_remove
@@ -27,10 +27,8 @@ document_remove
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/document_remove.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/document_remove.svg}
-\url{https://heroicons.dev}
 }
 \keyword{document_remove}
 \keyword{outline}

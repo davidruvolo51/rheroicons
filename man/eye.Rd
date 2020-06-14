@@ -16,9 +16,9 @@ solid$eye()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a eye
+Returns the svg markup for the heroicon ''eye'
 
-create a solid or outline SVG icon of a eye
+Returns the svg markup for the heroicon ''eye'
 }
 \description{
 eye
@@ -27,10 +27,8 @@ eye
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/eye.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/eye.svg}
-\url{https://heroicons.dev}
 }
 \keyword{eye}
 \keyword{outline}

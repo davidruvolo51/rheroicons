@@ -16,9 +16,9 @@ solid$search()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a search
+Returns the svg markup for the heroicon ''search'
 
-create a solid or outline SVG icon of a search
+Returns the svg markup for the heroicon ''search'
 }
 \description{
 search
@@ -27,10 +27,8 @@ search
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/search.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/search.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

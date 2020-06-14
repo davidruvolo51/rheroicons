@@ -16,9 +16,9 @@ solid$hand()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a hand
+Returns the svg markup for the heroicon ''hand'
 
-create a solid or outline SVG icon of a hand
+Returns the svg markup for the heroicon ''hand'
 }
 \description{
 hand
@@ -27,10 +27,8 @@ hand
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/hand.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/hand.svg}
-\url{https://heroicons.dev}
 }
 \keyword{hand}
 \keyword{outline}

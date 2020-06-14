@@ -16,9 +16,9 @@ solid$logout()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a logout
+Returns the svg markup for the heroicon ''logout'
 
-create a solid or outline SVG icon of a logout
+Returns the svg markup for the heroicon ''logout'
 }
 \description{
 logout
@@ -27,10 +27,8 @@ logout
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/logout.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/logout.svg}
-\url{https://heroicons.dev}
 }
 \keyword{logout}
 \keyword{outline}

@@ -16,9 +16,9 @@ solid$photograph()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a photograph
+Returns the svg markup for the heroicon ''photograph'
 
-create a solid or outline SVG icon of a photograph
+Returns the svg markup for the heroicon ''photograph'
 }
 \description{
 photograph
@@ -27,10 +27,8 @@ photograph
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/photograph.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/photograph.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{photograph}

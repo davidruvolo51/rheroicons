@@ -16,9 +16,9 @@ solid$download()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a download
+Returns the svg markup for the heroicon ''download'
 
-create a solid or outline SVG icon of a download
+Returns the svg markup for the heroicon ''download'
 }
 \description{
 download
@@ -27,10 +27,8 @@ download
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/download.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/download.svg}
-\url{https://heroicons.dev}
 }
 \keyword{download}
 \keyword{outline}

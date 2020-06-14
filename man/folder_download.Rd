@@ -16,9 +16,9 @@ solid$folder_download()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a folder_download
+Returns the svg markup for the heroicon ''folder_download'
 
-create a solid or outline SVG icon of a folder_download
+Returns the svg markup for the heroicon ''folder_download'
 }
 \description{
 folder_download
@@ -27,10 +27,8 @@ folder_download
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/folder_download.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/folder_download.svg}
-\url{https://heroicons.dev}
 }
 \keyword{folder_download}
 \keyword{outline}

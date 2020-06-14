@@ -16,9 +16,9 @@ solid$chat_alt()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a chat_alt
+Returns the svg markup for the heroicon ''chat_alt'
 
-create a solid or outline SVG icon of a chat_alt
+Returns the svg markup for the heroicon ''chat_alt'
 }
 \description{
 chat_alt
@@ -27,10 +27,8 @@ chat_alt
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/chat_alt.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/chat_alt.svg}
-\url{https://heroicons.dev}
 }
 \keyword{chat_alt}
 \keyword{outline}

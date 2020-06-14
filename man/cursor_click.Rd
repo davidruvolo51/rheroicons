@@ -16,9 +16,9 @@ solid$cursor_click()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a cursor_click
+Returns the svg markup for the heroicon ''cursor_click'
 
-create a solid or outline SVG icon of a cursor_click
+Returns the svg markup for the heroicon ''cursor_click'
 }
 \description{
 cursor_click
@@ -27,10 +27,8 @@ cursor_click
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/cursor_click.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/cursor_click.svg}
-\url{https://heroicons.dev}
 }
 \keyword{cursor_click}
 \keyword{outline}

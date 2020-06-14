@@ -16,9 +16,9 @@ solid$check_circle()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a check_circle
+Returns the svg markup for the heroicon ''check_circle'
 
-create a solid or outline SVG icon of a check_circle
+Returns the svg markup for the heroicon ''check_circle'
 }
 \description{
 check_circle
@@ -27,10 +27,8 @@ check_circle
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/check_circle.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/check_circle.svg}
-\url{https://heroicons.dev}
 }
 \keyword{check_circle}
 \keyword{outline}

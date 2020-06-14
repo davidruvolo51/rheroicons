@@ -16,9 +16,9 @@ solid$currency_rupee()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a currency_rupee
+Returns the svg markup for the heroicon ''currency_rupee'
 
-create a solid or outline SVG icon of a currency_rupee
+Returns the svg markup for the heroicon ''currency_rupee'
 }
 \description{
 currency_rupee
@@ -27,10 +27,8 @@ currency_rupee
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/currency_rupee.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/currency_rupee.svg}
-\url{https://heroicons.dev}
 }
 \keyword{currency_rupee}
 \keyword{outline}

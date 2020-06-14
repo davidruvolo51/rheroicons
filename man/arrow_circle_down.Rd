@@ -16,9 +16,9 @@ solid$arrow_circle_down()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a arrow_circle_down
+Returns the svg markup for the heroicon ''arrow_circle_down'
 
-create a solid or outline SVG icon of a arrow_circle_down
+Returns the svg markup for the heroicon ''arrow_circle_down'
 }
 \description{
 arrow_circle_down
@@ -27,10 +27,8 @@ arrow_circle_down
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/arrow_circle_down.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/arrow_circle_down.svg}
-\url{https://heroicons.dev}
 }
 \keyword{arrow_circle_down}
 \keyword{outline}

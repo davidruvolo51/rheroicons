@@ -16,9 +16,9 @@ solid$briefcase()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a briefcase
+Returns the svg markup for the heroicon ''briefcase'
 
-create a solid or outline SVG icon of a briefcase
+Returns the svg markup for the heroicon ''briefcase'
 }
 \description{
 briefcase
@@ -27,10 +27,8 @@ briefcase
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/briefcase.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/briefcase.svg}
-\url{https://heroicons.dev}
 }
 \keyword{briefcase}
 \keyword{outline}

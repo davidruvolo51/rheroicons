@@ -1,16 +1,18 @@
 {
   "name": "rheroicons",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "author": "davidruvolo51 <davidruvolo51@gmail.com>",
   "license": "MIT",
   "scripts": {
     "clean" : "rm -rf R/*",
-    "convert" : "Rscript -e \"source('scripts/icons_0_source.R')\"",
+    "convert" : "Rscript -e \"source('scripts/icons_1_source.R')\"",
     "document" : "RScript -e 'devtools::document()'",
     "uninstall" : "RScript -e 'devtools::uninstall()'",
     "install" : "RScript -e 'devtools::install()'",
     "build" : "Rscript -e 'devtools::build()'",
-    "package" : "yarn build && yarn install"
+    "package" : "yarn build && yarn install",
+    "fetch" : "Rscript -e \"source('scripts/icons_0_fetch.R')\"",
+    "fix_modified_content": "git rm -rf --cached src/heroicons && git add src/heroicons"
   }
 }

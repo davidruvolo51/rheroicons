@@ -16,9 +16,9 @@ solid$heart()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a heart
+Returns the svg markup for the heroicon ''heart'
 
-create a solid or outline SVG icon of a heart
+Returns the svg markup for the heroicon ''heart'
 }
 \description{
 heart
@@ -27,10 +27,8 @@ heart
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/heart.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/heart.svg}
-\url{https://heroicons.dev}
 }
 \keyword{heart}
 \keyword{outline}

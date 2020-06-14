@@ -16,9 +16,9 @@ solid$sun()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a sun
+Returns the svg markup for the heroicon ''sun'
 
-create a solid or outline SVG icon of a sun
+Returns the svg markup for the heroicon ''sun'
 }
 \description{
 sun
@@ -27,10 +27,8 @@ sun
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/sun.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/sun.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

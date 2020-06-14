@@ -16,9 +16,9 @@ solid$archive()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a archive
+Returns the svg markup for the heroicon ''archive'
 
-create a solid or outline SVG icon of a archive
+Returns the svg markup for the heroicon ''archive'
 }
 \description{
 archive
@@ -27,10 +27,8 @@ archive
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/archive.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/archive.svg}
-\url{https://heroicons.dev}
 }
 \keyword{archive}
 \keyword{outline}

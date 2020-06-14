@@ -16,9 +16,9 @@ solid$camera()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a camera
+Returns the svg markup for the heroicon ''camera'
 
-create a solid or outline SVG icon of a camera
+Returns the svg markup for the heroicon ''camera'
 }
 \description{
 camera
@@ -27,10 +27,8 @@ camera
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/camera.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/camera.svg}
-\url{https://heroicons.dev}
 }
 \keyword{camera}
 \keyword{outline}

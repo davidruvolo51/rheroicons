@@ -16,9 +16,9 @@ solid$view_list()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a view_list
+Returns the svg markup for the heroicon ''view_list'
 
-create a solid or outline SVG icon of a view_list
+Returns the svg markup for the heroicon ''view_list'
 }
 \description{
 view_list
@@ -27,10 +27,8 @@ view_list
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/view_list.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/view_list.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

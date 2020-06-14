@@ -16,9 +16,9 @@ solid$duplicate()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a duplicate
+Returns the svg markup for the heroicon ''duplicate'
 
-create a solid or outline SVG icon of a duplicate
+Returns the svg markup for the heroicon ''duplicate'
 }
 \description{
 duplicate
@@ -27,10 +27,8 @@ duplicate
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/duplicate.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/duplicate.svg}
-\url{https://heroicons.dev}
 }
 \keyword{duplicate}
 \keyword{outline}

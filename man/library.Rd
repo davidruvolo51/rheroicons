@@ -16,9 +16,9 @@ solid$library()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a library
+Returns the svg markup for the heroicon ''library'
 
-create a solid or outline SVG icon of a library
+Returns the svg markup for the heroicon ''library'
 }
 \description{
 library
@@ -27,10 +27,8 @@ library
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/library.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/library.svg}
-\url{https://heroicons.dev}
 }
 \keyword{library}
 \keyword{outline}

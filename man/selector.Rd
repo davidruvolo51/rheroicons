@@ -16,9 +16,9 @@ solid$selector()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a selector
+Returns the svg markup for the heroicon ''selector'
 
-create a solid or outline SVG icon of a selector
+Returns the svg markup for the heroicon ''selector'
 }
 \description{
 selector
@@ -27,10 +27,8 @@ selector
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/selector.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/selector.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

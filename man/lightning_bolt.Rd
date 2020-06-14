@@ -16,9 +16,9 @@ solid$lightning_bolt()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a lightning_bolt
+Returns the svg markup for the heroicon ''lightning_bolt'
 
-create a solid or outline SVG icon of a lightning_bolt
+Returns the svg markup for the heroicon ''lightning_bolt'
 }
 \description{
 lightning_bolt
@@ -27,10 +27,8 @@ lightning_bolt
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/lightning_bolt.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/lightning_bolt.svg}
-\url{https://heroicons.dev}
 }
 \keyword{lightning_bolt}
 \keyword{outline}

@@ -16,9 +16,9 @@ solid$chevron_left()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a chevron_left
+Returns the svg markup for the heroicon ''chevron_left'
 
-create a solid or outline SVG icon of a chevron_left
+Returns the svg markup for the heroicon ''chevron_left'
 }
 \description{
 chevron_left
@@ -27,10 +27,8 @@ chevron_left
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/chevron_left.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/chevron_left.svg}
-\url{https://heroicons.dev}
 }
 \keyword{chevron_left}
 \keyword{outline}

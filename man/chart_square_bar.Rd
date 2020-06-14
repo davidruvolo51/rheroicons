@@ -16,9 +16,9 @@ solid$chart_square_bar()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a chart_square_bar
+Returns the svg markup for the heroicon ''chart_square_bar'
 
-create a solid or outline SVG icon of a chart_square_bar
+Returns the svg markup for the heroicon ''chart_square_bar'
 }
 \description{
 chart_square_bar
@@ -27,10 +27,8 @@ chart_square_bar
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/chart_square_bar.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/chart_square_bar.svg}
-\url{https://heroicons.dev}
 }
 \keyword{chart_square_bar}
 \keyword{outline}

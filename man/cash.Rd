@@ -16,9 +16,9 @@ solid$cash()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a cash
+Returns the svg markup for the heroicon ''cash'
 
-create a solid or outline SVG icon of a cash
+Returns the svg markup for the heroicon ''cash'
 }
 \description{
 cash
@@ -27,10 +27,8 @@ cash
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/cash.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/cash.svg}
-\url{https://heroicons.dev}
 }
 \keyword{cash}
 \keyword{outline}

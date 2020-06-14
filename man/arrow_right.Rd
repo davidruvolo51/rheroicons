@@ -16,9 +16,9 @@ solid$arrow_right()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a arrow_right
+Returns the svg markup for the heroicon ''arrow_right'
 
-create a solid or outline SVG icon of a arrow_right
+Returns the svg markup for the heroicon ''arrow_right'
 }
 \description{
 arrow_right
@@ -27,10 +27,8 @@ arrow_right
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/arrow_right.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/arrow_right.svg}
-\url{https://heroicons.dev}
 }
 \keyword{arrow_right}
 \keyword{outline}

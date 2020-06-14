@@ -16,9 +16,9 @@ solid$view_boards()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a view_boards
+Returns the svg markup for the heroicon ''view_boards'
 
-create a solid or outline SVG icon of a view_boards
+Returns the svg markup for the heroicon ''view_boards'
 }
 \description{
 view_boards
@@ -27,10 +27,8 @@ view_boards
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/view_boards.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/view_boards.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

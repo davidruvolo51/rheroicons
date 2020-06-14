@@ -16,9 +16,9 @@ solid$fire()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a fire
+Returns the svg markup for the heroicon ''fire'
 
-create a solid or outline SVG icon of a fire
+Returns the svg markup for the heroicon ''fire'
 }
 \description{
 fire
@@ -27,10 +27,8 @@ fire
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/fire.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/fire.svg}
-\url{https://heroicons.dev}
 }
 \keyword{fire}
 \keyword{outline}

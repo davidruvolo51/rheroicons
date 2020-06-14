@@ -16,9 +16,9 @@ solid$user_circle()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a user_circle
+Returns the svg markup for the heroicon ''user_circle'
 
-create a solid or outline SVG icon of a user_circle
+Returns the svg markup for the heroicon ''user_circle'
 }
 \description{
 user_circle
@@ -27,10 +27,8 @@ user_circle
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/user_circle.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/user_circle.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

@@ -16,9 +16,9 @@ solid$translate()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a translate
+Returns the svg markup for the heroicon ''translate'
 
-create a solid or outline SVG icon of a translate
+Returns the svg markup for the heroicon ''translate'
 }
 \description{
 translate
@@ -27,10 +27,8 @@ translate
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/translate.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/translate.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

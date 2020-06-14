@@ -16,9 +16,9 @@ solid$moon()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a moon
+Returns the svg markup for the heroicon ''moon'
 
-create a solid or outline SVG icon of a moon
+Returns the svg markup for the heroicon ''moon'
 }
 \description{
 moon
@@ -27,10 +27,8 @@ moon
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/moon.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/moon.svg}
-\url{https://heroicons.dev}
 }
 \keyword{moon}
 \keyword{outline}

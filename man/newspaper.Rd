@@ -16,9 +16,9 @@ solid$newspaper()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a newspaper
+Returns the svg markup for the heroicon ''newspaper'
 
-create a solid or outline SVG icon of a newspaper
+Returns the svg markup for the heroicon ''newspaper'
 }
 \description{
 newspaper
@@ -27,10 +27,8 @@ newspaper
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/newspaper.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/newspaper.svg}
-\url{https://heroicons.dev}
 }
 \keyword{newspaper}
 \keyword{outline}

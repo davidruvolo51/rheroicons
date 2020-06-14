@@ -16,9 +16,9 @@ solid$clipboard_check()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a clipboard_check
+Returns the svg markup for the heroicon ''clipboard_check'
 
-create a solid or outline SVG icon of a clipboard_check
+Returns the svg markup for the heroicon ''clipboard_check'
 }
 \description{
 clipboard_check
@@ -27,10 +27,8 @@ clipboard_check
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/clipboard_check.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/clipboard_check.svg}
-\url{https://heroicons.dev}
 }
 \keyword{clipboard_check}
 \keyword{outline}

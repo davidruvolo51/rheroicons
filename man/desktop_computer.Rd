@@ -16,9 +16,9 @@ solid$desktop_computer()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a desktop_computer
+Returns the svg markup for the heroicon ''desktop_computer'
 
-create a solid or outline SVG icon of a desktop_computer
+Returns the svg markup for the heroicon ''desktop_computer'
 }
 \description{
 desktop_computer
@@ -27,10 +27,8 @@ desktop_computer
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/desktop_computer.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/desktop_computer.svg}
-\url{https://heroicons.dev}
 }
 \keyword{desktop_computer}
 \keyword{outline}

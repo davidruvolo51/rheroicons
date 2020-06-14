@@ -16,9 +16,9 @@ solid$minus_circle()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a minus_circle
+Returns the svg markup for the heroicon ''minus_circle'
 
-create a solid or outline SVG icon of a minus_circle
+Returns the svg markup for the heroicon ''minus_circle'
 }
 \description{
 minus_circle
@@ -27,10 +27,8 @@ minus_circle
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/minus_circle.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/minus_circle.svg}
-\url{https://heroicons.dev}
 }
 \keyword{minus_circle}
 \keyword{outline}

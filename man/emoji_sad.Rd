@@ -16,9 +16,9 @@ solid$emoji_sad()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a emoji_sad
+Returns the svg markup for the heroicon ''emoji_sad'
 
-create a solid or outline SVG icon of a emoji_sad
+Returns the svg markup for the heroicon ''emoji_sad'
 }
 \description{
 emoji_sad
@@ -27,10 +27,8 @@ emoji_sad
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/emoji_sad.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/emoji_sad.svg}
-\url{https://heroicons.dev}
 }
 \keyword{emoji_sad}
 \keyword{outline}

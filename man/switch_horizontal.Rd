@@ -16,9 +16,9 @@ solid$switch_horizontal()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a switch_horizontal
+Returns the svg markup for the heroicon ''switch_horizontal'
 
-create a solid or outline SVG icon of a switch_horizontal
+Returns the svg markup for the heroicon ''switch_horizontal'
 }
 \description{
 switch_horizontal
@@ -27,10 +27,8 @@ switch_horizontal
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/switch_horizontal.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/switch_horizontal.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

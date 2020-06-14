@@ -16,9 +16,9 @@ solid$location_marker()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a location_marker
+Returns the svg markup for the heroicon ''location_marker'
 
-create a solid or outline SVG icon of a location_marker
+Returns the svg markup for the heroicon ''location_marker'
 }
 \description{
 location_marker
@@ -27,10 +27,8 @@ location_marker
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/location_marker.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/location_marker.svg}
-\url{https://heroicons.dev}
 }
 \keyword{location_marker}
 \keyword{outline}

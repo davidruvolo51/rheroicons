@@ -16,9 +16,9 @@ solid$bell()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a bell
+Returns the svg markup for the heroicon ''bell'
 
-create a solid or outline SVG icon of a bell
+Returns the svg markup for the heroicon ''bell'
 }
 \description{
 bell
@@ -27,10 +27,8 @@ bell
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/bell.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/bell.svg}
-\url{https://heroicons.dev}
 }
 \keyword{bell}
 \keyword{outline}

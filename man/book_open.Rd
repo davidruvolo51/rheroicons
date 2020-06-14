@@ -16,9 +16,9 @@ solid$book_open()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a book_open
+Returns the svg markup for the heroicon ''book_open'
 
-create a solid or outline SVG icon of a book_open
+Returns the svg markup for the heroicon ''book_open'
 }
 \description{
 book_open
@@ -27,10 +27,8 @@ book_open
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/book_open.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/book_open.svg}
-\url{https://heroicons.dev}
 }
 \keyword{book_open}
 \keyword{outline}

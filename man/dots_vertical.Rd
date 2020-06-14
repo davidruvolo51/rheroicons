@@ -16,9 +16,9 @@ solid$dots_vertical()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a dots_vertical
+Returns the svg markup for the heroicon ''dots_vertical'
 
-create a solid or outline SVG icon of a dots_vertical
+Returns the svg markup for the heroicon ''dots_vertical'
 }
 \description{
 dots_vertical
@@ -27,10 +27,8 @@ dots_vertical
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/dots_vertical.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/dots_vertical.svg}
-\url{https://heroicons.dev}
 }
 \keyword{dots_vertical}
 \keyword{outline}

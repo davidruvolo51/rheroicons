@@ -16,9 +16,9 @@ solid$volume_off()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a volume_off
+Returns the svg markup for the heroicon ''volume_off'
 
-create a solid or outline SVG icon of a volume_off
+Returns the svg markup for the heroicon ''volume_off'
 }
 \description{
 volume_off
@@ -27,10 +27,8 @@ volume_off
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/volume_off.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/volume_off.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

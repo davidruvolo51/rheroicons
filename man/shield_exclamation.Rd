@@ -16,9 +16,9 @@ solid$shield_exclamation()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a shield_exclamation
+Returns the svg markup for the heroicon ''shield_exclamation'
 
-create a solid or outline SVG icon of a shield_exclamation
+Returns the svg markup for the heroicon ''shield_exclamation'
 }
 \description{
 shield_exclamation
@@ -27,10 +27,8 @@ shield_exclamation
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/shield_exclamation.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/shield_exclamation.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

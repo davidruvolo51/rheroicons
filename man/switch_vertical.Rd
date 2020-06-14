@@ -16,9 +16,9 @@ solid$switch_vertical()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a switch_vertical
+Returns the svg markup for the heroicon ''switch_vertical'
 
-create a solid or outline SVG icon of a switch_vertical
+Returns the svg markup for the heroicon ''switch_vertical'
 }
 \description{
 switch_vertical
@@ -27,10 +27,8 @@ switch_vertical
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/switch_vertical.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/switch_vertical.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

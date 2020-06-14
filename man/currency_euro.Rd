@@ -16,9 +16,9 @@ solid$currency_euro()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a currency_euro
+Returns the svg markup for the heroicon ''currency_euro'
 
-create a solid or outline SVG icon of a currency_euro
+Returns the svg markup for the heroicon ''currency_euro'
 }
 \description{
 currency_euro
@@ -27,10 +27,8 @@ currency_euro
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/currency_euro.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/currency_euro.svg}
-\url{https://heroicons.dev}
 }
 \keyword{currency_euro}
 \keyword{outline}

@@ -16,9 +16,9 @@ solid$trash()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a trash
+Returns the svg markup for the heroicon ''trash'
 
-create a solid or outline SVG icon of a trash
+Returns the svg markup for the heroicon ''trash'
 }
 \description{
 trash
@@ -27,10 +27,8 @@ trash
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/trash.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/trash.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

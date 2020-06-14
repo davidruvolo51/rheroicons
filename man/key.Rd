@@ -16,9 +16,9 @@ solid$key()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a key
+Returns the svg markup for the heroicon ''key'
 
-create a solid or outline SVG icon of a key
+Returns the svg markup for the heroicon ''key'
 }
 \description{
 key
@@ -27,10 +27,8 @@ key
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/key.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/key.svg}
-\url{https://heroicons.dev}
 }
 \keyword{key}
 \keyword{outline}

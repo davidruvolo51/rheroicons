@@ -16,9 +16,9 @@ solid$x_circle()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a x_circle
+Returns the svg markup for the heroicon ''x_circle'
 
-create a solid or outline SVG icon of a x_circle
+Returns the svg markup for the heroicon ''x_circle'
 }
 \description{
 x_circle
@@ -27,10 +27,8 @@ x_circle
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/x_circle.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/x_circle.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

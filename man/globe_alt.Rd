@@ -16,9 +16,9 @@ solid$globe_alt()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a globe_alt
+Returns the svg markup for the heroicon ''globe_alt'
 
-create a solid or outline SVG icon of a globe_alt
+Returns the svg markup for the heroicon ''globe_alt'
 }
 \description{
 globe_alt
@@ -27,10 +27,8 @@ globe_alt
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/globe_alt.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/globe_alt.svg}
-\url{https://heroicons.dev}
 }
 \keyword{globe_alt}
 \keyword{outline}

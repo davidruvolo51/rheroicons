@@ -16,9 +16,9 @@ solid$arrows_expand()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a arrows_expand
+Returns the svg markup for the heroicon ''arrows_expand'
 
-create a solid or outline SVG icon of a arrows_expand
+Returns the svg markup for the heroicon ''arrows_expand'
 }
 \description{
 arrows_expand
@@ -27,10 +27,8 @@ arrows_expand
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/arrows_expand.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/arrows_expand.svg}
-\url{https://heroicons.dev}
 }
 \keyword{arrows_expand}
 \keyword{outline}

@@ -16,9 +16,9 @@ solid$clipboard()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a clipboard
+Returns the svg markup for the heroicon ''clipboard'
 
-create a solid or outline SVG icon of a clipboard
+Returns the svg markup for the heroicon ''clipboard'
 }
 \description{
 clipboard
@@ -27,10 +27,8 @@ clipboard
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/clipboard.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/clipboard.svg}
-\url{https://heroicons.dev}
 }
 \keyword{clipboard}
 \keyword{outline}

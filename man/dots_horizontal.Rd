@@ -16,9 +16,9 @@ solid$dots_horizontal()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a dots_horizontal
+Returns the svg markup for the heroicon ''dots_horizontal'
 
-create a solid or outline SVG icon of a dots_horizontal
+Returns the svg markup for the heroicon ''dots_horizontal'
 }
 \description{
 dots_horizontal
@@ -27,10 +27,8 @@ dots_horizontal
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/dots_horizontal.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/dots_horizontal.svg}
-\url{https://heroicons.dev}
 }
 \keyword{dots_horizontal}
 \keyword{outline}
