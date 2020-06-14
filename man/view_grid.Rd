@@ -16,9 +16,9 @@ solid$view_grid()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a view_grid
+Returns the svg markup for the heroicon ''view_grid'
 
-create a solid or outline SVG icon of a view_grid
+Returns the svg markup for the heroicon ''view_grid'
 }
 \description{
 view_grid
@@ -27,10 +27,8 @@ view_grid
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/view_grid.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/view_grid.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

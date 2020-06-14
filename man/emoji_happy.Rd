@@ -16,9 +16,9 @@ solid$emoji_happy()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a emoji_happy
+Returns the svg markup for the heroicon ''emoji_happy'
 
-create a solid or outline SVG icon of a emoji_happy
+Returns the svg markup for the heroicon ''emoji_happy'
 }
 \description{
 emoji_happy
@@ -27,10 +27,8 @@ emoji_happy
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/emoji_happy.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/emoji_happy.svg}
-\url{https://heroicons.dev}
 }
 \keyword{emoji_happy}
 \keyword{outline}

@@ -16,9 +16,9 @@ solid$plus()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a plus
+Returns the svg markup for the heroicon ''plus'
 
-create a solid or outline SVG icon of a plus
+Returns the svg markup for the heroicon ''plus'
 }
 \description{
 plus
@@ -27,10 +27,8 @@ plus
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/plus.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/plus.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{plus}

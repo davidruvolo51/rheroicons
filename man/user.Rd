@@ -16,9 +16,9 @@ solid$user()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a user
+Returns the svg markup for the heroicon ''user'
 
-create a solid or outline SVG icon of a user
+Returns the svg markup for the heroicon ''user'
 }
 \description{
 user
@@ -27,10 +27,8 @@ user
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/user.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/user.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

@@ -2,7 +2,7 @@
 #' FILE: icons_99_utils.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-06-11
-#' MODIFIED: 2020-06-13
+#' MODIFIED: 2020-06-14
 #' PURPOSE: functions for parsing svg markup into R functions
 #' STATUS: complete
 #' PACKAGES: XML, purrr, stringr, formatR, dplyr
@@ -108,7 +108,7 @@ makeFunc <- function(string, icon, type) {
             " rheroicons-", icon  # icon class
         ),
         "\", ",
-        "\"aria_hidden\" = aria_hidden, ",
+        "\"aria_hidden\" = tolower(aria_hidden), ",
         viewbox_string(string), ", "
     )
 
@@ -129,16 +129,14 @@ makeFunc <- function(string, icon, type) {
     out <- paste0(
         "#'", icon, "\n",
         "#' @name ", icon, "\n",
-        "#' @return create a solid or outline SVG icon of a ", icon, "\n",
+        "#' @return Returns the svg markup for the heroicon ''", icon, "'\n",
         "#' @usage ", type, "$", icon, "()\n",
         "#' @param id a unique ID to be applied to the svg icon\n",
         "#' @param class a css class to be applied to the svg icon\n",
         "#' @param aria_hidden should the icon be readable by screen readers",
         " (default: false)\n",
         "#' @keywords rheroicons ", type, " ", icon, "\n",
-        "#' @references\n",
-        "#' \\url{", url, "}\n",
-        "#' \\url{https://heroicons.dev}\n",
+        "#' @references \\url{", url, "}\n",
         "#' @export\n",
         type, "$", icon,
         " <- function (id = NULL, class = NULL, aria_hidden = FALSE) {\n",
@@ -213,7 +211,7 @@ init_file <- function(path, type) {
         "#' ", toupper(type), " SVG Icons\n",
         "#' @name ", type, "\n",
         "#' @keywords rheroicons ", type, "\n",
-        "#' @details ", type, " icons from heroicons\n",
+        "#' @return ", type, " heroicons\n",
         "#' @usage rheroicons::", type, "$icon_name()\n",
         "#' @param id a unique ID to be applied to the svg icon\n",
         "#' @param class a css class to be applied to the svg icon\n",

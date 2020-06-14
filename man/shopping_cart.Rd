@@ -16,9 +16,9 @@ solid$shopping_cart()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a shopping_cart
+Returns the svg markup for the heroicon ''shopping_cart'
 
-create a solid or outline SVG icon of a shopping_cart
+Returns the svg markup for the heroicon ''shopping_cart'
 }
 \description{
 shopping_cart
@@ -27,10 +27,8 @@ shopping_cart
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/shopping_cart.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/shopping_cart.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

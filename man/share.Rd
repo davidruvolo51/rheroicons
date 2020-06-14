@@ -16,9 +16,9 @@ solid$share()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a share
+Returns the svg markup for the heroicon ''share'
 
-create a solid or outline SVG icon of a share
+Returns the svg markup for the heroicon ''share'
 }
 \description{
 share
@@ -27,10 +27,8 @@ share
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/share.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/share.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

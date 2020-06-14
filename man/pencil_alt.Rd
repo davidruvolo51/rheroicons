@@ -16,9 +16,9 @@ solid$pencil_alt()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a pencil_alt
+Returns the svg markup for the heroicon ''pencil_alt'
 
-create a solid or outline SVG icon of a pencil_alt
+Returns the svg markup for the heroicon ''pencil_alt'
 }
 \description{
 pencil_alt
@@ -27,10 +27,8 @@ pencil_alt
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/pencil_alt.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/pencil_alt.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{pencil_alt}

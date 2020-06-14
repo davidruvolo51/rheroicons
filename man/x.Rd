@@ -16,9 +16,9 @@ solid$x()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a x
+Returns the svg markup for the heroicon ''x'
 
-create a solid or outline SVG icon of a x
+Returns the svg markup for the heroicon ''x'
 }
 \description{
 x
@@ -27,10 +27,8 @@ x
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/x.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/x.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

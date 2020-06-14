@@ -16,9 +16,9 @@ solid$stop()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a stop
+Returns the svg markup for the heroicon ''stop'
 
-create a solid or outline SVG icon of a stop
+Returns the svg markup for the heroicon ''stop'
 }
 \description{
 stop
@@ -27,10 +27,8 @@ stop
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/stop.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/stop.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

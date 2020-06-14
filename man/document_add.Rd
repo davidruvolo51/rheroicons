@@ -16,9 +16,9 @@ solid$document_add()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a document_add
+Returns the svg markup for the heroicon ''document_add'
 
-create a solid or outline SVG icon of a document_add
+Returns the svg markup for the heroicon ''document_add'
 }
 \description{
 document_add
@@ -27,10 +27,8 @@ document_add
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/document_add.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/document_add.svg}
-\url{https://heroicons.dev}
 }
 \keyword{document_add}
 \keyword{outline}

@@ -16,9 +16,9 @@ solid$ticket()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a ticket
+Returns the svg markup for the heroicon ''ticket'
 
-create a solid or outline SVG icon of a ticket
+Returns the svg markup for the heroicon ''ticket'
 }
 \description{
 ticket
@@ -27,10 +27,8 @@ ticket
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/ticket.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/ticket.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

@@ -17,11 +17,11 @@ rheroicons::solid$icon_name()
 
 \item{aria_hidden}{should the icon be readable by screen readers}
 }
+\value{
+solid heroicons
+}
 \description{
 SOLID SVG Icons
-}
-\details{
-solid icons from heroicons
 }
 \examples{
 reheroicons::solid$book_open()

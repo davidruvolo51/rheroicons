@@ -16,9 +16,9 @@ solid$flag()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a flag
+Returns the svg markup for the heroicon ''flag'
 
-create a solid or outline SVG icon of a flag
+Returns the svg markup for the heroicon ''flag'
 }
 \description{
 flag
@@ -27,10 +27,8 @@ flag
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/flag.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/flag.svg}
-\url{https://heroicons.dev}
 }
 \keyword{flag}
 \keyword{outline}

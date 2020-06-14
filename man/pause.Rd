@@ -16,9 +16,9 @@ solid$pause()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a pause
+Returns the svg markup for the heroicon ''pause'
 
-create a solid or outline SVG icon of a pause
+Returns the svg markup for the heroicon ''pause'
 }
 \description{
 pause
@@ -27,10 +27,8 @@ pause
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/pause.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/pause.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{pause}

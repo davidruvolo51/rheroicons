@@ -16,9 +16,9 @@ solid$check()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a check
+Returns the svg markup for the heroicon ''check'
 
-create a solid or outline SVG icon of a check
+Returns the svg markup for the heroicon ''check'
 }
 \description{
 check
@@ -27,10 +27,8 @@ check
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/check.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/check.svg}
-\url{https://heroicons.dev}
 }
 \keyword{check}
 \keyword{outline}

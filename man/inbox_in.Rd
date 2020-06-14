@@ -16,9 +16,9 @@ solid$inbox_in()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a inbox_in
+Returns the svg markup for the heroicon ''inbox_in'
 
-create a solid or outline SVG icon of a inbox_in
+Returns the svg markup for the heroicon ''inbox_in'
 }
 \description{
 inbox_in
@@ -27,10 +27,8 @@ inbox_in
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/inbox_in.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/inbox_in.svg}
-\url{https://heroicons.dev}
 }
 \keyword{inbox_in}
 \keyword{outline}

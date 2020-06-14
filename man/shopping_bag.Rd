@@ -16,9 +16,9 @@ solid$shopping_bag()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a shopping_bag
+Returns the svg markup for the heroicon ''shopping_bag'
 
-create a solid or outline SVG icon of a shopping_bag
+Returns the svg markup for the heroicon ''shopping_bag'
 }
 \description{
 shopping_bag
@@ -27,10 +27,8 @@ shopping_bag
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/shopping_bag.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/shopping_bag.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

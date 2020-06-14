@@ -16,9 +16,9 @@ solid$exclamation_circle()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a exclamation_circle
+Returns the svg markup for the heroicon ''exclamation_circle'
 
-create a solid or outline SVG icon of a exclamation_circle
+Returns the svg markup for the heroicon ''exclamation_circle'
 }
 \description{
 exclamation_circle
@@ -27,10 +27,8 @@ exclamation_circle
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/exclamation_circle.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/exclamation_circle.svg}
-\url{https://heroicons.dev}
 }
 \keyword{exclamation_circle}
 \keyword{outline}

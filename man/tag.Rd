@@ -16,9 +16,9 @@ solid$tag()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a tag
+Returns the svg markup for the heroicon ''tag'
 
-create a solid or outline SVG icon of a tag
+Returns the svg markup for the heroicon ''tag'
 }
 \description{
 tag
@@ -27,10 +27,8 @@ tag
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/tag.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/tag.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

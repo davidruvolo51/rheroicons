@@ -16,9 +16,9 @@ solid$external_link()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a external_link
+Returns the svg markup for the heroicon ''external_link'
 
-create a solid or outline SVG icon of a external_link
+Returns the svg markup for the heroicon ''external_link'
 }
 \description{
 external_link
@@ -27,10 +27,8 @@ external_link
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/external_link.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/external_link.svg}
-\url{https://heroicons.dev}
 }
 \keyword{external_link}
 \keyword{outline}

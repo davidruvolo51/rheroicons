@@ -16,9 +16,9 @@ solid$chart_pie()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a chart_pie
+Returns the svg markup for the heroicon ''chart_pie'
 
-create a solid or outline SVG icon of a chart_pie
+Returns the svg markup for the heroicon ''chart_pie'
 }
 \description{
 chart_pie
@@ -27,10 +27,8 @@ chart_pie
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/chart_pie.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/chart_pie.svg}
-\url{https://heroicons.dev}
 }
 \keyword{chart_pie}
 \keyword{outline}

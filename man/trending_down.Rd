@@ -16,9 +16,9 @@ solid$trending_down()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a trending_down
+Returns the svg markup for the heroicon ''trending_down'
 
-create a solid or outline SVG icon of a trending_down
+Returns the svg markup for the heroicon ''trending_down'
 }
 \description{
 trending_down
@@ -27,10 +27,8 @@ trending_down
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/trending_down.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/trending_down.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

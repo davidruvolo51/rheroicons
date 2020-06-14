@@ -16,9 +16,9 @@ solid$bookmark()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a bookmark
+Returns the svg markup for the heroicon ''bookmark'
 
-create a solid or outline SVG icon of a bookmark
+Returns the svg markup for the heroicon ''bookmark'
 }
 \description{
 bookmark
@@ -27,10 +27,8 @@ bookmark
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/bookmark.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/bookmark.svg}
-\url{https://heroicons.dev}
 }
 \keyword{bookmark}
 \keyword{outline}

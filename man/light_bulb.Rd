@@ -16,9 +16,9 @@ solid$light_bulb()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a light_bulb
+Returns the svg markup for the heroicon ''light_bulb'
 
-create a solid or outline SVG icon of a light_bulb
+Returns the svg markup for the heroicon ''light_bulb'
 }
 \description{
 light_bulb
@@ -27,10 +27,8 @@ light_bulb
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/light_bulb.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/light_bulb.svg}
-\url{https://heroicons.dev}
 }
 \keyword{light_bulb}
 \keyword{outline}

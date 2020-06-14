@@ -16,9 +16,9 @@ solid$menu_alt_1()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a menu_alt_1
+Returns the svg markup for the heroicon ''menu_alt_1'
 
-create a solid or outline SVG icon of a menu_alt_1
+Returns the svg markup for the heroicon ''menu_alt_1'
 }
 \description{
 menu_alt_1
@@ -27,10 +27,8 @@ menu_alt_1
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/menu_alt_1.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/menu_alt_1.svg}
-\url{https://heroicons.dev}
 }
 \keyword{menu_alt_1}
 \keyword{outline}

@@ -16,9 +16,9 @@ solid$sparkles()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a sparkles
+Returns the svg markup for the heroicon ''sparkles'
 
-create a solid or outline SVG icon of a sparkles
+Returns the svg markup for the heroicon ''sparkles'
 }
 \description{
 sparkles
@@ -27,10 +27,8 @@ sparkles
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/sparkles.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/sparkles.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

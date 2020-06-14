@@ -16,9 +16,9 @@ solid$cog()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a cog
+Returns the svg markup for the heroicon ''cog'
 
-create a solid or outline SVG icon of a cog
+Returns the svg markup for the heroicon ''cog'
 }
 \description{
 cog
@@ -27,10 +27,8 @@ cog
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/cog.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/cog.svg}
-\url{https://heroicons.dev}
 }
 \keyword{cog}
 \keyword{outline}

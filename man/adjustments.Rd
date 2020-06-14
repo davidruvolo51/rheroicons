@@ -16,9 +16,9 @@ solid$adjustments()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a adjustments
+Returns the svg markup for the heroicon ''adjustments'
 
-create a solid or outline SVG icon of a adjustments
+Returns the svg markup for the heroicon ''adjustments'
 }
 \description{
 adjustments
@@ -27,10 +27,8 @@ adjustments
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/adjustments.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/adjustments.svg}
-\url{https://heroicons.dev}
 }
 \keyword{adjustments}
 \keyword{outline}

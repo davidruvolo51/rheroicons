@@ -16,9 +16,9 @@ solid$code()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a code
+Returns the svg markup for the heroicon ''code'
 
-create a solid or outline SVG icon of a code
+Returns the svg markup for the heroicon ''code'
 }
 \description{
 code
@@ -27,10 +27,8 @@ code
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/code.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/code.svg}
-\url{https://heroicons.dev}
 }
 \keyword{code}
 \keyword{outline}

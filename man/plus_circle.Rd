@@ -16,9 +16,9 @@ solid$plus_circle()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a plus_circle
+Returns the svg markup for the heroicon ''plus_circle'
 
-create a solid or outline SVG icon of a plus_circle
+Returns the svg markup for the heroicon ''plus_circle'
 }
 \description{
 plus_circle
@@ -27,10 +27,8 @@ plus_circle
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/plus_circle.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/plus_circle.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{plus_circle}

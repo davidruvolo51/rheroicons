@@ -16,9 +16,9 @@ solid$lock_open()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a lock_open
+Returns the svg markup for the heroicon ''lock_open'
 
-create a solid or outline SVG icon of a lock_open
+Returns the svg markup for the heroicon ''lock_open'
 }
 \description{
 lock_open
@@ -27,10 +27,8 @@ lock_open
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/lock_open.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/lock_open.svg}
-\url{https://heroicons.dev}
 }
 \keyword{lock_open}
 \keyword{outline}

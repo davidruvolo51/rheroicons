@@ -16,9 +16,9 @@ solid$phone_outgoing()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a phone_outgoing
+Returns the svg markup for the heroicon ''phone_outgoing'
 
-create a solid or outline SVG icon of a phone_outgoing
+Returns the svg markup for the heroicon ''phone_outgoing'
 }
 \description{
 phone_outgoing
@@ -27,10 +27,8 @@ phone_outgoing
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/phone_outgoing.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/phone_outgoing.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{phone_outgoing}

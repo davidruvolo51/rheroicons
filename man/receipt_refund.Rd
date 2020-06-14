@@ -16,9 +16,9 @@ solid$receipt_refund()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a receipt_refund
+Returns the svg markup for the heroicon ''receipt_refund'
 
-create a solid or outline SVG icon of a receipt_refund
+Returns the svg markup for the heroicon ''receipt_refund'
 }
 \description{
 receipt_refund
@@ -27,10 +27,8 @@ receipt_refund
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/receipt_refund.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/receipt_refund.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{receipt_refund}

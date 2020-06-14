@@ -16,9 +16,9 @@ solid$qrcode()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a qrcode
+Returns the svg markup for the heroicon ''qrcode'
 
-create a solid or outline SVG icon of a qrcode
+Returns the svg markup for the heroicon ''qrcode'
 }
 \description{
 qrcode
@@ -27,10 +27,8 @@ qrcode
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/qrcode.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/qrcode.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{qrcode}

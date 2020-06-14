@@ -16,9 +16,9 @@ solid$color_swatch()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a color_swatch
+Returns the svg markup for the heroicon ''color_swatch'
 
-create a solid or outline SVG icon of a color_swatch
+Returns the svg markup for the heroicon ''color_swatch'
 }
 \description{
 color_swatch
@@ -27,10 +27,8 @@ color_swatch
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/color_swatch.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/color_swatch.svg}
-\url{https://heroicons.dev}
 }
 \keyword{color_swatch}
 \keyword{outline}

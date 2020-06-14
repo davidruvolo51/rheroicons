@@ -16,9 +16,9 @@ solid$link()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a link
+Returns the svg markup for the heroicon ''link'
 
-create a solid or outline SVG icon of a link
+Returns the svg markup for the heroicon ''link'
 }
 \description{
 link
@@ -27,10 +27,8 @@ link
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/link.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/link.svg}
-\url{https://heroicons.dev}
 }
 \keyword{link}
 \keyword{outline}

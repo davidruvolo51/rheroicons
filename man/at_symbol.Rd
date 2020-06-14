@@ -16,9 +16,9 @@ solid$at_symbol()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a at_symbol
+Returns the svg markup for the heroicon ''at_symbol'
 
-create a solid or outline SVG icon of a at_symbol
+Returns the svg markup for the heroicon ''at_symbol'
 }
 \description{
 at_symbol
@@ -27,10 +27,8 @@ at_symbol
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/at_symbol.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/at_symbol.svg}
-\url{https://heroicons.dev}
 }
 \keyword{at_symbol}
 \keyword{outline}

@@ -16,9 +16,9 @@ solid$eye_off()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a eye_off
+Returns the svg markup for the heroicon ''eye_off'
 
-create a solid or outline SVG icon of a eye_off
+Returns the svg markup for the heroicon ''eye_off'
 }
 \description{
 eye_off
@@ -27,10 +27,8 @@ eye_off
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/eye_off.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/eye_off.svg}
-\url{https://heroicons.dev}
 }
 \keyword{eye_off}
 \keyword{outline}

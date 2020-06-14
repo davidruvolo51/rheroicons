@@ -16,9 +16,9 @@ solid$cloud_download()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a cloud_download
+Returns the svg markup for the heroicon ''cloud_download'
 
-create a solid or outline SVG icon of a cloud_download
+Returns the svg markup for the heroicon ''cloud_download'
 }
 \description{
 cloud_download
@@ -27,10 +27,8 @@ cloud_download
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/cloud_download.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/cloud_download.svg}
-\url{https://heroicons.dev}
 }
 \keyword{cloud_download}
 \keyword{outline}

@@ -16,9 +16,9 @@ solid$question_mark_circle()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a question_mark_circle
+Returns the svg markup for the heroicon ''question_mark_circle'
 
-create a solid or outline SVG icon of a question_mark_circle
+Returns the svg markup for the heroicon ''question_mark_circle'
 }
 \description{
 question_mark_circle
@@ -27,10 +27,8 @@ question_mark_circle
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/question_mark_circle.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/question_mark_circle.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{question_mark_circle}

@@ -17,11 +17,11 @@ rheroicons::outline$icon_name()
 
 \item{aria_hidden}{should the icon be readable by screen readers}
 }
+\value{
+outline heroicons
+}
 \description{
 OUTLINE SVG Icons
-}
-\details{
-outline icons from heroicons
 }
 \examples{
 reheroicons::outline$book_open()

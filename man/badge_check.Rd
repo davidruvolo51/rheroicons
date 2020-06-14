@@ -16,9 +16,9 @@ solid$badge_check()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a badge_check
+Returns the svg markup for the heroicon ''badge_check'
 
-create a solid or outline SVG icon of a badge_check
+Returns the svg markup for the heroicon ''badge_check'
 }
 \description{
 badge_check
@@ -27,10 +27,8 @@ badge_check
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/badge_check.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/badge_check.svg}
-\url{https://heroicons.dev}
 }
 \keyword{badge_check}
 \keyword{outline}

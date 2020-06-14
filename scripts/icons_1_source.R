@@ -1,5 +1,5 @@
 #'////////////////////////////////////////////////////////////////////////////
-#' FILE: icons_0_source.R
+#' FILE: icons_1_source.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-06-11
 #' MODIFIED: 2020-06-11
@@ -14,15 +14,6 @@ suppressPackageStartupMessages(library(dplyr))
 
 # source utils
 source("scripts/icons_99_utils.R")
-
-#'//////////////////////////////////////
-
-#' ~ 0 ~
-# clone source icons
-#' system("cd src/ && git clone 'https://github.com/refactoringui/heroicons/'")
-
-#' remove extra dirs
-# system("cd src/heroicons && rm -rf .github react scripts src vue *.yaml *.json *.lock *.md")
 
 #'//////////////////////////////////////
 

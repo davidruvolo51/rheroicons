@@ -16,9 +16,9 @@ solid$reply()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a reply
+Returns the svg markup for the heroicon ''reply'
 
-create a solid or outline SVG icon of a reply
+Returns the svg markup for the heroicon ''reply'
 }
 \description{
 reply
@@ -27,10 +27,8 @@ reply
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/reply.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/reply.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{reply}

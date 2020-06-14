@@ -16,9 +16,9 @@ solid$filter()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a filter
+Returns the svg markup for the heroicon ''filter'
 
-create a solid or outline SVG icon of a filter
+Returns the svg markup for the heroicon ''filter'
 }
 \description{
 filter
@@ -27,10 +27,8 @@ filter
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/filter.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/filter.svg}
-\url{https://heroicons.dev}
 }
 \keyword{filter}
 \keyword{outline}

@@ -16,9 +16,9 @@ solid$zoom_out()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a zoom_out
+Returns the svg markup for the heroicon ''zoom_out'
 
-create a solid or outline SVG icon of a zoom_out
+Returns the svg markup for the heroicon ''zoom_out'
 }
 \description{
 zoom_out
@@ -27,10 +27,8 @@ zoom_out
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/zoom_out.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/zoom_out.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

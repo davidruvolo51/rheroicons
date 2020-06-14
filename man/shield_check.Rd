@@ -16,9 +16,9 @@ solid$shield_check()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a shield_check
+Returns the svg markup for the heroicon ''shield_check'
 
-create a solid or outline SVG icon of a shield_check
+Returns the svg markup for the heroicon ''shield_check'
 }
 \description{
 shield_check
@@ -27,10 +27,8 @@ shield_check
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/shield_check.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/shield_check.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

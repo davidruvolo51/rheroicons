@@ -16,9 +16,9 @@ solid$clock()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a clock
+Returns the svg markup for the heroicon ''clock'
 
-create a solid or outline SVG icon of a clock
+Returns the svg markup for the heroicon ''clock'
 }
 \description{
 clock
@@ -27,10 +27,8 @@ clock
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/clock.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/clock.svg}
-\url{https://heroicons.dev}
 }
 \keyword{clock}
 \keyword{outline}

@@ -16,9 +16,9 @@ solid$arrow_down()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a arrow_down
+Returns the svg markup for the heroicon ''arrow_down'
 
-create a solid or outline SVG icon of a arrow_down
+Returns the svg markup for the heroicon ''arrow_down'
 }
 \description{
 arrow_down
@@ -27,10 +27,8 @@ arrow_down
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/arrow_down.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/arrow_down.svg}
-\url{https://heroicons.dev}
 }
 \keyword{arrow_down}
 \keyword{outline}

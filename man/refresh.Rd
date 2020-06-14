@@ -16,9 +16,9 @@ solid$refresh()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a refresh
+Returns the svg markup for the heroicon ''refresh'
 
-create a solid or outline SVG icon of a refresh
+Returns the svg markup for the heroicon ''refresh'
 }
 \description{
 refresh
@@ -27,10 +27,8 @@ refresh
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/refresh.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/refresh.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{refresh}

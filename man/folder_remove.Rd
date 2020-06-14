@@ -16,9 +16,9 @@ solid$folder_remove()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a folder_remove
+Returns the svg markup for the heroicon ''folder_remove'
 
-create a solid or outline SVG icon of a folder_remove
+Returns the svg markup for the heroicon ''folder_remove'
 }
 \description{
 folder_remove
@@ -27,10 +27,8 @@ folder_remove
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/folder_remove.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/folder_remove.svg}
-\url{https://heroicons.dev}
 }
 \keyword{folder_remove}
 \keyword{outline}

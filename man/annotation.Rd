@@ -16,9 +16,9 @@ solid$annotation()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a annotation
+Returns the svg markup for the heroicon ''annotation'
 
-create a solid or outline SVG icon of a annotation
+Returns the svg markup for the heroicon ''annotation'
 }
 \description{
 annotation
@@ -27,10 +27,8 @@ annotation
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/annotation.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/annotation.svg}
-\url{https://heroicons.dev}
 }
 \keyword{annotation}
 \keyword{outline}

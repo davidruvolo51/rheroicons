@@ -16,9 +16,9 @@ solid$information_circle()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a information_circle
+Returns the svg markup for the heroicon ''information_circle'
 
-create a solid or outline SVG icon of a information_circle
+Returns the svg markup for the heroicon ''information_circle'
 }
 \description{
 information_circle
@@ -27,10 +27,8 @@ information_circle
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/information_circle.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/information_circle.svg}
-\url{https://heroicons.dev}
 }
 \keyword{information_circle}
 \keyword{outline}

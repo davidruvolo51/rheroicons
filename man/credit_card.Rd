@@ -16,9 +16,9 @@ solid$credit_card()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a credit_card
+Returns the svg markup for the heroicon ''credit_card'
 
-create a solid or outline SVG icon of a credit_card
+Returns the svg markup for the heroicon ''credit_card'
 }
 \description{
 credit_card
@@ -27,10 +27,8 @@ credit_card
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/credit_card.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/credit_card.svg}
-\url{https://heroicons.dev}
 }
 \keyword{credit_card}
 \keyword{outline}

@@ -16,9 +16,9 @@ solid$dots_circle_horizontal()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a dots_circle_horizontal
+Returns the svg markup for the heroicon ''dots_circle_horizontal'
 
-create a solid or outline SVG icon of a dots_circle_horizontal
+Returns the svg markup for the heroicon ''dots_circle_horizontal'
 }
 \description{
 dots_circle_horizontal
@@ -27,10 +27,8 @@ dots_circle_horizontal
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/dots_circle_horizontal.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/dots_circle_horizontal.svg}
-\url{https://heroicons.dev}
 }
 \keyword{dots_circle_horizontal}
 \keyword{outline}

@@ -16,9 +16,9 @@ solid$upload()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a upload
+Returns the svg markup for the heroicon ''upload'
 
-create a solid or outline SVG icon of a upload
+Returns the svg markup for the heroicon ''upload'
 }
 \description{
 upload
@@ -27,10 +27,8 @@ upload
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/upload.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/upload.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

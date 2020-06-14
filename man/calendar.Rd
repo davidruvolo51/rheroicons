@@ -16,9 +16,9 @@ solid$calendar()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a calendar
+Returns the svg markup for the heroicon ''calendar'
 
-create a solid or outline SVG icon of a calendar
+Returns the svg markup for the heroicon ''calendar'
 }
 \description{
 calendar
@@ -27,10 +27,8 @@ calendar
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/calendar.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/calendar.svg}
-\url{https://heroicons.dev}
 }
 \keyword{calendar}
 \keyword{outline}

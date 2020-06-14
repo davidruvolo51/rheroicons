@@ -16,9 +16,9 @@ solid$sort_descending()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a sort_descending
+Returns the svg markup for the heroicon ''sort_descending'
 
-create a solid or outline SVG icon of a sort_descending
+Returns the svg markup for the heroicon ''sort_descending'
 }
 \description{
 sort_descending
@@ -27,10 +27,8 @@ sort_descending
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/sort_descending.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/sort_descending.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{rheroicons}

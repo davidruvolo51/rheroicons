@@ -16,9 +16,9 @@ solid$paper_clip()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a paper_clip
+Returns the svg markup for the heroicon ''paper_clip'
 
-create a solid or outline SVG icon of a paper_clip
+Returns the svg markup for the heroicon ''paper_clip'
 }
 \description{
 paper_clip
@@ -27,10 +27,8 @@ paper_clip
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/paper_clip.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/paper_clip.svg}
-\url{https://heroicons.dev}
 }
 \keyword{outline}
 \keyword{paper_clip}

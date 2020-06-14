@@ -16,9 +16,9 @@ solid$bookmark_alt()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a bookmark_alt
+Returns the svg markup for the heroicon ''bookmark_alt'
 
-create a solid or outline SVG icon of a bookmark_alt
+Returns the svg markup for the heroicon ''bookmark_alt'
 }
 \description{
 bookmark_alt
@@ -27,10 +27,8 @@ bookmark_alt
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/bookmark_alt.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/bookmark_alt.svg}
-\url{https://heroicons.dev}
 }
 \keyword{bookmark_alt}
 \keyword{outline}

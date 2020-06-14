@@ -16,9 +16,9 @@ solid$home()
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
 }
 \value{
-create a solid or outline SVG icon of a home
+Returns the svg markup for the heroicon ''home'
 
-create a solid or outline SVG icon of a home
+Returns the svg markup for the heroicon ''home'
 }
 \description{
 home
@@ -27,10 +27,8 @@ home
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/home.svg}
-\url{https://heroicons.dev}
 
 \url{https://github.com/refactoringui/heroicons/blob/master/solid/home.svg}
-\url{https://heroicons.dev}
 }
 \keyword{home}
 \keyword{outline}
