@@ -4,3 +4,4 @@ rheroicons.code-workspace
 package.json
 README.md
 .gitignore
+node_modules

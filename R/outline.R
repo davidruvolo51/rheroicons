@@ -29,7 +29,7 @@ outline <- list()
 #' @export
 outline$adjustments <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-adjustments", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_adjustments", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -55,7 +55,7 @@ outline$adjustments <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$annotation <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-annotation", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_annotation", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -81,7 +81,7 @@ outline$annotation <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$archive <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-archive", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_archive", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -107,7 +107,7 @@ outline$archive <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$arrow_circle_down <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-arrow_circle_down", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_arrow_circle_down", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -133,7 +133,7 @@ outline$arrow_circle_down <- function(id = NULL, class = NULL, aria_hidden = FAL
 #' @export
 outline$arrow_circle_left <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-arrow_circle_left", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_arrow_circle_left", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -159,7 +159,7 @@ outline$arrow_circle_left <- function(id = NULL, class = NULL, aria_hidden = FAL
 #' @export
 outline$arrow_circle_right <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-arrow_circle_right", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_arrow_circle_right", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -185,7 +185,7 @@ outline$arrow_circle_right <- function(id = NULL, class = NULL, aria_hidden = FA
 #' @export
 outline$arrow_circle_up <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-arrow_circle_up", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_arrow_circle_up", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -211,7 +211,7 @@ outline$arrow_circle_up <- function(id = NULL, class = NULL, aria_hidden = FALSE
 #' @export
 outline$arrow_down <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-arrow_down", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_arrow_down", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -237,7 +237,7 @@ outline$arrow_down <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$arrow_left <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-arrow_left", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_arrow_left", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -263,7 +263,7 @@ outline$arrow_left <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$arrow_narrow_down <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-arrow_narrow_down", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_arrow_narrow_down", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -289,7 +289,7 @@ outline$arrow_narrow_down <- function(id = NULL, class = NULL, aria_hidden = FAL
 #' @export
 outline$arrow_narrow_left <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-arrow_narrow_left", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_arrow_narrow_left", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -315,7 +315,7 @@ outline$arrow_narrow_left <- function(id = NULL, class = NULL, aria_hidden = FAL
 #' @export
 outline$arrow_narrow_right <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-arrow_narrow_right", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_arrow_narrow_right", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -341,7 +341,7 @@ outline$arrow_narrow_right <- function(id = NULL, class = NULL, aria_hidden = FA
 #' @export
 outline$arrow_narrow_up <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-arrow_narrow_up", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_arrow_narrow_up", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -367,7 +367,7 @@ outline$arrow_narrow_up <- function(id = NULL, class = NULL, aria_hidden = FALSE
 #' @export
 outline$arrow_right <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-arrow_right", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_arrow_right", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -393,7 +393,7 @@ outline$arrow_right <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$arrow_up <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-arrow_up", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_arrow_up", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -419,7 +419,7 @@ outline$arrow_up <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$arrows_expand <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-arrows_expand", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_arrows_expand", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -445,7 +445,7 @@ outline$arrows_expand <- function(id = NULL, class = NULL, aria_hidden = FALSE) 
 #' @export
 outline$at_symbol <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-at_symbol", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_at_symbol", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -471,7 +471,7 @@ outline$at_symbol <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$badge_check <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-badge_check", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_badge_check", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -497,7 +497,7 @@ outline$badge_check <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$ban <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-ban", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_ban", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -523,7 +523,7 @@ outline$ban <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$bell <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-bell", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_bell", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -549,7 +549,7 @@ outline$bell <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$book_open <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-book_open", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_book_open", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -575,7 +575,7 @@ outline$book_open <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$bookmark_alt <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-bookmark_alt", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_bookmark_alt", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -601,7 +601,7 @@ outline$bookmark_alt <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$bookmark <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-bookmark", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_bookmark", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -627,7 +627,7 @@ outline$bookmark <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$briefcase <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-briefcase", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_briefcase", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -653,7 +653,7 @@ outline$briefcase <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$calendar <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-calendar", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_calendar", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -679,7 +679,7 @@ outline$calendar <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$camera <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-camera", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_camera", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -707,7 +707,7 @@ outline$camera <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$cash <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-cash", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_cash", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -733,7 +733,7 @@ outline$cash <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$chart_bar <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-chart_bar", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_chart_bar", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -759,7 +759,7 @@ outline$chart_bar <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$chart_pie <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-chart_pie", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_chart_pie", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -787,7 +787,7 @@ outline$chart_pie <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$chart_square_bar <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-chart_square_bar", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_chart_square_bar", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -813,7 +813,7 @@ outline$chart_square_bar <- function(id = NULL, class = NULL, aria_hidden = FALS
 #' @export
 outline$chat_alt_2 <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-chat_alt_2", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_chat_alt_2", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -839,7 +839,7 @@ outline$chat_alt_2 <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$chat_alt <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-chat_alt", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_chat_alt", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -865,7 +865,7 @@ outline$chat_alt <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$chat <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-chat", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_chat", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -891,7 +891,7 @@ outline$chat <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$check_circle <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-check_circle", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_check_circle", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -917,7 +917,7 @@ outline$check_circle <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$check <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-check", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_check", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -943,7 +943,7 @@ outline$check <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$chevron_down <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-chevron_down", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_chevron_down", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -969,7 +969,7 @@ outline$chevron_down <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$chevron_left <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-chevron_left", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_chevron_left", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -995,7 +995,7 @@ outline$chevron_left <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$chevron_right <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-chevron_right", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_chevron_right", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1021,7 +1021,7 @@ outline$chevron_right <- function(id = NULL, class = NULL, aria_hidden = FALSE) 
 #' @export
 outline$chevron_up <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-chevron_up", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_chevron_up", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1047,7 +1047,7 @@ outline$chevron_up <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$clipboard_check <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-clipboard_check", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_clipboard_check", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1073,7 +1073,7 @@ outline$clipboard_check <- function(id = NULL, class = NULL, aria_hidden = FALSE
 #' @export
 outline$clipboard_copy <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-clipboard_copy", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_clipboard_copy", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1099,7 +1099,7 @@ outline$clipboard_copy <- function(id = NULL, class = NULL, aria_hidden = FALSE)
 #' @export
 outline$clipboard_list <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-clipboard_list", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_clipboard_list", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1125,7 +1125,7 @@ outline$clipboard_list <- function(id = NULL, class = NULL, aria_hidden = FALSE)
 #' @export
 outline$clipboard <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-clipboard", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_clipboard", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1151,7 +1151,7 @@ outline$clipboard <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$clock <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-clock", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_clock", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1177,7 +1177,7 @@ outline$clock <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$cloud_download <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-cloud_download", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_cloud_download", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1203,7 +1203,7 @@ outline$cloud_download <- function(id = NULL, class = NULL, aria_hidden = FALSE)
 #' @export
 outline$cloud_upload <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-cloud_upload", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_cloud_upload", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1229,7 +1229,7 @@ outline$cloud_upload <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$code <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-code", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_code", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1255,7 +1255,7 @@ outline$code <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$cog <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-cog", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_cog", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1283,7 +1283,7 @@ outline$cog <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$collection <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-collection", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_collection", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1309,7 +1309,7 @@ outline$collection <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$color_swatch <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-color_swatch", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_color_swatch", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1335,7 +1335,7 @@ outline$color_swatch <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$credit_card <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-credit_card", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_credit_card", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1361,7 +1361,7 @@ outline$credit_card <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$currency_dollar <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-currency_dollar", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_currency_dollar", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1387,7 +1387,7 @@ outline$currency_dollar <- function(id = NULL, class = NULL, aria_hidden = FALSE
 #' @export
 outline$currency_euro <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-currency_euro", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_currency_euro", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1413,7 +1413,7 @@ outline$currency_euro <- function(id = NULL, class = NULL, aria_hidden = FALSE) 
 #' @export
 outline$currency_pound <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-currency_pound", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_currency_pound", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1439,7 +1439,7 @@ outline$currency_pound <- function(id = NULL, class = NULL, aria_hidden = FALSE)
 #' @export
 outline$currency_rupee <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-currency_rupee", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_currency_rupee", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1465,7 +1465,7 @@ outline$currency_rupee <- function(id = NULL, class = NULL, aria_hidden = FALSE)
 #' @export
 outline$currency_yen <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-currency_yen", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_currency_yen", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1491,7 +1491,7 @@ outline$currency_yen <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$cursor_click <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-cursor_click", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_cursor_click", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1517,7 +1517,7 @@ outline$cursor_click <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$desktop_computer <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-desktop_computer", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_desktop_computer", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1543,7 +1543,7 @@ outline$desktop_computer <- function(id = NULL, class = NULL, aria_hidden = FALS
 #' @export
 outline$document_add <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-document_add", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_document_add", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1569,7 +1569,7 @@ outline$document_add <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$document_download <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-document_download", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_document_download", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1595,7 +1595,7 @@ outline$document_download <- function(id = NULL, class = NULL, aria_hidden = FAL
 #' @export
 outline$document_duplicate <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-document_duplicate", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_document_duplicate", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1621,7 +1621,7 @@ outline$document_duplicate <- function(id = NULL, class = NULL, aria_hidden = FA
 #' @export
 outline$document_remove <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-document_remove", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_document_remove", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1647,7 +1647,7 @@ outline$document_remove <- function(id = NULL, class = NULL, aria_hidden = FALSE
 #' @export
 outline$document_report <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-document_report", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_document_report", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1673,7 +1673,7 @@ outline$document_report <- function(id = NULL, class = NULL, aria_hidden = FALSE
 #' @export
 outline$document <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-document", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_document", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1699,7 +1699,7 @@ outline$document <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$dots_circle_horizontal <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-dots_circle_horizontal", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_dots_circle_horizontal", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1725,7 +1725,7 @@ outline$dots_circle_horizontal <- function(id = NULL, class = NULL, aria_hidden 
 #' @export
 outline$dots_horizontal <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-dots_horizontal", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_dots_horizontal", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1751,7 +1751,7 @@ outline$dots_horizontal <- function(id = NULL, class = NULL, aria_hidden = FALSE
 #' @export
 outline$dots_vertical <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-dots_vertical", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_dots_vertical", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1777,7 +1777,7 @@ outline$dots_vertical <- function(id = NULL, class = NULL, aria_hidden = FALSE) 
 #' @export
 outline$download <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-download", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_download", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1803,7 +1803,7 @@ outline$download <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$duplicate <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-duplicate", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_duplicate", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1829,7 +1829,7 @@ outline$duplicate <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$emoji_happy <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-emoji_happy", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_emoji_happy", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1855,7 +1855,7 @@ outline$emoji_happy <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$emoji_sad <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-emoji_sad", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_emoji_sad", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1881,7 +1881,7 @@ outline$emoji_sad <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$exclamation_circle <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-exclamation_circle", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_exclamation_circle", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1907,7 +1907,7 @@ outline$exclamation_circle <- function(id = NULL, class = NULL, aria_hidden = FA
 #' @export
 outline$exclamation <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-exclamation", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_exclamation", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1933,7 +1933,7 @@ outline$exclamation <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$external_link <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-external_link", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_external_link", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1959,7 +1959,7 @@ outline$external_link <- function(id = NULL, class = NULL, aria_hidden = FALSE) 
 #' @export
 outline$eye_off <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-eye_off", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_eye_off", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -1985,7 +1985,7 @@ outline$eye_off <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$eye <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-eye", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_eye", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2013,7 +2013,7 @@ outline$eye <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$filter <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-filter", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_filter", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2039,7 +2039,7 @@ outline$filter <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$fire <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-fire", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_fire", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2067,7 +2067,7 @@ outline$fire <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$flag <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-flag", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_flag", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2093,7 +2093,7 @@ outline$flag <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$folder_add <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-folder_add", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_folder_add", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2119,7 +2119,7 @@ outline$folder_add <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$folder_download <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-folder_download", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_folder_download", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2145,7 +2145,7 @@ outline$folder_download <- function(id = NULL, class = NULL, aria_hidden = FALSE
 #' @export
 outline$folder_remove <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-folder_remove", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_folder_remove", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2171,7 +2171,7 @@ outline$folder_remove <- function(id = NULL, class = NULL, aria_hidden = FALSE) 
 #' @export
 outline$folder <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-folder", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_folder", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2197,7 +2197,7 @@ outline$folder <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$globe_alt <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-globe_alt", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_globe_alt", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2223,7 +2223,7 @@ outline$globe_alt <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$globe <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-globe", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_globe", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2249,7 +2249,7 @@ outline$globe <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$hand <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-hand", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_hand", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2275,7 +2275,7 @@ outline$hand <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$hashtag <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-hashtag", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_hashtag", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2301,7 +2301,7 @@ outline$hashtag <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$heart <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-heart", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_heart", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2327,7 +2327,7 @@ outline$heart <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$home <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-home", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_home", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2353,7 +2353,7 @@ outline$home <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$inbox_in <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-inbox_in", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_inbox_in", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2379,7 +2379,7 @@ outline$inbox_in <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$inbox <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-inbox", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_inbox", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2405,7 +2405,7 @@ outline$inbox <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$information_circle <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-information_circle", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_information_circle", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2431,7 +2431,7 @@ outline$information_circle <- function(id = NULL, class = NULL, aria_hidden = FA
 #' @export
 outline$key <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-key", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_key", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2457,7 +2457,7 @@ outline$key <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$library <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-library", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_library", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2483,7 +2483,7 @@ outline$library <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$light_bulb <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-light_bulb", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_light_bulb", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2509,7 +2509,7 @@ outline$light_bulb <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$lightning_bolt <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-lightning_bolt", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_lightning_bolt", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2535,7 +2535,7 @@ outline$lightning_bolt <- function(id = NULL, class = NULL, aria_hidden = FALSE)
 #' @export
 outline$link <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-link", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_link", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2561,7 +2561,7 @@ outline$link <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$location_marker <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-location_marker", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_location_marker", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2589,7 +2589,7 @@ outline$location_marker <- function(id = NULL, class = NULL, aria_hidden = FALSE
 #' @export
 outline$lock_closed <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-lock_closed", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_lock_closed", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2615,7 +2615,7 @@ outline$lock_closed <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$lock_open <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-lock_open", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_lock_open", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2641,7 +2641,7 @@ outline$lock_open <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$logout <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-logout", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_logout", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2667,7 +2667,7 @@ outline$logout <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$mail_open <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-mail_open", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_mail_open", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2693,7 +2693,7 @@ outline$mail_open <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$mail <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-mail", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_mail", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2719,7 +2719,7 @@ outline$mail <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$menu_alt_1 <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-menu_alt_1", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_menu_alt_1", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2745,7 +2745,7 @@ outline$menu_alt_1 <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$menu_alt_2 <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-menu_alt_2", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_menu_alt_2", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2771,7 +2771,7 @@ outline$menu_alt_2 <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$menu_alt_3 <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-menu_alt_3", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_menu_alt_3", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2797,7 +2797,7 @@ outline$menu_alt_3 <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$menu_alt_4 <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-menu_alt_4", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_menu_alt_4", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2823,7 +2823,7 @@ outline$menu_alt_4 <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$menu <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-menu", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_menu", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2849,7 +2849,7 @@ outline$menu <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$microphone <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-microphone", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_microphone", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2875,7 +2875,7 @@ outline$microphone <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$minus_circle <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-minus_circle", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_minus_circle", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2901,7 +2901,7 @@ outline$minus_circle <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$moon <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-moon", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_moon", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2927,7 +2927,7 @@ outline$moon <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$newspaper <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-newspaper", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_newspaper", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2953,7 +2953,7 @@ outline$newspaper <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$office_building <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-office_building", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_office_building", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -2979,7 +2979,7 @@ outline$office_building <- function(id = NULL, class = NULL, aria_hidden = FALSE
 #' @export
 outline$paper_clip <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-paper_clip", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_paper_clip", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3005,7 +3005,7 @@ outline$paper_clip <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$pause <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-pause", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_pause", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3031,7 +3031,7 @@ outline$pause <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$pencil_alt <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-pencil_alt", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_pencil_alt", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3057,7 +3057,7 @@ outline$pencil_alt <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$pencil <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-pencil", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_pencil", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3083,7 +3083,7 @@ outline$pencil <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$phone_incoming <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-phone_incoming", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_phone_incoming", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3109,7 +3109,7 @@ outline$phone_incoming <- function(id = NULL, class = NULL, aria_hidden = FALSE)
 #' @export
 outline$phone_outgoing <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-phone_outgoing", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_phone_outgoing", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3135,7 +3135,7 @@ outline$phone_outgoing <- function(id = NULL, class = NULL, aria_hidden = FALSE)
 #' @export
 outline$phone <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-phone", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_phone", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3161,7 +3161,7 @@ outline$phone <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$photograph <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-photograph", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_photograph", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3187,7 +3187,7 @@ outline$photograph <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$play <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-play", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_play", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3215,7 +3215,7 @@ outline$play <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$plus_circle <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-plus_circle", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_plus_circle", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3241,7 +3241,7 @@ outline$plus_circle <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$plus <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-plus", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_plus", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3267,7 +3267,7 @@ outline$plus <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$printer <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-printer", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_printer", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3293,7 +3293,7 @@ outline$printer <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$puzzle <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-puzzle", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_puzzle", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3319,7 +3319,7 @@ outline$puzzle <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$qrcode <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-qrcode", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_qrcode", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3345,7 +3345,7 @@ outline$qrcode <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$question_mark_circle <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-question_mark_circle", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_question_mark_circle", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3371,7 +3371,7 @@ outline$question_mark_circle <- function(id = NULL, class = NULL, aria_hidden = 
 #' @export
 outline$receipt_refund <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-receipt_refund", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_receipt_refund", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3397,7 +3397,7 @@ outline$receipt_refund <- function(id = NULL, class = NULL, aria_hidden = FALSE)
 #' @export
 outline$refresh <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-refresh", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_refresh", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3423,7 +3423,7 @@ outline$refresh <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$reply <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-reply", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_reply", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3449,7 +3449,7 @@ outline$reply <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$scale <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-scale", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_scale", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3475,7 +3475,7 @@ outline$scale <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$search <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-search", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_search", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3501,7 +3501,7 @@ outline$search <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$selector <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-selector", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_selector", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3527,7 +3527,7 @@ outline$selector <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$share <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-share", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_share", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3553,7 +3553,7 @@ outline$share <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$shield_check <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-shield_check", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_shield_check", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3579,7 +3579,7 @@ outline$shield_check <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$shield_exclamation <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-shield_exclamation", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_shield_exclamation", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3605,7 +3605,7 @@ outline$shield_exclamation <- function(id = NULL, class = NULL, aria_hidden = FA
 #' @export
 outline$shopping_bag <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-shopping_bag", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_shopping_bag", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3631,7 +3631,7 @@ outline$shopping_bag <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$shopping_cart <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-shopping_cart", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_shopping_cart", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3657,7 +3657,7 @@ outline$shopping_cart <- function(id = NULL, class = NULL, aria_hidden = FALSE) 
 #' @export
 outline$sort_ascending <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-sort_ascending", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_sort_ascending", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3683,7 +3683,7 @@ outline$sort_ascending <- function(id = NULL, class = NULL, aria_hidden = FALSE)
 #' @export
 outline$sort_descending <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-sort_descending", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_sort_descending", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3709,7 +3709,7 @@ outline$sort_descending <- function(id = NULL, class = NULL, aria_hidden = FALSE
 #' @export
 outline$sparkles <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-sparkles", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_sparkles", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3735,7 +3735,7 @@ outline$sparkles <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$speakerphone <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-speakerphone", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_speakerphone", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3761,7 +3761,7 @@ outline$speakerphone <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$star <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-star", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_star", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3787,7 +3787,7 @@ outline$star <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$stop <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-stop", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_stop", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3815,7 +3815,7 @@ outline$stop <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$sun <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-sun", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_sun", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3841,7 +3841,7 @@ outline$sun <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$support <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-support", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_support", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3867,7 +3867,7 @@ outline$support <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$switch_horizontal <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-switch_horizontal", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_switch_horizontal", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3893,7 +3893,7 @@ outline$switch_horizontal <- function(id = NULL, class = NULL, aria_hidden = FAL
 #' @export
 outline$switch_vertical <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-switch_vertical", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_switch_vertical", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3919,7 +3919,7 @@ outline$switch_vertical <- function(id = NULL, class = NULL, aria_hidden = FALSE
 #' @export
 outline$tag <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-tag", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_tag", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3945,7 +3945,7 @@ outline$tag <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$template <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-template", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_template", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3971,7 +3971,7 @@ outline$template <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$terminal <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-terminal", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_terminal", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -3997,7 +3997,7 @@ outline$terminal <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$thumb_down <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-thumb_down", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_thumb_down", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4023,7 +4023,7 @@ outline$thumb_down <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$thumb_up <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-thumb_up", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_thumb_up", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4049,7 +4049,7 @@ outline$thumb_up <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$ticket <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-ticket", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_ticket", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4075,7 +4075,7 @@ outline$ticket <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$translate <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-translate", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_translate", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4101,7 +4101,7 @@ outline$translate <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$trash <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-trash", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_trash", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4127,7 +4127,7 @@ outline$trash <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$trending_down <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-trending_down", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_trending_down", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4153,7 +4153,7 @@ outline$trending_down <- function(id = NULL, class = NULL, aria_hidden = FALSE) 
 #' @export
 outline$trending_up <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-trending_up", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_trending_up", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4179,7 +4179,7 @@ outline$trending_up <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$upload <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-upload", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_upload", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4205,7 +4205,7 @@ outline$upload <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$user_add <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-user_add", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_user_add", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4231,7 +4231,7 @@ outline$user_add <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$user_circle <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-user_circle", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_user_circle", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4257,7 +4257,7 @@ outline$user_circle <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$user_group <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-user_group", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_user_group", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4283,7 +4283,7 @@ outline$user_group <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$user_remove <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-user_remove", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_user_remove", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4309,7 +4309,7 @@ outline$user_remove <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$user <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-user", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_user", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4335,7 +4335,7 @@ outline$user <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$users <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-users", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_users", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4361,7 +4361,7 @@ outline$users <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$view_boards <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-view_boards", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_view_boards", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4387,7 +4387,7 @@ outline$view_boards <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$view_grid_add <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-view_grid_add", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_view_grid_add", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4413,7 +4413,7 @@ outline$view_grid_add <- function(id = NULL, class = NULL, aria_hidden = FALSE) 
 #' @export
 outline$view_grid <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-view_grid", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_view_grid", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4439,7 +4439,7 @@ outline$view_grid <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$view_list <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-view_list", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_view_list", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4465,7 +4465,7 @@ outline$view_list <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$volume_off <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-volume_off", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_volume_off", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4493,7 +4493,7 @@ outline$volume_off <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$volume_up <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-volume_up", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_volume_up", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4519,7 +4519,7 @@ outline$volume_up <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$x_circle <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-x_circle", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_x_circle", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4545,7 +4545,7 @@ outline$x_circle <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$x <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-x", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_x", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4571,7 +4571,7 @@ outline$x <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$zoom_in <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-zoom_in", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_zoom_in", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 
@@ -4597,7 +4597,7 @@ outline$zoom_in <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
 #' @export
 outline$zoom_out <- function(id = NULL, class = NULL, aria_hidden = FALSE) {
     stopifnot(is.logical(aria_hidden))
-    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons-outline rheroicons-zoom_out", 
+    svg <- tag(`_tag_name` = "svg", list(class = "rheroicons rheroicons_outline rheroicons_zoom_out", 
         aria_hidden = tolower(aria_hidden), width = "24", height = "24", fill = "none", 
         viewBox = "0 0 24 24", stroke = "currentColor", tag(`_tag_name` = "path", 
             list(`stroke-linecap` = "round", `stroke-linejoin` = "round", `stroke-width` = "2", 

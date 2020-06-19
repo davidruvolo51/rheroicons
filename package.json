@@ -1,18 +1,29 @@
 {
   "name": "rheroicons",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "index.js",
-  "author": "davidruvolo51 <davidruvolo51@gmail.com>",
+  "author": "dcruvolo",
   "license": "MIT",
   "scripts": {
-    "clean" : "rm -rf R/*",
-    "convert" : "Rscript -e \"source('scripts/icons_1_source.R')\"",
-    "document" : "RScript -e 'devtools::document()'",
-    "uninstall" : "RScript -e 'devtools::uninstall()'",
-    "install" : "RScript -e 'devtools::install()'",
-    "build" : "Rscript -e 'devtools::build()'",
-    "package" : "yarn build && yarn install",
-    "fetch" : "Rscript -e \"source('scripts/icons_0_fetch.R')\"",
-    "fix_modified_content": "git rm -rf --cached src/heroicons && git add src/heroicons"
+    "clean": "rm -rf R/*",
+    "convert": "Rscript -e \"source('scripts/icons_convert.R')\"",
+    "document": "RScript -e 'devtools::document()'",
+    "uninstall": "RScript -e 'devtools::uninstall()'",
+    "install": "RScript -e 'devtools::install()'",
+    "build": "Rscript -e 'devtools::build()'",
+    "package": "npm run build && npm run install"
+  },
+  "dependencies": {
+    "heroicons": "^0.3.6"
+  },
+  "description": "Heroicons for R",
+  "keywords" : ["r", "rstats", "shiny", "heroicons"],
+  "homepage" : "https://github.com/davidruvolo51/rheroicons",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidruvolo51/rheroicons.git"
+  },
+  "bugs" : {
+    "url": "https://github.com/davidruvolo51/reheroicons/issues"
   }
 }
