@@ -5,7 +5,7 @@ The `rheroicons` provides access to the fantastic SVG icon collection [heroicons
 ## Install
 
 ```r
-devtools::install_github("davidruvolo51/rheroicons")
+devtools::install_github("davidruvolo51/rheroicons@prod")
 ```
 
 Use [heroicons.dev](https://heroicons.dev) to search for icons.
