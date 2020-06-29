@@ -15,6 +15,7 @@
     "demo_build" : "parcel build inst/rheroicons-demo/src/index.js -d inst/rheroicons-demo/www -o inst/rheroicons-demo/www/rheroicons.min.js --no-source-maps",
     "demo_clean": "rm -rf inst/rheroicons-demo/www/rheroicons.min.*",
     "demo_start": "concurrently \"npm run demo_shiny\" \"npm run demo_dev\" ",
+    "demo_deploy" : "Rscript -e \"rsconnect::deployApp(appDir = 'inst/rheroicons-demo', account = 'davidruvolo')\"",
     "package": "npm run build && npm run install"
   },
   "devDependencies": {

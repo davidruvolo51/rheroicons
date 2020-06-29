@@ -6,4 +6,5 @@ README.md
 .gitignore
 node_modules
 inst/rheroicons-demo/src
+inst/rheroicons-demo/rsconnect
 .cache

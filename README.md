@@ -8,7 +8,11 @@ The `rheroicons` provides access to the fantastic SVG icon collection [heroicons
 devtools::install_github("davidruvolo51/rheroicons@prod")
 ```
 
-Use [heroicons.dev](https://heroicons.dev) to search for icons.
+Use the rheroicons gallery to view all of the icons included in this package: [davidruvolo.shinyapps.io/rheroicons-demo/](https://davidruvolo.shinyapps.io/rheroicons-demo/). Alternatively, you can run the gallery locally.
+
+```r
+rheroicons::launch_gallery()
+```
 
 ## Use
 
