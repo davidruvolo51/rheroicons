@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf R/*",
     "convert": "Rscript -e \"source('scripts/icons_convert.R')\"",
-    "document": "RScript -e 'devtools::check_main()'",
+    "document": "RScript -e 'devtools::check_man()'",
     "uninstall": "RScript -e 'devtools::uninstall()'",
     "install": "RScript -e 'devtools::install()'",
     "build": "Rscript -e 'devtools::build()'",
