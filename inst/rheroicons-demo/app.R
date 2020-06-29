@@ -4,7 +4,7 @@
 #' CREATED: 2020-06-24
 #' MODIFIED: 2020-06-29
 #' PURPOSE: rheroicons demo
-#' STATUS: in.progress
+#' STATUS: working
 #' PACKAGES: shiny; rheroicons
 #' COMMENTS: NA
 #'////////////////////////////////////////////////////////////////////////////
@@ -73,9 +73,10 @@ ui <- tagList(
             ),
             tags$form(
                 class = "form",
+                tags$legend("Options"),
                 tags$fieldset(
                     id = "iconSet",
-                    class = "select-input-group",
+                    class = "select-input-group hidden",
                     `data-group` = "iconSet",
                     tags$label(
                         `for` = "select_icon_family",

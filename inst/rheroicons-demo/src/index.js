@@ -2,16 +2,15 @@
 // FILE: index.js
 // AUTHOR: David Ruvolo
 // CREATED: 2020-06-28
-// MODIFIED: 2020-06-28
+// MODIFIED: 2020-06-29
 // PURPOSE: main entry
 // DEPENDENCIES: NA
-// STATUS: in.progress
+// STATUS: working
 // COMMENTS: NA
 ////////////////////////////////////////////////////////////////////////////////
 
 // import scss
 import "./scss/index.scss"
-
 
 ////////////////////////////////////////
 
@@ -85,7 +84,7 @@ $.extend(selectInputToggle, {
 
         // call elements
         var selectText = $(el).find(".select-input-selected");
-        var selectMenu = $(el).find(".select-input-options");
+        var selectMenu = $(el);
 
         // event to toggle dropdown
         $(el).on("click", "button.select-input-parent", function (e) {

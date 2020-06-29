@@ -1,0 +1,96 @@
+/*  main */
+.main {
+    margin-top: 55px;
+    width: 100%;
+    min-height: 100vh;
+
+    .section {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        padding: 32px 0;
+        z-index: 1;
+
+        h1 {
+            font-size: 32pt;
+        }
+    }
+
+    .icon-section {
+        padding: 32px 0;
+        background-color: $light;
+
+        h2,
+        p {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+    .icon-list {
+        padding: 0;
+        list-style: none;
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        .icon-item {
+            margin: 12px;
+
+            button {
+                padding: 12px;
+                background-color: #ffffff;
+
+                .rheroicons {
+                    display: block;
+                    margin: 0 auto;
+                    margin-bottom: 12px;
+                }
+                span {
+                    display: block;
+                }
+
+                &:hover,
+                &:focus {
+                    background-color: $green;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 512px) {
+    .main {
+        .icon-list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (min-width: 812px) {
+    .main {
+        .icon-list {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+$breakpoint: 972px;
+@media (min-width: $breakpoint) {
+    .main {
+        .section {
+            max-width: $breakpoint;
+        }
+        .icon-section {
+            h2,
+            p {
+                text-align: center;
+            }
+        }
+        .icon-list {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
