@@ -2,7 +2,7 @@
 #' FILE: _utils.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-06-11
-#' MODIFIED: 2020-06-19
+#' MODIFIED: 2020-07-01
 #' PURPOSE: functions for parsing svg markup into R functions
 #' STATUS: complete
 #' PACKAGES: XML, purrr, stringr, formatR, dplyr
@@ -108,7 +108,6 @@ makeFunc <- function(string, icon, type) {
             " rheroicons_", icon  # icon class
         ),
         "\", ",
-        "\"aria_hidden\" = tolower(aria_hidden), ",
         viewbox_string(string), ", "
     )
 
@@ -127,24 +126,45 @@ makeFunc <- function(string, icon, type) {
 
     # build function
     out <- paste0(
-        "#'", icon, "\n",
+        "#' ", icon, "\n",
         "#' @name ", icon, "\n",
-        "#' @return Returns the svg markup for the heroicon ''", icon, "'\n",
-        "#' @usage ", type, "$", icon, "()\n",
         "#' @param id a unique ID to be applied to the svg icon\n",
         "#' @param class a css class to be applied to the svg icon\n",
         "#' @param aria_hidden should the icon be readable by screen readers",
         " (default: false)\n",
+        "#' @param title a string that describes the icon",
+        "(should be used if aria_hidden is FALSE)\n",
+        "#' @return Returns the svg markup for the heroicon ''", icon, "'\n",
         "#' @keywords rheroicons ", type, " ", icon, "\n",
-        "#' @references \\url{", url, "}\n",
+        "#' @references\n",
+        "#' \\url{", url, "}\n",
+        "#' @examples\n",
+        "#' rheroicons::", type, "$", icon, "(\n",
+        "#'   id = 'my_", icon, "_icon',\n",
+        "#'   class = 'my-icons',\n",
+        "#'   aria_hidden = FALSE,\n",
+        "#'   title = 'a title for the ", icon, " icon'\n",
+        "#' )\n",
+        "#' @importFrom htmltools tag\n",
         "#' @export\n",
         type, "$", icon,
-        " <- function (id = NULL, class = NULL, aria_hidden = FALSE) {\n",
+        " <- function",
+        "(id = NULL, class = NULL, aria_hidden = FALSE, title = NULL) {\n",
         "  stopifnot(is.logical(aria_hidden))\n",
         "  ", svg, "\n",
         "  if (!is.null(id)) { svg$attribs$id <- id }\n",
         "  if (!is.null(class)) {\n",
         "    svg$attribs$class <- paste0(svg$attribs$class, \" \", class)\n",
+        "  }\n",
+        "  if (isTRUE(aria_hidden)) {\n",
+        "      svg$attribs$`aria-hidden` <- \"true\"\n",
+        "  }\n",
+        "  if (!is.null(title)) {\n",
+        "    stopifnot(is.character(title))\n",
+        "    svg$children <- tagList(\n",
+        "        tag(\"title\", list(title)),\n",
+        "        svg$children",
+        "    )\n",
         "  }\n",
         "  return(svg)\n",
         "}\n"
@@ -212,17 +232,14 @@ init_file <- function(path, type) {
         "#' @name ", type, "\n",
         "#' @keywords rheroicons ", type, "\n",
         "#' @return ", type, " heroicons\n",
-        "#' @usage rheroicons::", type, "$icon_name()\n",
-        "#' @param id a unique ID to be applied to the svg icon\n",
-        "#' @param class a css class to be applied to the svg icon\n",
-        "#' @param aria_hidden should the icon be readable by screen readers\n",
         "#' @references\n",
         "#' \\url{https://github.com/refactoringui/heroicons}\n",
-        "#' \\url{https://heroicons.dev}\n",
+        "#' \\url{https://davidruvolo.shinyapps.io/rheroicons-demo/}\n",
         "#' @examples\n",
-        "#' reheroicons::", type, "$book_open()\n",
-        "#' reheroicons::", type, "$book_open(id = 'myBookIcon')\n",
-        "#' reheroicons::", type, "$book_open(class = 'my-icon-set')\n",
+        "#' rheroicons::", type, "$book_open()\n",
+        "#' rheroicons::", type, "$book_open(id = 'myBookIcon')\n",
+        "#' rheroicons::", type, "$book_open(class = 'my-icon-set')\n",
+        "#' rheroicons::", type, "$book_open(aria_hidden = FALSE, title = 'read document')\n",
         "#' @importFrom htmltools tag\n",
         "#' @export\n",
         type, " <- list()\n"
