@@ -3,17 +3,14 @@
 \name{shield_exclamation}
 \alias{shield_exclamation}
 \title{shield_exclamation}
-\usage{
-outline$shield_exclamation()
-
-solid$shield_exclamation()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''shield_exclamation'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''shield_exclamation'
 shield_exclamation
 
 shield_exclamation
+}
+\examples{
+rheroicons::outline$shield_exclamation(
+  id = 'my_shield_exclamation_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the shield_exclamation icon'
+)
+rheroicons::solid$shield_exclamation(
+  id = 'my_shield_exclamation_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the shield_exclamation icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/shield_exclamation.svg}

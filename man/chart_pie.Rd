@@ -3,17 +3,14 @@
 \name{chart_pie}
 \alias{chart_pie}
 \title{chart_pie}
-\usage{
-outline$chart_pie()
-
-solid$chart_pie()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''chart_pie'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''chart_pie'
 chart_pie
 
 chart_pie
+}
+\examples{
+rheroicons::outline$chart_pie(
+  id = 'my_chart_pie_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the chart_pie icon'
+)
+rheroicons::solid$chart_pie(
+  id = 'my_chart_pie_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the chart_pie icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/chart_pie.svg}

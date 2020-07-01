@@ -3,17 +3,14 @@
 \name{arrow_narrow_up}
 \alias{arrow_narrow_up}
 \title{arrow_narrow_up}
-\usage{
-outline$arrow_narrow_up()
-
-solid$arrow_narrow_up()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''arrow_narrow_up'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''arrow_narrow_up'
 arrow_narrow_up
 
 arrow_narrow_up
+}
+\examples{
+rheroicons::outline$arrow_narrow_up(
+  id = 'my_arrow_narrow_up_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the arrow_narrow_up icon'
+)
+rheroicons::solid$arrow_narrow_up(
+  id = 'my_arrow_narrow_up_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the arrow_narrow_up icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/arrow_narrow_up.svg}

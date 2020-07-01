@@ -3,17 +3,14 @@
 \name{chat_alt}
 \alias{chat_alt}
 \title{chat_alt}
-\usage{
-outline$chat_alt()
-
-solid$chat_alt()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''chat_alt'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''chat_alt'
 chat_alt
 
 chat_alt
+}
+\examples{
+rheroicons::outline$chat_alt(
+  id = 'my_chat_alt_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the chat_alt icon'
+)
+rheroicons::solid$chat_alt(
+  id = 'my_chat_alt_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the chat_alt icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/chat_alt.svg}

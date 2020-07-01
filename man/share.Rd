@@ -3,17 +3,14 @@
 \name{share}
 \alias{share}
 \title{share}
-\usage{
-outline$share()
-
-solid$share()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''share'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''share'
 share
 
 share
+}
+\examples{
+rheroicons::outline$share(
+  id = 'my_share_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the share icon'
+)
+rheroicons::solid$share(
+  id = 'my_share_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the share icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/share.svg}

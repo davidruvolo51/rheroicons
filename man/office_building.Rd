@@ -3,17 +3,14 @@
 \name{office_building}
 \alias{office_building}
 \title{office_building}
-\usage{
-outline$office_building()
-
-solid$office_building()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''office_building'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''office_building'
 office_building
 
 office_building
+}
+\examples{
+rheroicons::outline$office_building(
+  id = 'my_office_building_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the office_building icon'
+)
+rheroicons::solid$office_building(
+  id = 'my_office_building_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the office_building icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/office_building.svg}

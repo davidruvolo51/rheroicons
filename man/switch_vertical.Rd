@@ -3,17 +3,14 @@
 \name{switch_vertical}
 \alias{switch_vertical}
 \title{switch_vertical}
-\usage{
-outline$switch_vertical()
-
-solid$switch_vertical()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''switch_vertical'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''switch_vertical'
 switch_vertical
 
 switch_vertical
+}
+\examples{
+rheroicons::outline$switch_vertical(
+  id = 'my_switch_vertical_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the switch_vertical icon'
+)
+rheroicons::solid$switch_vertical(
+  id = 'my_switch_vertical_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the switch_vertical icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/switch_vertical.svg}

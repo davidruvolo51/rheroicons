@@ -3,17 +3,14 @@
 \name{cloud_upload}
 \alias{cloud_upload}
 \title{cloud_upload}
-\usage{
-outline$cloud_upload()
-
-solid$cloud_upload()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''cloud_upload'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''cloud_upload'
 cloud_upload
 
 cloud_upload
+}
+\examples{
+rheroicons::outline$cloud_upload(
+  id = 'my_cloud_upload_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the cloud_upload icon'
+)
+rheroicons::solid$cloud_upload(
+  id = 'my_cloud_upload_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the cloud_upload icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/cloud_upload.svg}

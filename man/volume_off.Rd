@@ -3,17 +3,14 @@
 \name{volume_off}
 \alias{volume_off}
 \title{volume_off}
-\usage{
-outline$volume_off()
-
-solid$volume_off()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''volume_off'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''volume_off'
 volume_off
 
 volume_off
+}
+\examples{
+rheroicons::outline$volume_off(
+  id = 'my_volume_off_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the volume_off icon'
+)
+rheroicons::solid$volume_off(
+  id = 'my_volume_off_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the volume_off icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/volume_off.svg}

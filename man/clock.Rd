@@ -3,17 +3,14 @@
 \name{clock}
 \alias{clock}
 \title{clock}
-\usage{
-outline$clock()
-
-solid$clock()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''clock'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''clock'
 clock
 
 clock
+}
+\examples{
+rheroicons::outline$clock(
+  id = 'my_clock_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the clock icon'
+)
+rheroicons::solid$clock(
+  id = 'my_clock_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the clock icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/clock.svg}

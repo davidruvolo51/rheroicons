@@ -3,17 +3,14 @@
 \name{clipboard_copy}
 \alias{clipboard_copy}
 \title{clipboard_copy}
-\usage{
-outline$clipboard_copy()
-
-solid$clipboard_copy()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''clipboard_copy'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''clipboard_copy'
 clipboard_copy
 
 clipboard_copy
+}
+\examples{
+rheroicons::outline$clipboard_copy(
+  id = 'my_clipboard_copy_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the clipboard_copy icon'
+)
+rheroicons::solid$clipboard_copy(
+  id = 'my_clipboard_copy_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the clipboard_copy icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/clipboard_copy.svg}

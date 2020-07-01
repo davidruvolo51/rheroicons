@@ -3,17 +3,14 @@
 \name{chart_bar}
 \alias{chart_bar}
 \title{chart_bar}
-\usage{
-outline$chart_bar()
-
-solid$chart_bar()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''chart_bar'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''chart_bar'
 chart_bar
 
 chart_bar
+}
+\examples{
+rheroicons::outline$chart_bar(
+  id = 'my_chart_bar_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the chart_bar icon'
+)
+rheroicons::solid$chart_bar(
+  id = 'my_chart_bar_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the chart_bar icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/chart_bar.svg}

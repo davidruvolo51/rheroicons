@@ -3,17 +3,14 @@
 \name{plus_circle}
 \alias{plus_circle}
 \title{plus_circle}
-\usage{
-outline$plus_circle()
-
-solid$plus_circle()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''plus_circle'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''plus_circle'
 plus_circle
 
 plus_circle
+}
+\examples{
+rheroicons::outline$plus_circle(
+  id = 'my_plus_circle_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the plus_circle icon'
+)
+rheroicons::solid$plus_circle(
+  id = 'my_plus_circle_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the plus_circle icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/plus_circle.svg}

@@ -3,17 +3,14 @@
 \name{light_bulb}
 \alias{light_bulb}
 \title{light_bulb}
-\usage{
-outline$light_bulb()
-
-solid$light_bulb()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''light_bulb'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''light_bulb'
 light_bulb
 
 light_bulb
+}
+\examples{
+rheroicons::outline$light_bulb(
+  id = 'my_light_bulb_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the light_bulb icon'
+)
+rheroicons::solid$light_bulb(
+  id = 'my_light_bulb_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the light_bulb icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/light_bulb.svg}

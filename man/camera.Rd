@@ -3,17 +3,14 @@
 \name{camera}
 \alias{camera}
 \title{camera}
-\usage{
-outline$camera()
-
-solid$camera()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''camera'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''camera'
 camera
 
 camera
+}
+\examples{
+rheroicons::outline$camera(
+  id = 'my_camera_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the camera icon'
+)
+rheroicons::solid$camera(
+  id = 'my_camera_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the camera icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/camera.svg}

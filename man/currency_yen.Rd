@@ -3,17 +3,14 @@
 \name{currency_yen}
 \alias{currency_yen}
 \title{currency_yen}
-\usage{
-outline$currency_yen()
-
-solid$currency_yen()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''currency_yen'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''currency_yen'
 currency_yen
 
 currency_yen
+}
+\examples{
+rheroicons::outline$currency_yen(
+  id = 'my_currency_yen_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the currency_yen icon'
+)
+rheroicons::solid$currency_yen(
+  id = 'my_currency_yen_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the currency_yen icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/currency_yen.svg}

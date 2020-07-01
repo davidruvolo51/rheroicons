@@ -3,17 +3,14 @@
 \name{menu_alt_1}
 \alias{menu_alt_1}
 \title{menu_alt_1}
-\usage{
-outline$menu_alt_1()
-
-solid$menu_alt_1()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''menu_alt_1'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''menu_alt_1'
 menu_alt_1
 
 menu_alt_1
+}
+\examples{
+rheroicons::outline$menu_alt_1(
+  id = 'my_menu_alt_1_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the menu_alt_1 icon'
+)
+rheroicons::solid$menu_alt_1(
+  id = 'my_menu_alt_1_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the menu_alt_1 icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/menu_alt_1.svg}

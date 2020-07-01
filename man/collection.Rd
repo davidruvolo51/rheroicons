@@ -3,17 +3,14 @@
 \name{collection}
 \alias{collection}
 \title{collection}
-\usage{
-outline$collection()
-
-solid$collection()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''collection'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''collection'
 collection
 
 collection
+}
+\examples{
+rheroicons::outline$collection(
+  id = 'my_collection_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the collection icon'
+)
+rheroicons::solid$collection(
+  id = 'my_collection_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the collection icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/collection.svg}

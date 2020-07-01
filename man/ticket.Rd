@@ -3,17 +3,14 @@
 \name{ticket}
 \alias{ticket}
 \title{ticket}
-\usage{
-outline$ticket()
-
-solid$ticket()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''ticket'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''ticket'
 ticket
 
 ticket
+}
+\examples{
+rheroicons::outline$ticket(
+  id = 'my_ticket_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the ticket icon'
+)
+rheroicons::solid$ticket(
+  id = 'my_ticket_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the ticket icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/ticket.svg}

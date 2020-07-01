@@ -3,17 +3,14 @@
 \name{newspaper}
 \alias{newspaper}
 \title{newspaper}
-\usage{
-outline$newspaper()
-
-solid$newspaper()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''newspaper'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''newspaper'
 newspaper
 
 newspaper
+}
+\examples{
+rheroicons::outline$newspaper(
+  id = 'my_newspaper_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the newspaper icon'
+)
+rheroicons::solid$newspaper(
+  id = 'my_newspaper_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the newspaper icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/newspaper.svg}

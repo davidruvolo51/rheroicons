@@ -3,17 +3,14 @@
 \name{folder_download}
 \alias{folder_download}
 \title{folder_download}
-\usage{
-outline$folder_download()
-
-solid$folder_download()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''folder_download'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''folder_download'
 folder_download
 
 folder_download
+}
+\examples{
+rheroicons::outline$folder_download(
+  id = 'my_folder_download_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the folder_download icon'
+)
+rheroicons::solid$folder_download(
+  id = 'my_folder_download_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the folder_download icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/folder_download.svg}

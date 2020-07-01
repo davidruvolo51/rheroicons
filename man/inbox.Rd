@@ -3,17 +3,14 @@
 \name{inbox}
 \alias{inbox}
 \title{inbox}
-\usage{
-outline$inbox()
-
-solid$inbox()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''inbox'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''inbox'
 inbox
 
 inbox
+}
+\examples{
+rheroicons::outline$inbox(
+  id = 'my_inbox_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the inbox icon'
+)
+rheroicons::solid$inbox(
+  id = 'my_inbox_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the inbox icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/inbox.svg}

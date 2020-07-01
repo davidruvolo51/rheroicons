@@ -3,17 +3,14 @@
 \name{view_boards}
 \alias{view_boards}
 \title{view_boards}
-\usage{
-outline$view_boards()
-
-solid$view_boards()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''view_boards'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''view_boards'
 view_boards
 
 view_boards
+}
+\examples{
+rheroicons::outline$view_boards(
+  id = 'my_view_boards_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the view_boards icon'
+)
+rheroicons::solid$view_boards(
+  id = 'my_view_boards_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the view_boards icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/view_boards.svg}

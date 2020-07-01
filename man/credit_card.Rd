@@ -3,17 +3,14 @@
 \name{credit_card}
 \alias{credit_card}
 \title{credit_card}
-\usage{
-outline$credit_card()
-
-solid$credit_card()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''credit_card'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''credit_card'
 credit_card
 
 credit_card
+}
+\examples{
+rheroicons::outline$credit_card(
+  id = 'my_credit_card_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the credit_card icon'
+)
+rheroicons::solid$credit_card(
+  id = 'my_credit_card_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the credit_card icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/credit_card.svg}

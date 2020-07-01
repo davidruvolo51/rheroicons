@@ -3,17 +3,14 @@
 \name{sparkles}
 \alias{sparkles}
 \title{sparkles}
-\usage{
-outline$sparkles()
-
-solid$sparkles()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''sparkles'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''sparkles'
 sparkles
 
 sparkles
+}
+\examples{
+rheroicons::outline$sparkles(
+  id = 'my_sparkles_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the sparkles icon'
+)
+rheroicons::solid$sparkles(
+  id = 'my_sparkles_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the sparkles icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/sparkles.svg}

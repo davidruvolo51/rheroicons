@@ -3,17 +3,14 @@
 \name{book_open}
 \alias{book_open}
 \title{book_open}
-\usage{
-outline$book_open()
-
-solid$book_open()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''book_open'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''book_open'
 book_open
 
 book_open
+}
+\examples{
+rheroicons::outline$book_open(
+  id = 'my_book_open_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the book_open icon'
+)
+rheroicons::solid$book_open(
+  id = 'my_book_open_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the book_open icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/book_open.svg}

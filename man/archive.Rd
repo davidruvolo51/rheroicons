@@ -3,17 +3,14 @@
 \name{archive}
 \alias{archive}
 \title{archive}
-\usage{
-outline$archive()
-
-solid$archive()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''archive'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''archive'
 archive
 
 archive
+}
+\examples{
+rheroicons::outline$archive(
+  id = 'my_archive_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the archive icon'
+)
+rheroicons::solid$archive(
+  id = 'my_archive_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the archive icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/archive.svg}

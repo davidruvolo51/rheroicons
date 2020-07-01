@@ -3,17 +3,14 @@
 \name{user_remove}
 \alias{user_remove}
 \title{user_remove}
-\usage{
-outline$user_remove()
-
-solid$user_remove()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''user_remove'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''user_remove'
 user_remove
 
 user_remove
+}
+\examples{
+rheroicons::outline$user_remove(
+  id = 'my_user_remove_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the user_remove icon'
+)
+rheroicons::solid$user_remove(
+  id = 'my_user_remove_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the user_remove icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/user_remove.svg}

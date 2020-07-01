@@ -3,17 +3,14 @@
 \name{eye}
 \alias{eye}
 \title{eye}
-\usage{
-outline$eye()
-
-solid$eye()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''eye'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''eye'
 eye
 
 eye
+}
+\examples{
+rheroicons::outline$eye(
+  id = 'my_eye_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the eye icon'
+)
+rheroicons::solid$eye(
+  id = 'my_eye_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the eye icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/eye.svg}

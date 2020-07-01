@@ -3,17 +3,14 @@
 \name{filter}
 \alias{filter}
 \title{filter}
-\usage{
-outline$filter()
-
-solid$filter()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''filter'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''filter'
 filter
 
 filter
+}
+\examples{
+rheroicons::outline$filter(
+  id = 'my_filter_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the filter icon'
+)
+rheroicons::solid$filter(
+  id = 'my_filter_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the filter icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/filter.svg}

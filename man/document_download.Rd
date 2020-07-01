@@ -3,17 +3,14 @@
 \name{document_download}
 \alias{document_download}
 \title{document_download}
-\usage{
-outline$document_download()
-
-solid$document_download()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''document_download'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''document_download'
 document_download
 
 document_download
+}
+\examples{
+rheroicons::outline$document_download(
+  id = 'my_document_download_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the document_download icon'
+)
+rheroicons::solid$document_download(
+  id = 'my_document_download_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the document_download icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/document_download.svg}

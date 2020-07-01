@@ -3,17 +3,14 @@
 \name{location_marker}
 \alias{location_marker}
 \title{location_marker}
-\usage{
-outline$location_marker()
-
-solid$location_marker()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''location_marker'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''location_marker'
 location_marker
 
 location_marker
+}
+\examples{
+rheroicons::outline$location_marker(
+  id = 'my_location_marker_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the location_marker icon'
+)
+rheroicons::solid$location_marker(
+  id = 'my_location_marker_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the location_marker icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/location_marker.svg}

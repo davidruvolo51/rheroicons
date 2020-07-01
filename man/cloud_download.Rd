@@ -3,17 +3,14 @@
 \name{cloud_download}
 \alias{cloud_download}
 \title{cloud_download}
-\usage{
-outline$cloud_download()
-
-solid$cloud_download()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''cloud_download'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''cloud_download'
 cloud_download
 
 cloud_download
+}
+\examples{
+rheroicons::outline$cloud_download(
+  id = 'my_cloud_download_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the cloud_download icon'
+)
+rheroicons::solid$cloud_download(
+  id = 'my_cloud_download_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the cloud_download icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/cloud_download.svg}

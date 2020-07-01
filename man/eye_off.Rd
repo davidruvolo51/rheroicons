@@ -3,17 +3,14 @@
 \name{eye_off}
 \alias{eye_off}
 \title{eye_off}
-\usage{
-outline$eye_off()
-
-solid$eye_off()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''eye_off'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''eye_off'
 eye_off
 
 eye_off
+}
+\examples{
+rheroicons::outline$eye_off(
+  id = 'my_eye_off_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the eye_off icon'
+)
+rheroicons::solid$eye_off(
+  id = 'my_eye_off_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the eye_off icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/eye_off.svg}

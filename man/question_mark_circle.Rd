@@ -3,17 +3,14 @@
 \name{question_mark_circle}
 \alias{question_mark_circle}
 \title{question_mark_circle}
-\usage{
-outline$question_mark_circle()
-
-solid$question_mark_circle()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''question_mark_circle'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''question_mark_circle'
 question_mark_circle
 
 question_mark_circle
+}
+\examples{
+rheroicons::outline$question_mark_circle(
+  id = 'my_question_mark_circle_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the question_mark_circle icon'
+)
+rheroicons::solid$question_mark_circle(
+  id = 'my_question_mark_circle_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the question_mark_circle icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/question_mark_circle.svg}

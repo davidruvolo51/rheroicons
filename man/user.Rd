@@ -3,17 +3,14 @@
 \name{user}
 \alias{user}
 \title{user}
-\usage{
-outline$user()
-
-solid$user()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''user'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''user'
 user
 
 user
+}
+\examples{
+rheroicons::outline$user(
+  id = 'my_user_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the user icon'
+)
+rheroicons::solid$user(
+  id = 'my_user_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the user icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/user.svg}

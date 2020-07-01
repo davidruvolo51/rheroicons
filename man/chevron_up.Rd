@@ -3,17 +3,14 @@
 \name{chevron_up}
 \alias{chevron_up}
 \title{chevron_up}
-\usage{
-outline$chevron_up()
-
-solid$chevron_up()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''chevron_up'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''chevron_up'
 chevron_up
 
 chevron_up
+}
+\examples{
+rheroicons::outline$chevron_up(
+  id = 'my_chevron_up_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the chevron_up icon'
+)
+rheroicons::solid$chevron_up(
+  id = 'my_chevron_up_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the chevron_up icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/chevron_up.svg}

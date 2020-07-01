@@ -3,17 +3,14 @@
 \name{check_circle}
 \alias{check_circle}
 \title{check_circle}
-\usage{
-outline$check_circle()
-
-solid$check_circle()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''check_circle'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''check_circle'
 check_circle
 
 check_circle
+}
+\examples{
+rheroicons::outline$check_circle(
+  id = 'my_check_circle_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the check_circle icon'
+)
+rheroicons::solid$check_circle(
+  id = 'my_check_circle_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the check_circle icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/check_circle.svg}
