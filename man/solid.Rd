@@ -8,14 +8,7 @@
 An object of class \code{list} of length 176.
 }
 \usage{
-rheroicons::solid$icon_name()
-}
-\arguments{
-\item{id}{a unique ID to be applied to the svg icon}
-
-\item{class}{a css class to be applied to the svg icon}
-
-\item{aria_hidden}{should the icon be readable by screen readers}
+solid
 }
 \value{
 solid heroicons
@@ -24,13 +17,14 @@ solid heroicons
 SOLID SVG Icons
 }
 \examples{
-reheroicons::solid$book_open()
-reheroicons::solid$book_open(id = 'myBookIcon')
-reheroicons::solid$book_open(class = 'my-icon-set')
+rheroicons::solid$book_open()
+rheroicons::solid$book_open(id = 'myBookIcon')
+rheroicons::solid$book_open(class = 'my-icon-set')
+rheroicons::solid$book_open(aria_hidden = FALSE, title = 'read document')
 }
 \references{
 \url{https://github.com/refactoringui/heroicons}
-\url{https://heroicons.dev}
+\url{https://davidruvolo.shinyapps.io/rheroicons-demo/}
 }
 \keyword{rheroicons}
 \keyword{solid}

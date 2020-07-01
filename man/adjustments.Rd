@@ -3,17 +3,14 @@
 \name{adjustments}
 \alias{adjustments}
 \title{adjustments}
-\usage{
-outline$adjustments()
-
-solid$adjustments()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''adjustments'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''adjustments'
 adjustments
 
 adjustments
+}
+\examples{
+rheroicons::outline$adjustments(
+  id = 'my_adjustments_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the adjustments icon'
+)
+rheroicons::solid$adjustments(
+  id = 'my_adjustments_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the adjustments icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/adjustments.svg}

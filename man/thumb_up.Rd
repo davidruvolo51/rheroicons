@@ -3,17 +3,14 @@
 \name{thumb_up}
 \alias{thumb_up}
 \title{thumb_up}
-\usage{
-outline$thumb_up()
-
-solid$thumb_up()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''thumb_up'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''thumb_up'
 thumb_up
 
 thumb_up
+}
+\examples{
+rheroicons::outline$thumb_up(
+  id = 'my_thumb_up_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the thumb_up icon'
+)
+rheroicons::solid$thumb_up(
+  id = 'my_thumb_up_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the thumb_up icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/thumb_up.svg}

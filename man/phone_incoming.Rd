@@ -3,17 +3,14 @@
 \name{phone_incoming}
 \alias{phone_incoming}
 \title{phone_incoming}
-\usage{
-outline$phone_incoming()
-
-solid$phone_incoming()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''phone_incoming'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''phone_incoming'
 phone_incoming
 
 phone_incoming
+}
+\examples{
+rheroicons::outline$phone_incoming(
+  id = 'my_phone_incoming_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the phone_incoming icon'
+)
+rheroicons::solid$phone_incoming(
+  id = 'my_phone_incoming_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the phone_incoming icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/phone_incoming.svg}

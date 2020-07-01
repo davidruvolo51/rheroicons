@@ -3,17 +3,14 @@
 \name{arrow_circle_up}
 \alias{arrow_circle_up}
 \title{arrow_circle_up}
-\usage{
-outline$arrow_circle_up()
-
-solid$arrow_circle_up()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''arrow_circle_up'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''arrow_circle_up'
 arrow_circle_up
 
 arrow_circle_up
+}
+\examples{
+rheroicons::outline$arrow_circle_up(
+  id = 'my_arrow_circle_up_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the arrow_circle_up icon'
+)
+rheroicons::solid$arrow_circle_up(
+  id = 'my_arrow_circle_up_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the arrow_circle_up icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/arrow_circle_up.svg}

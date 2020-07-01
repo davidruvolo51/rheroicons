@@ -3,17 +3,14 @@
 \name{arrow_narrow_right}
 \alias{arrow_narrow_right}
 \title{arrow_narrow_right}
-\usage{
-outline$arrow_narrow_right()
-
-solid$arrow_narrow_right()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''arrow_narrow_right'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''arrow_narrow_right'
 arrow_narrow_right
 
 arrow_narrow_right
+}
+\examples{
+rheroicons::outline$arrow_narrow_right(
+  id = 'my_arrow_narrow_right_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the arrow_narrow_right icon'
+)
+rheroicons::solid$arrow_narrow_right(
+  id = 'my_arrow_narrow_right_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the arrow_narrow_right icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/arrow_narrow_right.svg}

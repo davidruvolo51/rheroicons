@@ -3,17 +3,14 @@
 \name{document_remove}
 \alias{document_remove}
 \title{document_remove}
-\usage{
-outline$document_remove()
-
-solid$document_remove()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''document_remove'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''document_remove'
 document_remove
 
 document_remove
+}
+\examples{
+rheroicons::outline$document_remove(
+  id = 'my_document_remove_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the document_remove icon'
+)
+rheroicons::solid$document_remove(
+  id = 'my_document_remove_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the document_remove icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/document_remove.svg}

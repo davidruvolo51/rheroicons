@@ -3,17 +3,14 @@
 \name{chevron_right}
 \alias{chevron_right}
 \title{chevron_right}
-\usage{
-outline$chevron_right()
-
-solid$chevron_right()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''chevron_right'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''chevron_right'
 chevron_right
 
 chevron_right
+}
+\examples{
+rheroicons::outline$chevron_right(
+  id = 'my_chevron_right_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the chevron_right icon'
+)
+rheroicons::solid$chevron_right(
+  id = 'my_chevron_right_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the chevron_right icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/chevron_right.svg}

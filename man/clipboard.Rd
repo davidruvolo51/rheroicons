@@ -3,17 +3,14 @@
 \name{clipboard}
 \alias{clipboard}
 \title{clipboard}
-\usage{
-outline$clipboard()
-
-solid$clipboard()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''clipboard'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''clipboard'
 clipboard
 
 clipboard
+}
+\examples{
+rheroicons::outline$clipboard(
+  id = 'my_clipboard_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the clipboard icon'
+)
+rheroicons::solid$clipboard(
+  id = 'my_clipboard_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the clipboard icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/clipboard.svg}

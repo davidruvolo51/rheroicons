@@ -3,17 +3,14 @@
 \name{exclamation_circle}
 \alias{exclamation_circle}
 \title{exclamation_circle}
-\usage{
-outline$exclamation_circle()
-
-solid$exclamation_circle()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''exclamation_circle'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''exclamation_circle'
 exclamation_circle
 
 exclamation_circle
+}
+\examples{
+rheroicons::outline$exclamation_circle(
+  id = 'my_exclamation_circle_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the exclamation_circle icon'
+)
+rheroicons::solid$exclamation_circle(
+  id = 'my_exclamation_circle_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the exclamation_circle icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/exclamation_circle.svg}

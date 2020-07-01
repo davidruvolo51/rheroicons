@@ -8,14 +8,7 @@
 An object of class \code{list} of length 176.
 }
 \usage{
-rheroicons::outline$icon_name()
-}
-\arguments{
-\item{id}{a unique ID to be applied to the svg icon}
-
-\item{class}{a css class to be applied to the svg icon}
-
-\item{aria_hidden}{should the icon be readable by screen readers}
+outline
 }
 \value{
 outline heroicons
@@ -24,13 +17,14 @@ outline heroicons
 OUTLINE SVG Icons
 }
 \examples{
-reheroicons::outline$book_open()
-reheroicons::outline$book_open(id = 'myBookIcon')
-reheroicons::outline$book_open(class = 'my-icon-set')
+rheroicons::outline$book_open()
+rheroicons::outline$book_open(id = 'myBookIcon')
+rheroicons::outline$book_open(class = 'my-icon-set')
+rheroicons::outline$book_open(aria_hidden = FALSE, title = 'read document')
 }
 \references{
 \url{https://github.com/refactoringui/heroicons}
-\url{https://heroicons.dev}
+\url{https://davidruvolo.shinyapps.io/rheroicons-demo/}
 }
 \keyword{outline}
 \keyword{rheroicons}

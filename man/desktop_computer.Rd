@@ -3,17 +3,14 @@
 \name{desktop_computer}
 \alias{desktop_computer}
 \title{desktop_computer}
-\usage{
-outline$desktop_computer()
-
-solid$desktop_computer()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''desktop_computer'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''desktop_computer'
 desktop_computer
 
 desktop_computer
+}
+\examples{
+rheroicons::outline$desktop_computer(
+  id = 'my_desktop_computer_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the desktop_computer icon'
+)
+rheroicons::solid$desktop_computer(
+  id = 'my_desktop_computer_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the desktop_computer icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/desktop_computer.svg}

@@ -3,17 +3,14 @@
 \name{view_list}
 \alias{view_list}
 \title{view_list}
-\usage{
-outline$view_list()
-
-solid$view_list()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''view_list'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''view_list'
 view_list
 
 view_list
+}
+\examples{
+rheroicons::outline$view_list(
+  id = 'my_view_list_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the view_list icon'
+)
+rheroicons::solid$view_list(
+  id = 'my_view_list_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the view_list icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/view_list.svg}

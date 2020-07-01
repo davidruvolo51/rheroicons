@@ -3,17 +3,14 @@
 \name{heart}
 \alias{heart}
 \title{heart}
-\usage{
-outline$heart()
-
-solid$heart()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''heart'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''heart'
 heart
 
 heart
+}
+\examples{
+rheroicons::outline$heart(
+  id = 'my_heart_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the heart icon'
+)
+rheroicons::solid$heart(
+  id = 'my_heart_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the heart icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/heart.svg}

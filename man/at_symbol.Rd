@@ -3,17 +3,14 @@
 \name{at_symbol}
 \alias{at_symbol}
 \title{at_symbol}
-\usage{
-outline$at_symbol()
-
-solid$at_symbol()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''at_symbol'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''at_symbol'
 at_symbol
 
 at_symbol
+}
+\examples{
+rheroicons::outline$at_symbol(
+  id = 'my_at_symbol_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the at_symbol icon'
+)
+rheroicons::solid$at_symbol(
+  id = 'my_at_symbol_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the at_symbol icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/at_symbol.svg}

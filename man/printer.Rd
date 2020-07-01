@@ -3,17 +3,14 @@
 \name{printer}
 \alias{printer}
 \title{printer}
-\usage{
-outline$printer()
-
-solid$printer()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''printer'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''printer'
 printer
 
 printer
+}
+\examples{
+rheroicons::outline$printer(
+  id = 'my_printer_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the printer icon'
+)
+rheroicons::solid$printer(
+  id = 'my_printer_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the printer icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/printer.svg}

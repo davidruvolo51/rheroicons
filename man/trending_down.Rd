@@ -3,17 +3,14 @@
 \name{trending_down}
 \alias{trending_down}
 \title{trending_down}
-\usage{
-outline$trending_down()
-
-solid$trending_down()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''trending_down'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''trending_down'
 trending_down
 
 trending_down
+}
+\examples{
+rheroicons::outline$trending_down(
+  id = 'my_trending_down_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the trending_down icon'
+)
+rheroicons::solid$trending_down(
+  id = 'my_trending_down_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the trending_down icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/trending_down.svg}

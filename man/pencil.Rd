@@ -3,17 +3,14 @@
 \name{pencil}
 \alias{pencil}
 \title{pencil}
-\usage{
-outline$pencil()
-
-solid$pencil()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''pencil'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''pencil'
 pencil
 
 pencil
+}
+\examples{
+rheroicons::outline$pencil(
+  id = 'my_pencil_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the pencil icon'
+)
+rheroicons::solid$pencil(
+  id = 'my_pencil_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the pencil icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/pencil.svg}

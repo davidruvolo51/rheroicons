@@ -3,17 +3,14 @@
 \name{dots_circle_horizontal}
 \alias{dots_circle_horizontal}
 \title{dots_circle_horizontal}
-\usage{
-outline$dots_circle_horizontal()
-
-solid$dots_circle_horizontal()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''dots_circle_horizontal'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''dots_circle_horizontal'
 dots_circle_horizontal
 
 dots_circle_horizontal
+}
+\examples{
+rheroicons::outline$dots_circle_horizontal(
+  id = 'my_dots_circle_horizontal_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the dots_circle_horizontal icon'
+)
+rheroicons::solid$dots_circle_horizontal(
+  id = 'my_dots_circle_horizontal_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the dots_circle_horizontal icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/dots_circle_horizontal.svg}

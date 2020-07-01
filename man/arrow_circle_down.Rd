@@ -3,17 +3,14 @@
 \name{arrow_circle_down}
 \alias{arrow_circle_down}
 \title{arrow_circle_down}
-\usage{
-outline$arrow_circle_down()
-
-solid$arrow_circle_down()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''arrow_circle_down'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''arrow_circle_down'
 arrow_circle_down
 
 arrow_circle_down
+}
+\examples{
+rheroicons::outline$arrow_circle_down(
+  id = 'my_arrow_circle_down_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the arrow_circle_down icon'
+)
+rheroicons::solid$arrow_circle_down(
+  id = 'my_arrow_circle_down_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the arrow_circle_down icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/arrow_circle_down.svg}

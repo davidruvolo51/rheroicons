@@ -3,17 +3,14 @@
 \name{shopping_cart}
 \alias{shopping_cart}
 \title{shopping_cart}
-\usage{
-outline$shopping_cart()
-
-solid$shopping_cart()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''shopping_cart'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''shopping_cart'
 shopping_cart
 
 shopping_cart
+}
+\examples{
+rheroicons::outline$shopping_cart(
+  id = 'my_shopping_cart_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the shopping_cart icon'
+)
+rheroicons::solid$shopping_cart(
+  id = 'my_shopping_cart_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the shopping_cart icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/shopping_cart.svg}

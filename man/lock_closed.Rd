@@ -3,17 +3,14 @@
 \name{lock_closed}
 \alias{lock_closed}
 \title{lock_closed}
-\usage{
-outline$lock_closed()
-
-solid$lock_closed()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''lock_closed'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''lock_closed'
 lock_closed
 
 lock_closed
+}
+\examples{
+rheroicons::outline$lock_closed(
+  id = 'my_lock_closed_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the lock_closed icon'
+)
+rheroicons::solid$lock_closed(
+  id = 'my_lock_closed_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the lock_closed icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/lock_closed.svg}

@@ -3,17 +3,14 @@
 \name{arrows_expand}
 \alias{arrows_expand}
 \title{arrows_expand}
-\usage{
-outline$arrows_expand()
-
-solid$arrows_expand()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''arrows_expand'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''arrows_expand'
 arrows_expand
 
 arrows_expand
+}
+\examples{
+rheroicons::outline$arrows_expand(
+  id = 'my_arrows_expand_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the arrows_expand icon'
+)
+rheroicons::solid$arrows_expand(
+  id = 'my_arrows_expand_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the arrows_expand icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/arrows_expand.svg}

@@ -3,17 +3,14 @@
 \name{dots_vertical}
 \alias{dots_vertical}
 \title{dots_vertical}
-\usage{
-outline$dots_vertical()
-
-solid$dots_vertical()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''dots_vertical'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''dots_vertical'
 dots_vertical
 
 dots_vertical
+}
+\examples{
+rheroicons::outline$dots_vertical(
+  id = 'my_dots_vertical_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the dots_vertical icon'
+)
+rheroicons::solid$dots_vertical(
+  id = 'my_dots_vertical_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the dots_vertical icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/dots_vertical.svg}

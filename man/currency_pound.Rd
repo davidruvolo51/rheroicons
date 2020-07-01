@@ -3,17 +3,14 @@
 \name{currency_pound}
 \alias{currency_pound}
 \title{currency_pound}
-\usage{
-outline$currency_pound()
-
-solid$currency_pound()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''currency_pound'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''currency_pound'
 currency_pound
 
 currency_pound
+}
+\examples{
+rheroicons::outline$currency_pound(
+  id = 'my_currency_pound_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the currency_pound icon'
+)
+rheroicons::solid$currency_pound(
+  id = 'my_currency_pound_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the currency_pound icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/currency_pound.svg}

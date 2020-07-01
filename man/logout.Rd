@@ -3,17 +3,14 @@
 \name{logout}
 \alias{logout}
 \title{logout}
-\usage{
-outline$logout()
-
-solid$logout()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''logout'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''logout'
 logout
 
 logout
+}
+\examples{
+rheroicons::outline$logout(
+  id = 'my_logout_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the logout icon'
+)
+rheroicons::solid$logout(
+  id = 'my_logout_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the logout icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/logout.svg}

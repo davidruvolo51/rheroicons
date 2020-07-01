@@ -3,17 +3,14 @@
 \name{cog}
 \alias{cog}
 \title{cog}
-\usage{
-outline$cog()
-
-solid$cog()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''cog'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''cog'
 cog
 
 cog
+}
+\examples{
+rheroicons::outline$cog(
+  id = 'my_cog_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the cog icon'
+)
+rheroicons::solid$cog(
+  id = 'my_cog_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the cog icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/cog.svg}

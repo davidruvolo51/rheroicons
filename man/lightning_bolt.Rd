@@ -3,17 +3,14 @@
 \name{lightning_bolt}
 \alias{lightning_bolt}
 \title{lightning_bolt}
-\usage{
-outline$lightning_bolt()
-
-solid$lightning_bolt()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''lightning_bolt'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''lightning_bolt'
 lightning_bolt
 
 lightning_bolt
+}
+\examples{
+rheroicons::outline$lightning_bolt(
+  id = 'my_lightning_bolt_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the lightning_bolt icon'
+)
+rheroicons::solid$lightning_bolt(
+  id = 'my_lightning_bolt_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the lightning_bolt icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/lightning_bolt.svg}

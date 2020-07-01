@@ -3,17 +3,14 @@
 \name{zoom_out}
 \alias{zoom_out}
 \title{zoom_out}
-\usage{
-outline$zoom_out()
-
-solid$zoom_out()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''zoom_out'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''zoom_out'
 zoom_out
 
 zoom_out
+}
+\examples{
+rheroicons::outline$zoom_out(
+  id = 'my_zoom_out_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the zoom_out icon'
+)
+rheroicons::solid$zoom_out(
+  id = 'my_zoom_out_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the zoom_out icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/zoom_out.svg}

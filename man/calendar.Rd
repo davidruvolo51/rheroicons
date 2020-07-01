@@ -3,17 +3,14 @@
 \name{calendar}
 \alias{calendar}
 \title{calendar}
-\usage{
-outline$calendar()
-
-solid$calendar()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''calendar'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''calendar'
 calendar
 
 calendar
+}
+\examples{
+rheroicons::outline$calendar(
+  id = 'my_calendar_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the calendar icon'
+)
+rheroicons::solid$calendar(
+  id = 'my_calendar_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the calendar icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/calendar.svg}

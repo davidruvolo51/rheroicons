@@ -3,17 +3,14 @@
 \name{document_duplicate}
 \alias{document_duplicate}
 \title{document_duplicate}
-\usage{
-outline$document_duplicate()
-
-solid$document_duplicate()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''document_duplicate'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''document_duplicate'
 document_duplicate
 
 document_duplicate
+}
+\examples{
+rheroicons::outline$document_duplicate(
+  id = 'my_document_duplicate_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the document_duplicate icon'
+)
+rheroicons::solid$document_duplicate(
+  id = 'my_document_duplicate_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the document_duplicate icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/document_duplicate.svg}

@@ -3,17 +3,14 @@
 \name{search}
 \alias{search}
 \title{search}
-\usage{
-outline$search()
-
-solid$search()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''search'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''search'
 search
 
 search
+}
+\examples{
+rheroicons::outline$search(
+  id = 'my_search_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the search icon'
+)
+rheroicons::solid$search(
+  id = 'my_search_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the search icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/search.svg}

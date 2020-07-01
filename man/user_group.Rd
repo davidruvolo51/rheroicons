@@ -3,17 +3,14 @@
 \name{user_group}
 \alias{user_group}
 \title{user_group}
-\usage{
-outline$user_group()
-
-solid$user_group()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''user_group'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''user_group'
 user_group
 
 user_group
+}
+\examples{
+rheroicons::outline$user_group(
+  id = 'my_user_group_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the user_group icon'
+)
+rheroicons::solid$user_group(
+  id = 'my_user_group_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the user_group icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/user_group.svg}

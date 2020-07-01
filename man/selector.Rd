@@ -3,17 +3,14 @@
 \name{selector}
 \alias{selector}
 \title{selector}
-\usage{
-outline$selector()
-
-solid$selector()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''selector'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''selector'
 selector
 
 selector
+}
+\examples{
+rheroicons::outline$selector(
+  id = 'my_selector_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the selector icon'
+)
+rheroicons::solid$selector(
+  id = 'my_selector_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the selector icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/selector.svg}

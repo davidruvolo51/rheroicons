@@ -3,17 +3,14 @@
 \name{color_swatch}
 \alias{color_swatch}
 \title{color_swatch}
-\usage{
-outline$color_swatch()
-
-solid$color_swatch()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''color_swatch'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''color_swatch'
 color_swatch
 
 color_swatch
+}
+\examples{
+rheroicons::outline$color_swatch(
+  id = 'my_color_swatch_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the color_swatch icon'
+)
+rheroicons::solid$color_swatch(
+  id = 'my_color_swatch_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the color_swatch icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/color_swatch.svg}

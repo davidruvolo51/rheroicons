@@ -3,17 +3,14 @@
 \name{view_grid_add}
 \alias{view_grid_add}
 \title{view_grid_add}
-\usage{
-outline$view_grid_add()
-
-solid$view_grid_add()
-}
 \arguments{
 \item{id}{a unique ID to be applied to the svg icon}
 
 \item{class}{a css class to be applied to the svg icon}
 
 \item{aria_hidden}{should the icon be readable by screen readers (default: false)}
+
+\item{title}{a string that describes the icon(should be used if aria_hidden is FALSE)}
 }
 \value{
 Returns the svg markup for the heroicon ''view_grid_add'
@@ -24,6 +21,20 @@ Returns the svg markup for the heroicon ''view_grid_add'
 view_grid_add
 
 view_grid_add
+}
+\examples{
+rheroicons::outline$view_grid_add(
+  id = 'my_view_grid_add_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the view_grid_add icon'
+)
+rheroicons::solid$view_grid_add(
+  id = 'my_view_grid_add_icon',
+  class = 'my-icons',
+  aria_hidden = FALSE,
+  title = 'a title for the view_grid_add icon'
+)
 }
 \references{
 \url{https://github.com/refactoringui/heroicons/blob/master/outline/view_grid_add.svg}
