@@ -5,11 +5,6 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf R/outline.R R/solid.R",
-    "convert": "Rscript -e \"source('scripts/icons_convert.R')\"",
-    "document": "RScript -e 'devtools::check_man()'",
-    "rUninstall": "RScript -e 'devtools::uninstall()'",
-    "rInstall": "RScript -e 'devtools::install()'",
-    "rBuild": "Rscript -e 'devtools::build()'",
     "demo_dev" : "parcel inst/rheroicons-demo/src/index.js -d inst/rheroicons-demo/www -o inst/rheroicons-demo/www/rheroicons.min.js --no-source-maps",
     "demo_shiny": "Rscript -e \"shiny::runApp(appDir = './inst/rheroicons-demo', port = 8000, launch.browser = FALSE)\"",
     "demo_build" : "parcel build inst/rheroicons-demo/src/index.js -d inst/rheroicons-demo/www -o inst/rheroicons-demo/www/rheroicons.min.js --no-source-maps",

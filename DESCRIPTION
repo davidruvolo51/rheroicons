@@ -1,14 +1,18 @@
 Package: rheroicons
-Type: Package
-Title: Heroicons for use in Shiny applications
+Title: The Heroicons library for use in R-based web projects
 Version: 0.1.4
-Author: dcruvolo
-Maintainer: dcruvolo <yourself@somewhere.net>
-Description: Heroicons for use in Shiny applications
+Authors@R: 
+    person(given = "David",
+           family = "Ruvolo",
+           role = c("aut", "cre"),
+           email = "first.last@example.com",
+           comment = c(ORCID = "0000-0002-5745-5298"))
+Description: The rheroicons provides access to the fantastic SVG icon collection heroicons, developed by @adamwathan and @sschoger, as R functions for use in your R-based web projects (i.e., shiny, Rmarkdown, etc.). This package requires no HTML, CSS, or JavaScript dependencies as all icons are rendered inline as SVG elements.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-URL: https://github.com/davidruvolo51/rheroicons
-BugReports: https://github.com/davidruvolo51/rheroicons/issues
-Imports: htmltools (>= 0.4.0), shiny
+Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
+Imports: 
+    htmltools (>= 0.5.0),
+    shiny (>= 1.5.0)

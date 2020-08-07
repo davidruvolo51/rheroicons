@@ -2,7 +2,7 @@
 #' FILE: _utils.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-06-11
-#' MODIFIED: 2020-07-01
+#' MODIFIED: 2020-08-07
 #' PURPOSE: functions for parsing svg markup into R functions
 #' STATUS: complete
 #' PACKAGES: XML, purrr, stringr, formatR, dplyr
@@ -53,7 +53,7 @@ viewbox_string <- function(string) {
 makeAttrs <- function(node) {
    attrs <- XML::xmlAttrs(node)
    names(attrs) %>%
-      Map(function (name) {
+      Map(function(name) {
          val <- attrs[[name]]
          paste0(
             '"', name, '"',
@@ -83,7 +83,7 @@ renderNode <- function(node, indent = 0) {
        append(makeAttrs(node), .) %>%
        paste(collapse = ", ") %>%
        trimws(which = c("left")) %>%
-       paste0("tag(", tagName, "list(", ., "))")
+       paste0("htmltools::tag(", tagName, "list(", ., "))")
 }
 
 #' @name makeFunc
@@ -134,19 +134,19 @@ makeFunc <- function(string, icon, type) {
         " (default: false)\n",
         "#' @param title a string that describes the icon",
         "(should be used if aria_hidden is FALSE)\n",
+        "#' @param type set icon style (outline or solid)"
         "#' @return Returns the svg markup for the heroicon ''", icon, "'\n",
         "#' @keywords rheroicons ", type, " ", icon, "\n",
         "#' @references\n",
         "#' \\url{", url, "}\n",
         "#' @examples\n",
-        "#' rheroicons::", type, "$", icon, "(\n",
+        "#' rheroicons::", icon, "(\n",
         "#'   id = 'my_", icon, "_icon',\n",
         "#'   class = 'my-icons',\n",
         "#'   aria_hidden = FALSE,\n",
         "#'   title = 'a title for the ", icon, " icon'\n",
         "#' )\n",
-        "#' @importFrom htmltools tag\n",
-        "#' @export\n",
+       # "#' @export\n",
         type, "$", icon,
         " <- function",
         "(id = NULL, class = NULL, aria_hidden = FALSE, title = NULL) {\n",
@@ -161,8 +161,8 @@ makeFunc <- function(string, icon, type) {
         "  }\n",
         "  if (!is.null(title)) {\n",
         "    stopifnot(is.character(title))\n",
-        "    svg$children <- tagList(\n",
-        "        tag(\"title\", list(title)),\n",
+        "    svg$children <- htmltools::tagList(\n",
+        "        htmltools::tag(\"title\", list(title)),\n",
         "        svg$children",
         "    )\n",
         "  }\n",
@@ -184,13 +184,13 @@ cleanFunc <- function(string) {
 #' @details parse an svg string to R an function in a package
 #' @references \url{https://github.com/alandipert/html2r/blob/master/app.R}
 #' @importFrom XML htmlParse getNodeSet
-html2R <- function(html, icon, type = "outline") {
+html2R <- function(html, icons) {
    html %>%
       XML::htmlParse(.) %>%
       XML::getNodeSet("/html/body/*") %>%
       `[[`(1) %>%
       renderNode() %>%
-      makeFunc(string = ., icon = icon, type = type) %>%
+      makeFunc(string = ., icons = icons) %>%
       cleanFunc(.)
 }
 
@@ -223,26 +223,25 @@ get_files <- function(path) {
         select(., type, icon, path = .)
 }
 
-# @name init_files
-# @details a short function that creates the output files with notes
-init_file <- function(path, type) {
-    file.create(path)
-    header <- paste0(
-        "#' ", toupper(type), " SVG Icons\n",
-        "#' @name ", type, "\n",
-        "#' @keywords rheroicons ", type, "\n",
-        "#' @return ", type, " heroicons\n",
-        "#' @references\n",
-        "#' \\url{https://github.com/refactoringui/heroicons}\n",
-        "#' \\url{https://davidruvolo.shinyapps.io/rheroicons-demo/}\n",
-        "#' @examples\n",
-        "#' rheroicons::", type, "$book_open()\n",
-        "#' rheroicons::", type, "$book_open(id = 'myBookIcon')\n",
-        "#' rheroicons::", type, "$book_open(class = 'my-icon-set')\n",
-        "#' rheroicons::", type, "$book_open(aria_hidden = FALSE, title = 'read document')\n",
-        "#' @importFrom htmltools tag\n",
-        "#' @export\n",
-        type, " <- list()\n"
-    )
-    writeLines(header, path)
-}
+#' @name init_files
+#' @details a short function that creates the output files with notes
+# init_file <- function(path, type) {
+#     file.create(path)
+#     header <- paste0(
+#         "#' ", toupper(type), " SVG Icons\n",
+#         "#' @name ", type, "\n",
+#         "#' @keywords rheroicons ", type, "\n",
+#         "#' @return ", type, " heroicons\n",
+#         "#' @references\n",
+#         "#' \\url{https://github.com/refactoringui/heroicons}\n",
+#         "#' \\url{https://davidruvolo.shinyapps.io/rheroicons-demo/}\n",
+#         "#' @examples\n",
+#         "#' rheroicons::", type, "$book_open()\n",
+#         "#' rheroicons::", type, "$book_open(id = 'myBookIcon')\n",
+#         "#' rheroicons::", type, "$book_open(class = 'my-icon-set')\n",
+#         "#' rheroicons::", type, "$book_open(aria_hidden = FALSE, title = 'read document')\n",
+#         "#' @export\n",
+#         type, " <- structure(list(), class = c(\"icon-set\", \"", type, "-icons\"))\n"
+#     )
+#     writeLines(header, path)
+# }
