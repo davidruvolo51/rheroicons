@@ -2,7 +2,7 @@
 #' FILE: icons_convert.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-06-11
-#' MODIFIED: 2020-08-07
+#' MODIFIED: 2020-08-08
 #' PURPOSE: convert SVG files to R functions
 #' STATUS: working
 #' PACKAGES: XML, purrr, stringr, formatR
@@ -31,27 +31,38 @@ stopifnot(
     "icon sets are identical match" = paths$outline$icon == paths$solid$icon
 )
 
-# 
-
-
 # run loop
-reps <- 1# NROW(files)
+reps <- NROW(paths$outline)
 for (i in seq_len(reps)) {
 
     # msg
     cat("Converting icon", i, "of", reps, "...")
 
-    # read raw svg files
-    raw_outline <- readLines(paths$outline[i, "path"]) %>% paste0(., collapse = "")
-    raw_solid <- readLines(paths$solid[i, "path"]) %>% paste0(., collapse = "")
+    # Generate Shiny Tag Strings from Raw SVG files
+    outline <- as_svg_string(
+        path = paths$outline[i, "path"],
+        icon = paths$outline[i, "icon"],
+        type = paths$outline[i, "type"]
+    )
+    solid <- as_svg_string(
+        path = paths$solid[i, "path"],
+        icon = paths$solid[i, "icon"],
+        type = paths$solid[i, "type"]
+    )
 
-    # convert functions
-    svg_to_r <- html2R(icons = list(outline = raw_outline, solid = raw_solid))
+    # Generate R function
+    r_code <- svg_to_rcode(
+        name = paths$outline[i, "icon"],
+        icons = list(
+            outline = outline,
+            solid = solid
+        )
+    )
 
     # write function to file
     write(
-        x = svg_to_r,
-        file = paste0("R/", files[i, "type"], ".R"),
+        x = r_code,
+        file = paste0("R/", paths$outline[i, "icon"], ".R"),
         append = TRUE,
         sep = "\n\n\n"
     )
@@ -59,14 +70,3 @@ for (i in seq_len(reps)) {
     # message
     cat("complete!\n")
 }
-
-
-
-# files <- bind_rows(
-#     get_files("node_modules/heroicons/outline"),
-#     get_files("node_modules/heroicons/solid")
-# )
-
-# # init primary R files
-# init_file(path = "R/outline.R", type = "outline")
-# init_file(path = "R/solid.R", type = "solid")
