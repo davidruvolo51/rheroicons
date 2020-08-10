@@ -3,10 +3,10 @@
 on:
   push:
     branches:
-      - master
+      - prod
   pull_request:
     branches:
-      - master
+      - prod
 
 name: R-CMD-check
 
