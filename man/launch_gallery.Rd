@@ -4,7 +4,7 @@
 \alias{launch_gallery}
 \title{\code{launch_gallery}}
 \usage{
-rheroicons::launch_gallery()
+launch_gallery()
 }
 \value{
 This function starts the rheroicons gallery
@@ -12,6 +12,12 @@ This function starts the rheroicons gallery
 \description{
 This function starts the rheroicons gallery
 }
+\examples{
+\dontrun{
+  rheroicons::launch_gallery()
+}
+
+}
 \keyword{demo}
-\keyword{launch_gallery}
+\keyword{gallery}
 \keyword{rheroicons}
