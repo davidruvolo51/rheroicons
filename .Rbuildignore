@@ -12,3 +12,5 @@ inst/rheroicons-demo/rsconnect
 .babelrc
 ^\.travis\.yml$
 ^\.github$
+yarn.lock
+yarn-error.log

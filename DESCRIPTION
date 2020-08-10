@@ -1,6 +1,6 @@
 Package: rheroicons
 Title: The Heroicons library for use in R-based web projects
-Version: 0.1.4
+Version: 0.1.5
 Authors@R: 
     person(given = "David",
            family = "Ruvolo",
@@ -16,3 +16,5 @@ RoxygenNote: 7.1.0
 Imports: 
     htmltools (>= 0.5.0),
     shiny (>= 1.5.0)
+Suggests: 
+    testthat

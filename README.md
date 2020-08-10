@@ -1,3 +1,8 @@
+<!-- badges: start -->
+  [![Travis build status](https://travis-ci.com/davidruvolo51/rheroicons.svg?branch=master)](https://travis-ci.com/davidruvolo51/rheroicons)
+  [![R build status](https://github.com/davidruvolo51/rheroicons/workflows/R-CMD-check/badge.svg)](https://github.com/davidruvolo51/rheroicons/actions)
+  <!-- badges: end -->
+
 # rheroicons
 
 The `rheroicons` provides access to the fantastic SVG icon collection [heroicons](https://github.com/refactoringui/heroicons), developed by [adamwathan](https://github.com/adamwathan) and [sschoger](https://github.com/sschoger), as R functions for use in your R-based web projects (i.e., shiny, Rmarkdown, etc.). This package requires no HTML, CSS, or JavaScript dependencies as all SVG icons are rendered inline.
@@ -5,7 +10,7 @@ The `rheroicons` provides access to the fantastic SVG icon collection [heroicons
 ## Install
 
 ```r
-devtools::install_github("davidruvolo51/rheroicons@prod")
+devtools::install_github("davidruvolo51/rheroicons")
 ```
 
 Use the rheroicons gallery to view all of the icons included in this package: [davidruvolo.shinyapps.io/rheroicons-demo/](https://davidruvolo.shinyapps.io/rheroicons-demo/). Alternatively, you can run the gallery locally.
