@@ -2,7 +2,7 @@
 #' FILE: _utils.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-06-11
-#' MODIFIED: 2020-08-08
+#' MODIFIED: 2020-08-10
 #' PURPOSE: functions for parsing svg markup into R functions
 #' STATUS: complete
 #' PACKAGES: XML, purrr, stringr, formatR, dplyr
@@ -107,7 +107,8 @@ renderSVG <- function(node, icon, type) {
             " rheroicons_", icon  # icon class
         ),
         "\", ",
-        viewbox_string(node), ", "
+        viewbox_string(node), ", ",
+        "`data-icon-set` = \"", type, "\", "
     )
 
     # add optional arguments R code + fix viewBox
@@ -147,34 +148,27 @@ svg_to_rcode <- function(name, icons) {
     # build function
     out <- paste0(
         "#' ", name, "\n",
-        "#'\n",
-        "#' Render an svg icon of a ", name, "\n",
-        "#'\n",
+        "#' @name ", name, "\n",
+        "#' @description Render an svg icon of a ", name, "\n",
         "#' @param type render an outline or solid icon (default outline)\n",
-        "#' @param id a unique ID to be applied to the svg icon (optional)\n",
-        "#' @param class a css class to be applied to the svg icon (optional)\n",
+        "#' @param id a unique ID to be applied to the svg icon\n",
+        "#' @param class a css class to be applied to the svg icon\n",
         "#' @param aria_hidden should the icon be hidden from screen readers",
-        " (default: TRUE) (ideal for purely aesthetic icons)\n",
-        "#' @param title a string that describes the icon (optional;",
-        "should be used if aria_hidden is FALSE)\n",
-        "#'\n",
-        "#' @references\n",
-        "#' \\url{", urls$outline, "}\n",
-        "#' \\url{", urls$solid, "}\n",
-        "#'\n",
+        " (default: TRUE)\n",
+        "#' @param title a string that describes the icon (optional)\n",
         "#' @examples\n",
-        "#' rheroicons::", name, "(\n",
+        "#' rheroicons::icons$", name, "(\n",
         "#'   type = \"solid\",\n",
         "#'   id = \"my_", name, "_icon\",\n",
         "#'   class = \"my-icons\",\n",
         "#'   aria_hidden = FALSE,\n",
         "#'   title = \"a title for the ", name, " icon\"\n",
         "#' )\n",
-        "#'\n",
         "#' @return Render an svg icon of a ", name, "\n",
         "#' @keywords rheroicons ", name, "\n",
-        "#'\n",
-        "#' @export\n",
+        # "#'\n",
+        # "#' @export\n",
+        "icons$",
         name,
         " <- function",
         "(type = \"outline\", id = NULL, class = NULL, aria_hidden = FALSE, title = NULL) {\n",
@@ -186,21 +180,16 @@ svg_to_rcode <- function(name, icons) {
         "    outline = ", icons$outline, ",\n",
         "    solid = ", icons$solid, "\n",
         "  )\n",
-        "\n",
         "  el <- icon_styles[[type]]\n",
-        "\n",
         "  if (!is.null(id)) {\n",
         "    el$attribs$id <- id\n",
         "  }\n",
-        "\n",
         "  if (!is.null(class)) {\n",
         "    el$attribs$class <- paste0(el$attribs$class, \" \", class)\n",
         "  }\n",
-        "\n",
         "  if (isTRUE(aria_hidden)) {\n",
         "      el$attribs$`aria-hidden` <- \"true\"\n",
         "  }\n",
-        "\n",
         "  if (!is.null(title)) {\n",
         "    stopifnot(is.character(title))\n",
         "    el$children <- htmltools::tagList(\n",
@@ -208,7 +197,6 @@ svg_to_rcode <- function(name, icons) {
         "        el$children\n",
         "    )\n",
         "  }\n",
-        "\n",
         "  return(el)\n",
         "}\n"
     )
@@ -276,4 +264,32 @@ get_files <- function(path) {
             )
         ) %>%
         select(., type, icon, path = .)
+}
+
+
+# @name init_files
+# @details a short function that creates the output files with notes
+init_file <- function() {
+    file.create("R/icons.R")
+    header <- paste0(
+        "#' Heroicons for R\n",
+        "#'\n",
+        "#' @references\n",
+        "#' \\url{https://github.com/refactoringui/heroicons}\n",
+        "#' \\url{https://davidruvolo.shinyapps.io/rheroicons-demo/}\n",
+        "#'\n",
+        "#' @examples\n",
+        "#' rheroicons::icons$book_open()\n",
+        "#' rheroicons::icons$book_open(type = \"outline\")\n",
+        "#' rheroicons::icons$book_open(type = \"solid\")\n",
+        "#' rheroicons::icons$book_open(id = \"myBookIcon\")\n",
+        "#' rheroicons::icons$book_open(class = \"my-icon-set\")\n",
+        "#' rheroicons::icons$book_open(aria_hidden = FALSE)\n",
+        "#' rheroicons::icons$book_open(title = \"read documentation\")\n",
+        "#'\n",
+        "#' @keywords rheroicons\n",
+        "#' @export\n",
+        "icons <- list()\n"
+    )
+    writeLines(header, "R/icons.R")
 }

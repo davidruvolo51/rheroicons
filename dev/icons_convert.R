@@ -2,7 +2,7 @@
 #' FILE: icons_convert.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-06-11
-#' MODIFIED: 2020-08-08
+#' MODIFIED: 2020-08-10
 #' PURPOSE: convert SVG files to R functions
 #' STATUS: working
 #' PACKAGES: XML, purrr, stringr, formatR
@@ -31,12 +31,16 @@ stopifnot(
     "icon sets are identical match" = paths$outline$icon == paths$solid$icon
 )
 
+# init base file
+init_file()
+
 # run loop
 reps <- NROW(paths$outline)
+pb <- txtProgressBar(max = reps)
 for (i in seq_len(reps)) {
 
     # msg
-    cat("Converting icon", i, "of", reps, "...")
+    # cat("Converting icon", i, "of", reps, "...")
 
     # Generate Shiny Tag Strings from Raw SVG files
     outline <- as_svg_string(
@@ -62,11 +66,13 @@ for (i in seq_len(reps)) {
     # write function to file
     write(
         x = r_code,
-        file = paste0("R/", paths$outline[i, "icon"], ".R"),
+        # file = paste0("R/", paths$outline[i, "icon"], ".R"),
+        file = "R/icons.R",
         append = TRUE,
         sep = "\n\n\n"
     )
 
     # message
-    cat("complete!\n")
+    setTxtProgressBar(pb, value = i)
+    # cat("complete!\n")
 }
