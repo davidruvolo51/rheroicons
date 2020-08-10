@@ -2,9 +2,9 @@
 #' FILE: mod_icon.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-06-28
-#' MODIFIED: 2020-06-28
+#' MODIFIED: 2020-08-10
 #' PURPOSE: module for icon lists and items
-#' STATUS: in.progress
+#' STATUS: working
 #' PACKAGES: NA
 #' COMMENTS: NA
 #'////////////////////////////////////////////////////////////////////////////
@@ -23,7 +23,11 @@ icon_list_item_ui <- function(id, set, icon) {
         tags$button(
             id = ns("icon-copy"),
             class = "icon-name icon-button",
-            `data-value` = paste0("rheroicons::", set, "$", id, "()"),
+            `data-value` = paste0(
+                "rheroicons::icons$",
+                id,
+                "(type = \"", set, "\")"
+            ),
             HTML(icon),
             tags$span(id)
         )
@@ -43,14 +47,14 @@ icon_list_ui <- function(id, set) {
 
     # outline icons
     if (set == "outline") {
-        lapply(seq_len(length(rheroicons::outline)), function(d) {
+        lapply(seq_len(length(rheroicons::icons)), function(d) {
 
             # run nth function
-            html <- as.character(outline[[d]]())
+            html <- as.character(icons[[d]](type = "outline"))
 
             # render grandchild element and send to child element
             children[[d]] <<- icon_list_item_ui(
-                id = names(outline[d]),
+                id = names(icons[d]),
                 set = "outline",
                 icon = html
             )
@@ -59,14 +63,14 @@ icon_list_ui <- function(id, set) {
 
     # outline icons
     if (set == "solid") {
-        lapply(seq_len(length(rheroicons::solid)), function(d) {
+        lapply(seq_len(length(rheroicons::icons)), function(d) {
 
             # run nth function
-            html <- as.character(solid[[d]]())
+            html <- as.character(icons[[d]](type = "solid"))
 
             # render grandchild element and send to child element
             children[[d]] <<- icon_list_item_ui(
-                id = names(solid[d]),
+                id = names(icons[d]),
                 set = "solid",
                 icon = html
             )
