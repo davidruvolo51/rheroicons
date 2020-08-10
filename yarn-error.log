@@ -1,0 +1,64 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/davidcruvolo/.rvm/gems/ruby-2.0.0-p648/bin:/Users/davidcruvolo/.rvm/gems/ruby-2.0.0-p648@global/bin:/Users/davidcruvolo/.rvm/rubies/ruby-2.0.0-p648/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/git/bin:/Users/davidcruvolo/.rvm/gems/ruby-2.0.0-p648/bin:/Users/davidcruvolo/.rvm/gems/ruby-2.0.0-p648@global/bin:/Users/davidcruvolo/.rvm/rubies/ruby-2.0.0-p648/bin:/Users/davidcruvolo/.rvm/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.16.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/davidcruvolo/Github/rheroicons/package.json: Unexpected token } in JSON at position 1238
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "rheroicons",
+    "version": "0.1.4",
+    "author": "dcruvolo",
+    "license": "MIT",
+    "scripts": {
+      "clean": "rm -rf R/outline.R R/solid.R",
+      "convert": "Rscript -e \"source('scripts/icons_convert.R')\"",
+      "document": "RScript -e 'devtools::check_man()'",
+      "rUninstall": "RScript -e 'devtools::uninstall()'",
+      "rInstall": "RScript -e 'devtools::install()'",
+      "rBuild": "Rscript -e 'devtools::build()'",
+      "demo_dev" : "parcel inst/rheroicons-demo/src/index.js -d inst/rheroicons-demo/www -o inst/rheroicons-demo/www/rheroicons.min.js --no-source-maps",
+      "demo_shiny": "Rscript -e \"shiny::runApp(appDir = './inst/rheroicons-demo', port = 8000, launch.browser = FALSE)\"",
+      "demo_build" : "parcel build inst/rheroicons-demo/src/index.js -d inst/rheroicons-demo/www -o inst/rheroicons-demo/www/rheroicons.min.js --no-source-maps",
+      "demo_clean": "rm -rf inst/rheroicons-demo/www/rheroicons.min.*",
+      "demo_start": "concurrently \"npm run demo_shiny\" \"npm run demo_dev\" ",
+      "demo_deploy" : "Rscript -e \"rsconnect::deployApp(appDir = 'inst/rheroicons-demo', account = 'davidruvolo')\"",
+      "package": "npm run rBuild && npm run rInstall"
+    },
+    "devDependencies": {
+      "heroicons": "^0.3.6",
+    },
+    "description": "Heroicons for R",
+    "keywords" : ["r", "rstats", "shiny", "heroicons"],
+    "homepage" : "https://github.com/davidruvolo51/rheroicons",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/davidruvolo51/rheroicons.git"
+    },
+    "bugs" : {
+      "url": "https://github.com/davidruvolo51/reheroicons/issues"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

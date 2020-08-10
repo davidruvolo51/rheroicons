@@ -2,7 +2,7 @@
 #' FILE: app.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-06-24
-#' MODIFIED: 2020-06-29
+#' MODIFIED: 2020-08-10
 #' PURPOSE: rheroicons demo
 #' STATUS: working
 #' PACKAGES: shiny; rheroicons
@@ -50,7 +50,7 @@ ui <- tagList(
                 tags$p(
                     class = "menu-link",
                     "rheroicons",
-                    outline$sparkles(aria_hidden = TRUE),
+                    icons$sparkles(type = "solid", aria_hidden = TRUE),
                 )
             )
         )
@@ -90,7 +90,8 @@ ui <- tagList(
                             class = "select-input-selected",
                             "-- Choose --"
                         ),
-                        rheroicons::outline$chevron_down(
+                        icons$chevron_down(
+                            type = "outline",
                             aria_hidden = TRUE,
                             class = "select-input-parent-icon"
                         )
@@ -107,7 +108,8 @@ ui <- tagList(
                                 class = "select-input-option-button",
                                 `data-group` = "iconSet",
                                 `data-value` = "outline",
-                                rheroicons::solid$check_circle(
+                                icons$check_circle(
+                                    type = "solid",
                                     aria_hidden = TRUE,
                                     class = "selected-icon"
                                 ),
@@ -122,7 +124,8 @@ ui <- tagList(
                                 class = "select-input-option-button",
                                 `data-group` = "iconSet",
                                 `data-value` = "solid",
-                                rheroicons::solid$check_circle(
+                                icons$check_circle(
+                                    type = "solid",
                                     aria_hidden = TRUE,
                                     class = "selected-icon"
                                 ),
@@ -147,13 +150,13 @@ ui <- tagList(
     tags$div(
         id = "status-success",
         class = "status-box",
-        rheroicons::outline$thumb_up(aria_hidden = TRUE),
+        icons$thumb_up(type = "outline", aria_hidden = TRUE),
         tags$p("Successfully copied icon!")
     ),
     tags$div(
         id = "status-failed",
         class = "status-box",
-        rheroicons::outline$exclamation(aria_hidden = FALSE),
+        icons$exclamation(type = "outline", aria_hidden = FALSE),
         tags$p("Copy Failed")
     ),
     tags$script(src = "rheroicons.min.js")

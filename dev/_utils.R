@@ -2,7 +2,7 @@
 #' FILE: _utils.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-06-11
-#' MODIFIED: 2020-07-01
+#' MODIFIED: 2020-08-10
 #' PURPOSE: functions for parsing svg markup into R functions
 #' STATUS: complete
 #' PACKAGES: XML, purrr, stringr, formatR, dplyr
@@ -53,7 +53,7 @@ viewbox_string <- function(string) {
 makeAttrs <- function(node) {
    attrs <- XML::xmlAttrs(node)
    names(attrs) %>%
-      Map(function (name) {
+      Map(function(name) {
          val <- attrs[[name]]
          paste0(
             '"', name, '"',
@@ -83,20 +83,19 @@ renderNode <- function(node, indent = 0) {
        append(makeAttrs(node), .) %>%
        paste(collapse = ", ") %>%
        trimws(which = c("left")) %>%
-       paste0("tag(", tagName, "list(", ., "))")
+       paste0("htmltools::tag(", tagName, "list(", ., "))")
 }
 
-#' @name makeFunc
-#' @details build and R function (inspired by alandipert's example app)
-#' @importFrom stringr str_replace
-#' @importFrom formatR tidy_source
-makeFunc <- function(string, icon, type) {
-
-    # process type
-    types <- c("outline", "solid")
-    if (!type %in% types) {
-        stop("type not found. Use: ", types)
-    }
+#' Render SVG
+#'
+#' Render node set into SVG icon
+#'
+#' @param node output from render node
+#' @param icon name of the icon
+#' @param type icon style type (i.e., outline or solid)
+#'
+#' @noRd
+renderSVG <- function(node, icon, type) {
 
     # string to inject input arguments into <svg> element
     optional_args <- paste0(
@@ -108,69 +107,126 @@ makeFunc <- function(string, icon, type) {
             " rheroicons_", icon  # icon class
         ),
         "\", ",
-        viewbox_string(string), ", "
+        viewbox_string(node), ", ",
+        "`data-icon-set` = \"", type, "\", "
     )
 
-    # add optional arguments R code
-    svg <- stringr::str_replace(string, "list\\(", optional_args) %>%
-        paste0("svg <- ", .)
+    # add optional arguments R code + fix viewBox
+    svg <- stringr::str_replace(node, "list\\(", optional_args) %>%
+        stringr::str_replace(., pattern = "viewbox", replacement = "viewBox")
 
-    # fix viewbox
-    svg <- stringr::str_replace(svg, "viewbox", "viewBox")
+    return(svg)
+
+}
+
+
+#' SVG to R Code
+#'
+#' Wrap two SVG shiny tag strings into an R function
+#'
+#' @param name name of the icone
+#' @param icons a list containing svg string for solid and outline icon
+#'
+#' @importFrom stringr str_replace
+#' @importFrom formatR tidy_source
+#'
+#' @noRd
+svg_to_rcode <- function(name, icons) {
 
     # build url for reference
-    url <- paste0(
-        "https://github.com/refactoringui/heroicons/blob/master/",
-        type, "/", icon, ".svg"
+    urls <- list(
+        outline = paste0(
+            "https://github.com/refactoringui/heroicons/blob/master/",
+            "outline/", name, ".svg"
+        ),
+        solid = paste0(
+            "https://github.com/refactoringui/heroicons/blob/master/",
+            "solid/", name, ".svg"
+        )
     )
 
     # build function
     out <- paste0(
-        "#' ", icon, "\n",
-        "#' @name ", icon, "\n",
+        "#' ", name, "\n",
+        "#' @name ", name, "\n",
+        "#' @description Render an svg icon of a ", name, "\n",
+        "#' @param type render an outline or solid icon (default outline)\n",
         "#' @param id a unique ID to be applied to the svg icon\n",
         "#' @param class a css class to be applied to the svg icon\n",
-        "#' @param aria_hidden should the icon be readable by screen readers",
-        " (default: false)\n",
-        "#' @param title a string that describes the icon",
-        "(should be used if aria_hidden is FALSE)\n",
-        "#' @return Returns the svg markup for the heroicon ''", icon, "'\n",
-        "#' @keywords rheroicons ", type, " ", icon, "\n",
-        "#' @references\n",
-        "#' \\url{", url, "}\n",
+        "#' @param aria_hidden should the icon be hidden from screen readers",
+        " (default: TRUE)\n",
+        "#' @param title a string that describes the icon (optional)\n",
         "#' @examples\n",
-        "#' rheroicons::", type, "$", icon, "(\n",
-        "#'   id = 'my_", icon, "_icon',\n",
-        "#'   class = 'my-icons',\n",
+        "#' rheroicons::icons$", name, "(\n",
+        "#'   type = \"solid\",\n",
+        "#'   id = \"my_", name, "_icon\",\n",
+        "#'   class = \"my-icons\",\n",
         "#'   aria_hidden = FALSE,\n",
-        "#'   title = 'a title for the ", icon, " icon'\n",
+        "#'   title = \"a title for the ", name, " icon\"\n",
         "#' )\n",
-        "#' @importFrom htmltools tag\n",
-        "#' @export\n",
-        type, "$", icon,
+        "#' @return Render an svg icon of a ", name, "\n",
+        "#' @keywords rheroicons ", name, "\n",
+        # "#'\n",
+        # "#' @export\n",
+        "icons$",
+        name,
         " <- function",
-        "(id = NULL, class = NULL, aria_hidden = FALSE, title = NULL) {\n",
-        "  stopifnot(is.logical(aria_hidden))\n",
-        "  ", svg, "\n",
-        "  if (!is.null(id)) { svg$attribs$id <- id }\n",
+        "(type = \"outline\", id = NULL, class = NULL, aria_hidden = FALSE, title = NULL) {\n",
+        "  stopifnot(\n",
+        "    \"Aria Hidden must be TRUE or FALSE\" = is.logical(aria_hidden),\n",
+        "    \"Invalid icon type\" = type %in% c(\"solid\", \"outline\")\n",
+        "  )\n",
+        "  icon_styles <- list(\n",
+        "    outline = ", icons$outline, ",\n",
+        "    solid = ", icons$solid, "\n",
+        "  )\n",
+        "  el <- icon_styles[[type]]\n",
+        "  if (!is.null(id)) {\n",
+        "    el$attribs$id <- id\n",
+        "  }\n",
         "  if (!is.null(class)) {\n",
-        "    svg$attribs$class <- paste0(svg$attribs$class, \" \", class)\n",
+        "    el$attribs$class <- paste0(el$attribs$class, \" \", class)\n",
         "  }\n",
         "  if (isTRUE(aria_hidden)) {\n",
-        "      svg$attribs$`aria-hidden` <- \"true\"\n",
+        "      el$attribs$`aria-hidden` <- \"true\"\n",
         "  }\n",
         "  if (!is.null(title)) {\n",
         "    stopifnot(is.character(title))\n",
-        "    svg$children <- tagList(\n",
-        "        tag(\"title\", list(title)),\n",
-        "        svg$children",
+        "    el$children <- htmltools::tagList(\n",
+        "        htmltools::tag(\"title\", list(title)),\n",
+        "        el$children\n",
         "    )\n",
         "  }\n",
-        "  return(svg)\n",
+        "  return(el)\n",
         "}\n"
     )
     return(out)
 }
+
+
+#' As SVG String
+#'
+#' Convert Raw SVG to R Shiny Tag String from file
+#'
+#' @param path file path to SVG file
+#' @param icon name of the icon
+#' @param type icon style (outline or solid)
+#'
+#' @references \url{https://github.com/alandipert/html2r/blob/master/app.R}
+#' @importFrom XML htmlParse getNodeSet
+#'
+#' @noRd
+as_svg_string <- function(path, icon, type) {
+    readLines(path) %>%
+    paste0(., collapse = "") %>%
+    XML::htmlParse(.) %>%
+    XML::getNodeSet("/html/body/*") %>%
+    `[[`(1) %>%
+    renderNode(.) %>%
+    renderSVG(node = ., icon = icon, type = type) %>%
+    cleanFunc(.)
+}
+
 
 #' @name cleanFunc
 #' @details formats R code
@@ -180,19 +236,6 @@ cleanFunc <- function(string) {
     return(string_formatted$text.tidy)
 }
 
-#' @name html2R
-#' @details parse an svg string to R an function in a package
-#' @references \url{https://github.com/alandipert/html2r/blob/master/app.R}
-#' @importFrom XML htmlParse getNodeSet
-html2R <- function(html, icon, type = "outline") {
-   html %>%
-      XML::htmlParse(.) %>%
-      XML::getNodeSet("/html/body/*") %>%
-      `[[`(1) %>%
-      renderNode() %>%
-      makeFunc(string = ., icon = icon, type = type) %>%
-      cleanFunc(.)
-}
 
 #' @name get_files
 #' @details returns data frame containing the file path, icon type, icon name
@@ -223,26 +266,30 @@ get_files <- function(path) {
         select(., type, icon, path = .)
 }
 
+
 # @name init_files
 # @details a short function that creates the output files with notes
-init_file <- function(path, type) {
-    file.create(path)
+init_file <- function() {
+    file.create("R/icons.R")
     header <- paste0(
-        "#' ", toupper(type), " SVG Icons\n",
-        "#' @name ", type, "\n",
-        "#' @keywords rheroicons ", type, "\n",
-        "#' @return ", type, " heroicons\n",
+        "#' Heroicons for R\n",
+        "#'\n",
         "#' @references\n",
         "#' \\url{https://github.com/refactoringui/heroicons}\n",
         "#' \\url{https://davidruvolo.shinyapps.io/rheroicons-demo/}\n",
+        "#'\n",
         "#' @examples\n",
-        "#' rheroicons::", type, "$book_open()\n",
-        "#' rheroicons::", type, "$book_open(id = 'myBookIcon')\n",
-        "#' rheroicons::", type, "$book_open(class = 'my-icon-set')\n",
-        "#' rheroicons::", type, "$book_open(aria_hidden = FALSE, title = 'read document')\n",
-        "#' @importFrom htmltools tag\n",
+        "#' rheroicons::icons$book_open()\n",
+        "#' rheroicons::icons$book_open(type = \"outline\")\n",
+        "#' rheroicons::icons$book_open(type = \"solid\")\n",
+        "#' rheroicons::icons$book_open(id = \"myBookIcon\")\n",
+        "#' rheroicons::icons$book_open(class = \"my-icon-set\")\n",
+        "#' rheroicons::icons$book_open(aria_hidden = FALSE)\n",
+        "#' rheroicons::icons$book_open(title = \"read documentation\")\n",
+        "#'\n",
+        "#' @keywords rheroicons\n",
         "#' @export\n",
-        type, " <- list()\n"
+        "icons <- list()\n"
     )
-    writeLines(header, path)
+    writeLines(header, "R/icons.R")
 }

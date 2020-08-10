@@ -1,5 +1,5 @@
 src/
-scripts/
+dev/
 rheroicons.code-workspace
 package.json
 README.md
@@ -10,3 +10,7 @@ inst/rheroicons-demo/rsconnect
 .cache
 .postcssrc
 .babelrc
+^\.travis\.yml$
+^\.github$
+yarn.lock
+yarn-error.log
