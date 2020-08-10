@@ -1,5 +1,5 @@
 <!-- badges: start -->
-  [![Travis build status](https://travis-ci.com/davidruvolo51/rheroicons.svg?branch=master)](https://travis-ci.com/davidruvolo51/rheroicons)
+  [![Build Status](https://travis-ci.com/davidruvolo51/rheroicons.svg?branch=prod)](https://travis-ci.com/davidruvolo51/rheroicons)
   [![R build status](https://github.com/davidruvolo51/rheroicons/workflows/R-CMD-check/badge.svg)](https://github.com/davidruvolo51/rheroicons/actions)
   <!-- badges: end -->
 
