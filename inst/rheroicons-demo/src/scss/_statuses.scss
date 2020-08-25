@@ -7,10 +7,10 @@
     bottom: 1.5em;
     margin: 0 auto;
     border-radius: 6px;
-    transform: translateX(-100%);
+    transform: translateX(-110%);
     transition: all 0.4s ease-in-out;
     background-color: #ffffff;
-    box-shadow: 0 0 6px 4px $shadow;
+    box-shadow: 0 0 6px 4px hsl(0, 0%, 0%, 0.3);
 
     .rheroicons {
         width: 25px;
@@ -19,13 +19,13 @@
         border-radius: 6px 0 0 6px;
 
         &.rheroicons_thumb_up {
-            background-color: $green;
-            stroke: $dark;
+            background-color: $green-900;
+            stroke: $cool-grey-050;
         }
 
         &.rheroicons_exclamation {
-            background-color: $red;
-            stroke: $light;
+            background-color: $red-900;
+            stroke: $cool-grey-050;
         }
     }
 

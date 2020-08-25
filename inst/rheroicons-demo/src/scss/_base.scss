@@ -41,7 +41,7 @@ button {
     text-emphasis: center;
     margin: 0;
     font-size: 16pt;
-    color: $dark;
+    // color: $dark;
     background-color: transparent;
     padding: 6px 0;
     border-radius: 6px;
@@ -51,11 +51,8 @@ button {
 
 // form
 form {
-    padding: 16px;
+    padding: 0;
     margin: 0;
-    background-color: adjust-color($color: $green, $lightness: 20%, $alpha: 1);
-    border-radius: 6px;
-    position: relative;
 
     legend {
         font-size: 18pt;
