@@ -2,7 +2,7 @@
 #' FILE: app.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-06-24
-#' MODIFIED: 2020-08-10
+#' MODIFIED: 2020-08-25
 #' PURPOSE: rheroicons demo
 #' STATUS: working
 #' PACKAGES: shiny; rheroicons
@@ -10,18 +10,16 @@
 #'////////////////////////////////////////////////////////////////////////////
 
 # install
-# devtools::install_github("davidruvolo51/rheroicons@prod")
+# devtools::install_github("davidruvolo51/rheroicons@dev")
+# remove.packages("rheroicons")
 
 # pkgs
 suppressPackageStartupMessages(library(shiny))
 suppressPackageStartupMessages(library(rheroicons))
 
-# source
-source("modules/mod_icon.R")
-
 # pre-render icon UIs
-outlineUI <- icon_list_ui("outline-icons", "outline")
-solidUI <- icon_list_ui("solid-icons", "solid")
+outline_ui <- icon_list_ui("outline-icons", "outline")
+solid_ui <- icon_list_ui("solid-icons", "solid")
 
 # ui
 ui <- tagList(
@@ -49,8 +47,31 @@ ui <- tagList(
                 class = "menu-item",
                 tags$p(
                     class = "menu-link",
-                    "rheroicons",
-                    icons$sparkles(type = "solid", aria_hidden = TRUE),
+                    rheroicons::icons$photograph(type = "outline"),
+                    "rheroicons"
+                )
+            ),
+            tags$li(
+                class = "menu-item",
+                tags$a(
+                    class = "menu-link",
+                    href = "https://github.com/davidruvolo51/rheroicons",
+                    tag(
+                        "svg",
+                        list(
+                            height = "30",
+                            width = "30",
+                            role = "img",
+                            viewBox = "0 0 24 24",
+                            xmlns = "http://www.w3.org/2000/svg",
+                            tag(
+                                "path",
+                                list(
+                                    d = "M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                                )
+                            )
+                        )
+                    )
                 )
             )
         )
@@ -58,9 +79,12 @@ ui <- tagList(
     tags$main(
         id = "main",
         class = "main",
-        tags$section(
-            class = "section",
-            tags$h1("rheroicons"),
+        tags$header(
+            class = "header",
+            tags$h1(
+                rheroicons::icons$photograph(type = "outline"),
+                "rheroicons"
+            ),
             tags$p(
                 "The", tags$strong("rheroicons"), "package",
                 "brings the fantastic SVG",
@@ -70,6 +94,21 @@ ui <- tagList(
                     "heroicons"
                 ),
                 "to R for use in your R-based web projects."
+            ),
+            tags$cite(
+                "by",
+                tags$a(
+                    href = "https://github.com/davidruvolo51",
+                    "@dcruvolo"
+                )
+            ),
+        ),
+        tags$section(
+            class = "section",
+            tags$h2("Available Icons"),
+            tags$p(
+                "View outline or solid icons. Click an icon to copy the",
+                "R code to the clipboard."
             ),
             tags$form(
                 class = "form",
@@ -134,13 +173,8 @@ ui <- tagList(
                         )
                     )
                 )
-            )
-        ),
-        tags$section(
-            class = "icon-section",
-            tags$h2("Available Icons"),
-            tags$p("Click an icon to copy the name to the clipboard."),
-            uiOutput("icons"),
+            ),
+            uiOutput("icons")
         ),
         tags$textarea(
             id = "icon-clipboard",
@@ -168,12 +202,12 @@ server <- function(input, output, session) {
     observe({
         if (input$iconSet == "outline") {
             output$icons <- renderUI({
-                outlineUI
+                outline_ui
             })
         }
         if (input$iconSet == "solid") {
             output$icons <- renderUI({
-                solidUI
+                solid_ui
             })
         }
     })

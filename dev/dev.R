@@ -41,3 +41,12 @@ devtools::test()
 devtools::check_man()
 devtools::check()
 
+# pkgbump
+pkgbump::set_pkgbump(
+    files = c(
+        "package.json",
+        "DESCRIPTION"
+    )
+)
+
+pkgbump::pkgbump(version = "0.1.6")

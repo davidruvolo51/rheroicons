@@ -1,13 +1,4 @@
-// define colors
-$text: #3f454b;
-$dark: #252525;
-$medium: #dad6d6;
-$light: #f6f6f6;
-$green: #63c7b2;
-$red: #a61c3c;
-$shadow: hsla(0, 0%, 0%, 0.18);
-
-
+@import "_palette_20";
 @import "_base",  "_navbar", "_main", "_select_input", "_statuses";
 
 /* visually hidden content */
