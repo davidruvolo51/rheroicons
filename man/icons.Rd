@@ -5,7 +5,7 @@
 \alias{icons}
 \title{Heroicons for R}
 \format{
-An object of class \code{list} of length 176.
+An object of class \code{list} of length 226.
 }
 \usage{
 icons

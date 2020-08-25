@@ -14,3 +14,4 @@ inst/rheroicons-demo/rsconnect
 ^\.github$
 yarn.lock
 yarn-error.log
+^\.pkgbump\.json$

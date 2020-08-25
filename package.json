@@ -1,6 +1,6 @@
 {
   "name": "rheroicons",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "dcruvolo",
   "license": "MIT",
   "scripts": {
@@ -20,7 +20,7 @@
     "babel-preset-minify": "^0.5.1",
     "concurrently": "^5.2.0",
     "cssnano": "^4.1.10",
-    "heroicons": "^0.3.6",
+    "heroicons": "^0.4.0",
     "parcel": "^1.12.4",
     "postcss-modules": "^2.0.0",
     "sass": "^1.26.5"
