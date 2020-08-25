@@ -49,4 +49,4 @@ pkgbump::set_pkgbump(
     )
 )
 
-pkgbump::pkgbump(version = "0.1.5")
+pkgbump::pkgbump(version = "0.1.6")
