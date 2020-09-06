@@ -2904,9 +2904,9 @@ hash.js@^1.0.0, hash.js@^1.0.3:
     minimalistic-assert "^1.0.1"
 
 heroicons@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/heroicons/-/heroicons-0.4.0.tgz#6472b022bd689820ad49cbc84694d6f3a255fa30"
-  integrity sha512-CCPEBzBOJrliia0QL5tbR2E5MNlcrYcJhEB4m758RKh7h0vf9BjCqeOzKkIvASYPdOVld546Tixkg2i5ZAnkgA==
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/heroicons/-/heroicons-0.4.2.tgz#edaffde42d14bffdd456f0566fd9b8e295ad69e2"
+  integrity sha512-24Bc6LKmamKHzGiNC80/r9v/7pQrma2V5KlaLUHGoarqm+hggmxnngU+RjHQT8sANWPa5FWKLftn4fpmvry/7w==
 
 hex-color-regex@^1.1.0:
   version "1.1.0"
