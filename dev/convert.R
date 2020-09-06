@@ -32,47 +32,30 @@ stopifnot(
 )
 
 # init base file
-init_file()
+# init_file()
 
 # run loop
+rheroicons <- list()
 reps <- NROW(paths$outline)
 pb <- txtProgressBar(max = reps)
 for (i in seq_len(reps)) {
 
-    # msg
-    # cat("Converting icon", i, "of", reps, "...")
-
-    # Generate Shiny Tag Strings from Raw SVG files
-    outline <- as_svg_string(
-        path = paths$outline[i, "path"],
-        icon = paths$outline[i, "icon"],
-        type = paths$outline[i, "type"]
-    )
-    solid <- as_svg_string(
-        path = paths$solid[i, "path"],
-        icon = paths$solid[i, "icon"],
-        type = paths$solid[i, "type"]
-    )
-
-    # Generate R function
-    r_code <- svg_to_rcode(
-        name = paths$outline[i, "icon"],
+    # build master object
+    rheroicons[[paths$outline$icon[i]]] <- list(
         icons = list(
-            outline = outline,
-            solid = solid
+                outline = .process__svg(
+                path = paths$outline$path[i],
+                type = paths$outline$type[i],
+                icon = paths$outline$icon[i]
+            ),
+            solid = .process__svg(
+                path = paths$solid$path[i],
+                type = paths$solid$type[i],
+                icon = paths$solid$icon[i]
+            )
         )
-    )
-
-    # write function to file
-    write(
-        x = r_code,
-        # file = paste0("R/", paths$outline[i, "icon"], ".R"),
-        file = "R/icons.R",
-        append = TRUE,
-        sep = "\n\n\n"
     )
 
     # message
     setTxtProgressBar(pb, value = i)
-    # cat("complete!\n")
 }

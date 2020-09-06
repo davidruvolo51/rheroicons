@@ -2,13 +2,12 @@
 #' FILE: dev.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-08-07
-#' MODIFIED: 2020-08-10
+#' MODIFIED: 2020-09-06
 #' PURPOSE: package management
 #' STATUS: ongoing
 #' PACKAGES: usethis;
 #' COMMENTS: NA
 #'////////////////////////////////////////////////////////////////////////////
-
 
 # init primary files
 usethis::use_namespace()
@@ -18,30 +17,25 @@ usethis::use_github_action_check_standard()
 usethis::use_news_md()
 usethis::use_testthat()
 
-
 # pkgs
 usethis::use_package(package = "htmltools", min_version = TRUE)
 usethis::use_package(package = "shiny")
-
-# clean up existing icons
-sapply(
-    list.files("R", full.names = TRUE)[list.files("R") != "launch_gallery.R"],
-    file.remove
-)
+usethis::use_package(package = "stringr")
+usethis::use_package(package = "cli")
 
 # convert icons
-source("dev/icons_convert.R")
+source("dev/convert.R")
 
-# unit testing
-devtools::test()
-#' devtools::load_all()
-
+# use dataset
+usethis::use_data(rheroicons, internal = TRUE, overwrite = TRUE)
 
 # checks
 devtools::check_man()
+devtools::load_all()
+devtools::test()
 devtools::check()
 
-# pkgbump
+# init pkgbump
 pkgbump::set_pkgbump(
     files = c(
         "package.json",
@@ -49,4 +43,4 @@ pkgbump::set_pkgbump(
     )
 )
 
-pkgbump::pkgbump(version = "0.1.6")
+pkgbump::pkgbump(version = "0.2.0")
