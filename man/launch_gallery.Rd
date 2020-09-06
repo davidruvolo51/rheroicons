@@ -2,15 +2,16 @@
 % Please edit documentation in R/launch_gallery.R
 \name{launch_gallery}
 \alias{launch_gallery}
-\title{\code{launch_gallery}}
+\title{rheroicons gallery}
 \usage{
-launch_gallery()
+launch_gallery(...)
 }
-\value{
-This function starts the rheroicons gallery
+\arguments{
+\item{...}{additional options passed down to runApp}
 }
 \description{
-This function starts the rheroicons gallery
+Run the rheroicons gallery and search for icons. Click on an icon
+name to copy the function to the clipboard.
 }
 \examples{
 \dontrun{
@@ -18,6 +19,3 @@ This function starts the rheroicons gallery
 }
 
 }
-\keyword{demo}
-\keyword{gallery}
-\keyword{rheroicons}
