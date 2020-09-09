@@ -107,7 +107,7 @@ launch_gallery <- function(...) {
     shiny::addResourcePath(
         prefix = "rheroicons",
         directoryPath = system.file(
-            "inst/rheroicons-demo/www",
+            "gallery-assets/public",
             package = "rheroicons"
         )
     )

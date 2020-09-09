@@ -1,12 +1,11 @@
-src/
-dev/
+dev
 rheroicons.code-workspace
 package.json
 README.md
 .gitignore
 node_modules
-inst/rheroicons-demo/src
-inst/rheroicons-demo/rsconnect
+inst/rheroicons-gallery
+inst/gallery-assets/src
 .cache
 .postcssrc
 .babelrc
