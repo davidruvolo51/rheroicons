@@ -1,4 +1,5 @@
 node_modules
 .cache
-inst/rheroicons-demo/rsconnect
+.parcel-cache
+inst/rheroicons-gallery/rsconnect
 yarn-error.log

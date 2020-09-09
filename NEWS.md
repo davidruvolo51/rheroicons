@@ -1,3 +1,7 @@
+# rheroicons 0.2.1
+
+* Restructured static assets for the rheroicons gallery and fixed resource path
+
 # rheroicons 0.2.0
 
 * New package structure :rocket: icons are now generated using the function `rheroicon`. Select an icon using the argument `name`. Icons can be found in the gallery via `launch_gallery()` function. Use the argument `type` to return define the icon style as `outline` or `solid`. Icons can be further customized by passing additional css classes using the `classnames` argument. 

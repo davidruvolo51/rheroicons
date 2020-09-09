@@ -1,16 +1,14 @@
 {
   "name": "rheroicons",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "dcruvolo",
   "license": "MIT",
   "scripts": {
-    "demo_dev": "parcel inst/rheroicons-demo/src/index.js -d inst/rheroicons-demo/www -o inst/rheroicons-demo/www/rheroicons.min.js --no-source-maps",
-    "demo_shiny": "Rscript -e \"shiny::runApp(appDir = './inst/rheroicons-demo', port = 8000, launch.browser = FALSE)\"",
-    "demo_build": "parcel build inst/rheroicons-demo/src/index.js -d inst/rheroicons-demo/www -o inst/rheroicons-demo/www/rheroicons.min.js --no-source-maps",
-    "demo_clean": "rm -rf inst/rheroicons-demo/www/rheroicons.min.*",
-    "demo_start": "concurrently \"npm run demo_shiny\" \"npm run demo_dev\" ",
-    "demo_deploy": "Rscript -e \"rsconnect::deployApp(appDir = 'inst/rheroicons-demo', account = 'davidruvolo')\"",
-    "package": "npm run rBuild && npm run rInstall"
+    "shiny": "Rscript -e \"shiny::runApp(appDir = './inst/rheroicons-demo', port = 8000, launch.browser = FALSE)\"",
+    "start": "parcel inst/gallery-assets/src/index.js -d inst/gallery-assets/public -o inst/gallery-assets/rheroicons.min.js --no-source-maps",
+    "build": "parcel build inst/gallery-assets/src/index.js -d inst/gallery-assets/public -o inst/gallery-assets/rheroicons.min.js --no-source-maps",
+    "clean": "rm -rf .cache .parcel-cache inst/gallery-assets/public/*",
+    "deploy": "Rscript -e \"rsconnect::deployApp(appDir = 'inst/rheroicons-gallery', account = 'davidruvolo')\""
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
