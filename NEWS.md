@@ -1,3 +1,8 @@
+# rheroicons 0.2.2
+
+* Updated to parcel `v2.0`
+* Introduced `find_icon` function
+
 # rheroicons 0.2.1
 
 * Restructured static assets for the rheroicons gallery and fixed resource path
