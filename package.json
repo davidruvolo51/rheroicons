@@ -1,41 +1,39 @@
 {
   "name": "rheroicons",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "dcruvolo",
+  "description": "Heroicons for R",
   "license": "MIT",
   "scripts": {
     "shiny": "Rscript -e \"shiny::runApp(appDir = './inst/rheroicons-demo', port = 8000, launch.browser = FALSE)\"",
-    "start": "parcel inst/gallery-assets/src/index.js -d inst/gallery-assets/public -o inst/gallery-assets/rheroicons.min.js --no-source-maps",
-    "build": "parcel build inst/gallery-assets/src/index.js -d inst/gallery-assets/public -o inst/gallery-assets/rheroicons.min.js --no-source-maps",
+    "start": "parcel serve ./inst/gallery-assets/src/index.js",
+    "build": "parcel build ./inst/gallery-assets/src/index.js",
     "clean": "rm -rf .cache .parcel-cache inst/gallery-assets/public/*",
     "deploy": "Rscript -e \"rsconnect::deployApp(appDir = 'inst/rheroicons-gallery', account = 'davidruvolo')\""
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
-    "autoprefixer": "^9.7.6",
-    "babel-preset-minify": "^0.5.1",
-    "concurrently": "^5.2.0",
-    "cssnano": "^4.1.10",
+    "autoprefixer": "^9.8.6",
     "heroicons": "^0.4.0",
-    "parcel": "^1.12.4",
-    "postcss-modules": "^2.0.0",
-    "sass": "^1.26.5"
+    "parcel": "^2.0.0-beta.1"
   },
-  "description": "Heroicons for R",
-  "keywords": [
-    "r",
-    "rstats",
-    "shiny",
-    "heroicons"
-  ],
-  "homepage": "https://github.com/davidruvolo51/rheroicons",
+  "assets": "inst/gallery-assets/public/rheroicons.min.js",
+  "targets": {
+    "assets": {
+      "distDir": "inst/gallery-assets/public",
+      "sourceMap": false
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/davidruvolo51/rheroicons.git"
   },
   "bugs": {
     "url": "https://github.com/davidruvolo51/reheroicons/issues"
-  }
+  },
+  "keywords": [
+    "r",
+    "rstats",
+    "shiny",
+    "heroicons"
+  ]
 }
