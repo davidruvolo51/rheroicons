@@ -2,10 +2,10 @@
 #' FILE: dev.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-08-07
-#' MODIFIED: 2020-09-06
+#' MODIFIED: 2020-09-21
 #' PURPOSE: package management
 #' STATUS: ongoing
-#' PACKAGES: usethis;
+#' PACKAGES: usethis; pkgbump
 #' COMMENTS: NA
 #'////////////////////////////////////////////////////////////////////////////
 
@@ -43,4 +43,4 @@ pkgbump::set_pkgbump(
     )
 )
 
-pkgbump::pkgbump(version = "0.2.1")
+pkgbump::pkgbump(version = "0.2.2")

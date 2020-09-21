@@ -12,7 +12,7 @@
 #' @return Find an icon using a search term
 #'
 #' @export
-find_icons <- function(query) {
+find_icons <- function(query = "") {
 
     if (is.null(query)) {
         cli::cli_alert_danger(
