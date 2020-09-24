@@ -2,7 +2,7 @@
 #' FILE: dev.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-08-07
-#' MODIFIED: 2020-09-21
+#' MODIFIED: 2020-09-24
 #' PURPOSE: package management
 #' STATUS: ongoing
 #' PACKAGES: usethis; pkgbump
@@ -44,3 +44,31 @@ pkgbump::set_pkgbump(
 )
 
 pkgbump::pkgbump(version = "0.2.2")
+
+
+# ignore
+ignore <- c(
+    "node_modules",
+    "inst/rheroicons-gallery/rsconnect",
+    "yarn-error.log"
+)
+
+usethis::use_git_ignore(ignore)
+usethis::use_build_ignore(
+    files = c(
+        ignore,
+        ".github",
+        "config",
+        "dev",
+        "inst/rheroicons-gallery",
+        ".babelrc",
+        ".gitignore",
+        ".pkgbump.json",
+        ".travis.yml",
+        "package.json",
+        "postcss.config.js",
+        "rheroicons.code-workspace",
+        "webpack.config.js",
+        "yarn.lock"
+    )
+)

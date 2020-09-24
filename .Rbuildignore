@@ -14,3 +14,16 @@ inst/gallery-assets/src
 yarn.lock
 yarn-error.log
 ^\.pkgbump\.json$
+^node_modules$
+^inst/rheroicons-gallery/rsconnect$
+^yarn-error\.log$
+^config$
+^dev$
+^inst/rheroicons-gallery$
+^\.babelrc$
+^\.gitignore$
+^package\.json$
+^postcss\.config\.js$
+^rheroicons\.code-workspace$
+^webpack\.config\.js$
+^yarn\.lock$
