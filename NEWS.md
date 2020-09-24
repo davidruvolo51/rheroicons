@@ -1,3 +1,10 @@
+# rheroicons 0.2.21
+
+* Switched to webpack as the bundler of choice :tada:
+* Tested assets in dev and prod environments using the `dev-app`
+* Rebuilt assets 
+* Updated R package configuration and ignore files
+
 # rheroicons 0.2.2
 
 * Updated to parcel `v2.0`

@@ -43,7 +43,7 @@ pkgbump::set_pkgbump(
     )
 )
 
-pkgbump::pkgbump(version = "0.2.2")
+pkgbump::pkgbump(version = "0.2.21")
 
 
 # ignore
