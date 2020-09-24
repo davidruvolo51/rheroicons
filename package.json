@@ -1,34 +1,42 @@
 {
   "name": "rheroicons",
-  "version": "0.2.2",
+  "version": "0.2.21",
   "author": "dcruvolo",
   "description": "Heroicons for R",
   "license": "MIT",
   "scripts": {
     "shiny": "Rscript -e \"shiny::runApp(appDir = './inst/rheroicons-demo', port = 8000, launch.browser = FALSE)\"",
-    "start": "parcel serve ./inst/gallery-assets/src/index.js",
-    "build": "parcel build ./inst/gallery-assets/src/index.js",
-    "clean": "rm -rf .cache .parcel-cache inst/gallery-assets/public/*",
+    "start": "webpack-dev-server --watch --env dev",
+    "build": "webpack --env prod",
     "deploy": "Rscript -e \"rsconnect::deployApp(appDir = 'inst/rheroicons-gallery', account = 'davidruvolo')\""
   },
   "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
     "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.3.0",
     "heroicons": "^0.4.0",
-    "parcel": "^2.0.0-beta.1"
-  },
-  "assets": "inst/gallery-assets/public/rheroicons.min.js",
-  "targets": {
-    "assets": {
-      "distDir": "inst/gallery-assets/public",
-      "sourceMap": false
-    }
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^0.11.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "postcss-loader": "^4.0.2",
+    "postcss-modules": "^3.2.2",
+    "sass": "^1.26.11",
+    "sass-loader": "^10.0.2",
+    "terser-webpack-plugin": "^4.2.2",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.4"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/davidruvolo51/rheroicons.git"
   },
   "bugs": {
-    "url": "https://github.com/davidruvolo51/reheroicons/issues"
+    "url": "https://github.com/davidruvolo51/rheroicons/issues"
   },
   "keywords": [
     "r",
