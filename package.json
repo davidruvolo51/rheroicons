@@ -6,22 +6,14 @@
   "license": "MIT",
   "scripts": {
     "shiny": "Rscript -e \"shiny::runApp(appDir = './inst/rheroicons-demo', port = 8000, launch.browser = FALSE)\"",
-    "start": "parcel serve ./inst/gallery-assets/src/index.js",
-    "build": "parcel build ./inst/gallery-assets/src/index.js",
-    "clean": "rm -rf .cache .parcel-cache inst/gallery-assets/public/*",
+    "start": "",
+    "build": "",
+    "clean": "",
     "deploy": "Rscript -e \"rsconnect::deployApp(appDir = 'inst/rheroicons-gallery', account = 'davidruvolo')\""
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
-    "heroicons": "^0.4.0",
-    "parcel": "^2.0.0-beta.1"
-  },
-  "assets": "inst/gallery-assets/public/rheroicons.min.js",
-  "targets": {
-    "assets": {
-      "distDir": "inst/gallery-assets/public",
-      "sourceMap": false
-    }
+    "heroicons": "^0.4.0"
   },
   "repository": {
     "type": "git",
