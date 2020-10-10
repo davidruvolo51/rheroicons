@@ -2,7 +2,7 @@
 #' FILE: dev.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-08-07
-#' MODIFIED: 2020-09-24
+#' MODIFIED: 2020-10-10
 #' PURPOSE: package management
 #' STATUS: ongoing
 #' PACKAGES: usethis; pkgbump
@@ -43,7 +43,7 @@ pkgbump::set_pkgbump(
     )
 )
 
-pkgbump::pkgbump(version = "0.2.21")
+pkgbump::pkgbump(version = "0.2.3")
 
 
 # ignore

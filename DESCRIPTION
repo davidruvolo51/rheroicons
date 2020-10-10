@@ -1,6 +1,6 @@
 Package: rheroicons
 Title: The Heroicons library for use in R-based web projects
-Version: 0.2.21
+Version: 0.2.3
 Authors@R: 
     person(given = "David",
            family = "Ruvolo",

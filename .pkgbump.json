@@ -1,10 +1,17 @@
 {
-  "name": "pkgbump.config",
-  "updated": "2020-08-25 14:54:10",
-  "n": 2,
-  "files": ["package.json", "DESCRIPTION"],
-  "patterns": {
-    "R": "version = | version=",
-    "DESCRIPTION": "Version:"
+  "name": "pkgbump",
+  "version": "0.0.2",
+  "description": "config file for version number management",
+  "timestamps": {
+    "created": "2020-10-10 09:28:07",
+    "updated": "2020-10-10 09:28:07"
+  },
+  "config": {
+    "files": 2,
+    "paths": ["package.json", "DESCRIPTION"],
+    "patterns": {
+      "R": "version = .\\d+.\\d+.\\d+.|version=.\\d+.\\d+.\\d+.",
+      "DESCRIPTION": "Version:"
+    }
   }
 }
