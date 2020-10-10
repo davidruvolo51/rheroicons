@@ -13,17 +13,8 @@
 #'
 #' @export
 find_icons <- function(query = "") {
-
-    if (is.null(query)) {
-        cli::cli_alert_danger(
-            text = "'query' is undefined"
-        )
-    }
-
-    if (!is.null(query)) {
-        stringr::str_subset(
-            string = names(rheroicons),
-            pattern = query
-        )
-    }
+    stringr::str_subset(
+        string = names(rheroicons),
+        pattern = query
+    )
 }
