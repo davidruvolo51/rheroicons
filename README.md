@@ -1,6 +1,5 @@
 <!-- badges: start -->
 ![version](https://img.shields.io/github/package-json/v/davidruvolo51/rheroicons/prod?color=%2326709e)
-[![Build Status](https://travis-ci.com/davidruvolo51/rheroicons.svg?branch=prod)](https://travis-ci.com/davidruvolo51/rheroicons)
 [![R build status](https://github.com/davidruvolo51/rheroicons/workflows/R-CMD-check/badge.svg)](https://github.com/davidruvolo51/rheroicons/actions)
   <!-- badges: end -->
 
