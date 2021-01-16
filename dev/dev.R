@@ -43,7 +43,7 @@ pkgbump::set_pkgbump(
     )
 )
 
-pkgbump::pkgbump(version = "0.2.3")
+pkgbump::pkgbump(version = "0.2.4")
 
 
 # ignore
@@ -63,9 +63,9 @@ usethis::use_build_ignore(
         "inst/rheroicons-gallery",
         ".babelrc",
         ".gitignore",
-        ".pkgbump.json",
         ".travis.yml",
         "package.json",
+        "pkgbump.config.json",
         "postcss.config.js",
         "rheroicons.code-workspace",
         "webpack.config.js",
