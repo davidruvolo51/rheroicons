@@ -13,8 +13,5 @@
 #'
 #' @export
 find_icons <- function(query = "") {
-    stringr::str_subset(
-        string = names(rheroicons),
-        pattern = query
-    )
+    stringr::str_subset(string = names(rheroicons), pattern = query)
 }

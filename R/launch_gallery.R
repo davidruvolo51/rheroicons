@@ -38,6 +38,7 @@ launch_gallery <- function(...) {
                 "type = \"", set, "\"",
                 ")"
             ),
+            `data-icon` = id,
             htmltools::HTML(icon),
             shiny::tags$span(id)
         )

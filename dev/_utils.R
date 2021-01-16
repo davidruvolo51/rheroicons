@@ -2,7 +2,7 @@
 #' FILE: _utils.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-06-11
-#' MODIFIED: 2020-09-06
+#' MODIFIED: 2021-01-16
 #' PURPOSE: tools for converting icons into package database
 #' STATUS: complete
 #' PACKAGES: stringr, dplyr
