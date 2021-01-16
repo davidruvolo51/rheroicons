@@ -2,7 +2,7 @@
 // FILE: index.js
 // AUTHOR: David Ruvolo
 // CREATED: 2020-06-28
-// MODIFIED: 2020-06-29
+// MODIFIED: 2021-01-16
 // PURPOSE: main entry
 // DEPENDENCIES: NA
 // STATUS: working
@@ -28,14 +28,11 @@ $.extend(iconButton, {
     },
     subscribe: function (el) {
         $(el).on("click", function(e) {
-
-            // get value
             var d = $(el).data("value");
-
-            // write to clipboard
             navigator.clipboard.writeText(d).then(function() {
                 console.log("copied: ", d);
                 $("#status-success").addClass("show");
+                $("#status-success").find("p").text(`Copied '${$(el).data("icon")}'`);
                 setTimeout(function() {
                     $("#status-success").removeClass("show");
                 }, 3500)

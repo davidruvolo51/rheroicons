@@ -27,3 +27,4 @@ yarn-error.log
 ^rheroicons\.code-workspace$
 ^webpack\.config\.js$
 ^yarn\.lock$
+^pkgbump\.config\.json$
