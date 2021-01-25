@@ -1,3 +1,15 @@
+# rheroicons 0.2.4
+
+* Upgraded to latest version of heroicons ([v0.4.2](https://github.com/tailwindlabs/heroicons/releases/tag/v0.4.2))
+
+# rheroicons 0.2.3
+
+This is a minor package update. The main issue was the handling of error messages via the cli package. These changes are listed below.
+
+* Updated error message for rheroicon function. It now uses {.val {value}}
+* Removed error message for find_icons as the default query is "".
+* Reinit pkgbump configuration file
+
 # rheroicons 0.2.21
 
 * Switched to webpack as the bundler of choice :tada:
