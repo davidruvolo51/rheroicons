@@ -3,7 +3,7 @@
 #' Run the rheroicons gallery and search for icons. Click on an icon
 #' name to copy the function to the clipboard.
 #'
-#' @param ... additional options passed down to runApp
+#' @param ... additional options passed down to \code{shiny::runApp}
 #'
 #' @examples
 #' \dontrun{
