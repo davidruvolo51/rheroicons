@@ -1,15 +1,14 @@
-#' Find Icons
+#' Find available icons
 #'
-#' Find an icon using a search term
-#'
-#' @param query a search term passed down to \code{stringr::str_subset}
+#' @param query a search term passed down to \code{stringr::str_subset}.
+#'      Alternatively, leave blank to view all icon names.
 #'
 #' @examples
 #' find_icons(query = "chevron")
 #' find_icons(query = "chevron|arrow")
 #' find_icons(query = "down|up|left|right")
 #'
-#' @return Find an icon using a search term
+#' @return An array of icon names
 #'
 #' @export
 find_icons <- function(query = "") {
