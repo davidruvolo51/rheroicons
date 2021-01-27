@@ -2,7 +2,7 @@
 #' FILE: dev.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-08-07
-#' MODIFIED: 2020-10-10
+#' MODIFIED: 2021-01-27
 #' PURPOSE: package management
 #' STATUS: ongoing
 #' PACKAGES: usethis; pkgbump
@@ -23,11 +23,16 @@ usethis::use_package(package = "shiny")
 usethis::use_package(package = "stringr")
 usethis::use_package(package = "cli")
 
+#'//////////////////////////////////////
+
+#' ~ 1 ~
 # convert icons
 source("dev/convert.R")
 
 # use dataset
 usethis::use_data(rheroicons, internal = TRUE, overwrite = TRUE)
+
+#'//////////////////////////////////////
 
 # checks
 devtools::check_man()
@@ -43,7 +48,7 @@ pkgbump::set_pkgbump(
     )
 )
 
-pkgbump::pkgbump(version = "0.2.4")
+pkgbump::pkgbump(version = "0.3.0")
 
 
 # ignore
@@ -63,7 +68,7 @@ usethis::use_build_ignore(
         "inst/rheroicons-gallery",
         ".babelrc",
         ".gitignore",
-        ".travis.yml",
+        "cran-comments.md",
         "package.json",
         "pkgbump.config.json",
         "postcss.config.js",

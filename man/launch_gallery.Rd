@@ -7,7 +7,7 @@
 launch_gallery(...)
 }
 \arguments{
-\item{...}{additional options passed down to runApp}
+\item{...}{additional options passed down to \code{shiny::runApp}}
 }
 \description{
 Run the rheroicons gallery and search for icons. Click on an icon
