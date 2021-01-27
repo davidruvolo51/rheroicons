@@ -11,9 +11,8 @@ Authors@R: c(
     person(
         "Refactoring UI Inc",
         role = c("ctb", "cph"),
-        comment = "Author of heroicons library"
+        comment = "Author of heroicons library")
     )
-)
 Description: The rheroicons provides access to the fantastic SVG icon
     collection heroicons, originally developed by Adam Wathan and
     Steve Schoger at Tailwind Labs, as R functions for use in your
