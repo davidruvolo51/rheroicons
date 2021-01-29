@@ -35,15 +35,13 @@ rheroicon <- function(name, type = "outline", classnames = NULL)  {
 
     # warn if icon does not exist
     if (is.null(icon)) {
-        cli::cli_alert_danger("Icon {.val {name}} cannot be found.")
+        warning("Icon does not exist")
     }
 
     # throw error if input value for "type" is invalid
     valid_types <- c("outline", "solid")
     if (!type %in% valid_types) {
-        cli::cli_alert_danger(
-            "Type {.val {type}} is invalid. Use {.val {.valid_types}}"
-        )
+        warning("Icon type is invalid. Use 'outline' or 'solid'")
     }
 
     # process only if icon exists
