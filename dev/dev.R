@@ -9,49 +9,59 @@
 #' COMMENTS: NA
 #'////////////////////////////////////////////////////////////////////////////
 
-# init primary files
-usethis::use_namespace()
-usethis::use_description()
-usethis::use_travis()
-usethis::use_github_action_check_standard()
-usethis::use_news_md()
-usethis::use_testthat()
+#' init primary files
+#' usethis::use_namespace()
+#' usethis::use_description()
+#' usethis::use_travis()
+#' usethis::use_github_action_check_standard()
+#' usethis::use_news_md()
+#' usethis::use_testthat()
 
-# pkgs
-usethis::use_package(package = "htmltools", min_version = TRUE)
-usethis::use_package(package = "shiny")
-usethis::use_package(package = "stringr")
-usethis::use_package(package = "cli")
+
 
 #'//////////////////////////////////////
 
 #' ~ 1 ~
-# convert icons
+#' SVG Processing
+
+#' load conversion tools
 source("dev/convert.R")
 
-# use dataset
+#' update internal data object
 usethis::use_data(rheroicons, internal = TRUE, overwrite = TRUE)
 
 #'//////////////////////////////////////
 
-# checks
+#' ~ 2 ~
+#' Package Management
+
+#' ~ 2a ~
+#' pkgs
+usethis::use_package(package = "htmltools", min_version = TRUE)
+usethis::use_package(package = "shiny")
+usethis::use_package(package = "stringr")
+
+#' ~ 2b ~
+#' pkg checks
 devtools::check_man()
 devtools::load_all()
 devtools::test()
 devtools::check()
 
-# init pkgbump
-pkgbump::set_pkgbump(
-    files = c(
-        "package.json",
-        "DESCRIPTION"
-    )
-)
+#' ~ 2c ~
+#' cran checks
+devtools::check()
+devtools::spell_check()
+devtools::check_win_release()
+devtools::check_win_devel()
 
+#' ~ 2c ~
+#' pkgbump configuration
+pkgbump::set_pkgbump(files = c("package.json", "DESCRIPTION"))
 pkgbump::pkgbump(version = "0.3.0")
 
-
-# ignore
+#' ~ 2d ~
+# ignore files
 ignore <- c(
     "node_modules",
     "inst/rheroicons-gallery/rsconnect",
