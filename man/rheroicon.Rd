@@ -2,32 +2,32 @@
 % Please edit documentation in R/rheroicon.R
 \name{rheroicon}
 \alias{rheroicon}
-\title{An inline SVG icon from heriocons}
+\title{An inline SVG icon from Heroicons}
 \usage{
 rheroicon(name, type = "outline", classnames = NULL)
 }
 \arguments{
-\item{name}{a heroicon icon name}
+\item{name}{an icon name}
 
 \item{type}{render a "solid" or "outline" icon (default: "outline")}
 
 \item{classnames}{a string containing one or more CSS classes (optional)}
 }
 \value{
-Returns an svg string of an Heroicon icon
+Returns an SVG string
 }
 \description{
-Render an rheroicon icon by name. Use \code{launch_gallery} to view the icons
-available in this package or visit the heroicons icon gallery
+Render an icon by name. Use \code{launch_gallery} to view the icons
+available in this package or visit the Heroicons icon gallery
 (see referenced urls).
 }
-\section{Styling Icons with classnames}{
+\section{Styling Icons with CSS class names}{
 
 
-Icons are rendered from svg strings. All icons have three css classes
+Icons are rendered from SVG strings. All icons have three CSS classes
 defined: global ("rheroicons"), icon style ("rheroicons_outline" or
 "rheroicons_solid"), and icon name ("rheroicons_academic_cap").
-Use any of combination of these classes to style icons via css.
+Use any of combination of these classes to style icons via CSS.
 Alternatively, you can pass your own classes using the \code{classnames}
 argument.
 }

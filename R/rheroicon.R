@@ -1,19 +1,19 @@
-#' An inline SVG icon from heriocons
+#' An inline SVG icon from Heroicons
 #'
-#' Render an rheroicon icon by name. Use `launch_gallery` to view the icons
-#' available in this package or visit the heroicons icon gallery
+#' Render an icon by name. Use `launch_gallery` to view the icons
+#' available in this package or visit the Heroicons icon gallery
 #' (see referenced urls).
 #'
-#' @param name a heroicon icon name
+#' @param name an icon name
 #' @param type render a "solid" or "outline" icon (default: "outline")
 #' @param classnames a string containing one or more CSS classes (optional)
 #'
-#' @section Styling Icons with classnames:
+#' @section Styling Icons with CSS class names:
 #'
-#' Icons are rendered from svg strings. All icons have three css classes
+#' Icons are rendered from SVG strings. All icons have three CSS classes
 #' defined: global ("rheroicons"), icon style ("rheroicons_outline" or
 #' "rheroicons_solid"), and icon name ("rheroicons_academic_cap").
-#' Use any of combination of these classes to style icons via css.
+#' Use any of combination of these classes to style icons via CSS.
 #' Alternatively, you can pass your own classes using the \code{classnames}
 #' argument.
 #'
@@ -22,7 +22,7 @@
 #' rheroicon(name = "academic_cap", type = "solid")
 #' rheroicon(name = "academic_cap", classnames = "education-icons")
 #'
-#' @return Returns an svg string of an Heroicon icon
+#' @return Returns an SVG string
 #'
 #' @references
 #' \url{https://github.com/tailwindlabs/heroicons}
