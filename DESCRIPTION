@@ -1,5 +1,5 @@
 Package: rheroicons
-Title: A zero dependency svg icon library for use in R web-based projects
+Title: A zero dependency SVG icon library for use in R web-based projects
 Version: 0.3.0
 Authors@R: c(
     person(
@@ -9,15 +9,20 @@ Authors@R: c(
         email = "dcruvolo@gmail.com",
         comment = c(ORCID = "0000-0002-5745-5298")),
     person(
-        "Refactoring UI Inc",
+        given = "Adam",
+        family = "Wathan",
+        role = c("ctb", "cph"),
+        comment = "Author of heroicons library"),
+    person(
+        given = "Steve",
+        family = "Schoger",
         role = c("ctb", "cph"),
         comment = "Author of heroicons library")
     )
 Description: The rheroicons provides access to the fantastic SVG icon
-    collection heroicons, originally developed by Adam Wathan and
-    Steve Schoger at Tailwind Labs, as R functions for use in your
-    web-based projects (i.e., shiny Rmarkdown, etc.). All icons are
-    rendered as inline SVG elements. Therefore no HTML, CSS, or
+    collection Heroicons as R functions for use in your
+    web-based projects. All icons are
+    rendered as inline SVG elements. Therefore no CSS, or
     JavaScript dependencies are loaded into your app.
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -28,7 +33,9 @@ Imports:
     htmltools (>= 0.5.0),
     shiny (>= 1.5.0),
     stringr
-Suggests: 
+Suggests:
+    spelling, 
     testthat
 Depends: 
     R (>= 2.10)
+Language: en-US
