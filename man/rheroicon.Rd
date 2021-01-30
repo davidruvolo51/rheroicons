@@ -2,33 +2,43 @@
 % Please edit documentation in R/rheroicon.R
 \name{rheroicon}
 \alias{rheroicon}
-\title{rheroicon}
+\title{An inline SVG icon from Heroicons}
 \usage{
 rheroicon(name, type = "outline", classnames = NULL)
 }
 \arguments{
 \item{name}{an icon name}
 
-\item{type}{choose icon style "solid" or "outline" (default: "outline")}
+\item{type}{render a "solid" or "outline" icon (default: "outline")}
 
-\item{classnames}{a string containing one or more CSS classes}
+\item{classnames}{a string containing one or more CSS classes (optional)}
+}
+\value{
+Returns an SVG string
 }
 \description{
-Render an rheroicon icon by name. Use \code{launch_gallery} to view the icons
-available in this package or visit the gallery on shinyapps.io (see link
-below). All icons are rendered with three CSS classes: global ("rheroicons"),
-icon style ("rheroicons_outline" or "rheroicons_solid"), and icon name (
-"rheroicons_academic_cap"). Use any of these classes to customize the style
-of the icon or define your own classes using the argument \code{class}.
+Render an icon by name. Use \code{launch_gallery} to view the icons
+available in this package or visit the Heroicons icon gallery
+(see referenced urls).
 }
+\section{Styling Icons with CSS class names}{
+
+
+Icons are rendered from SVG strings. All icons have three CSS classes
+defined: global ("rheroicons"), icon style ("rheroicons_outline" or
+"rheroicons_solid"), and icon name ("rheroicons_academic_cap").
+Use any of combination of these classes to style icons via CSS.
+Alternatively, you can pass your own classes using the \code{classnames}
+argument.
+}
+
 \examples{
 rheroicon(name = "academic_cap")
 rheroicon(name = "academic_cap", type = "solid")
 rheroicon(name = "academic_cap", classnames = "education-icons")
 
-
 }
 \references{
+\url{https://heroicons.com}
 \url{https://github.com/tailwindlabs/heroicons}
-\url{https://davidruvolo.shinyapps.io/rheroicons-demo/}
 }

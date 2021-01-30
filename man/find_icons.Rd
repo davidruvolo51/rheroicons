@@ -2,22 +2,27 @@
 % Please edit documentation in R/find_icon.R
 \name{find_icons}
 \alias{find_icons}
-\title{Find Icons}
+\title{Find available icons}
 \usage{
 find_icons(query = "")
 }
 \arguments{
-\item{query}{a search term passed down to \code{stringr::str_subset}}
+\item{query}{a search term passed down to \code{stringr::str_subset}.
+Alternatively, leave blank to view all icon names.}
 }
 \value{
-Find an icon using a search term
+An array of icon names
 }
 \description{
-Find an icon using a search term
+Find available icons
 }
 \examples{
 find_icons(query = "chevron")
 find_icons(query = "chevron|arrow")
 find_icons(query = "down|up|left|right")
 
+}
+\references{
+\url{https://heroicons.com}
+\url{https://github.com/tailwindlabs/heroicons}
 }

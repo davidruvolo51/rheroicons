@@ -9,6 +9,27 @@
 #' COMMENTS: NA
 #' ////////////////////////////////////////////////////////////////////////////
 
+#' Icon is Null
+#'
+#' Function fails correctly if no name is provided
+test_that("function properly errors out", {
+    expect_warning(
+        object = rheroicon()
+    )
+})
+
+#' IconType fails
+#'
+#' If an invalid icon type is provided, function should
+#' fail as expected. Pass a value other than `solid` or `outline`
+test_that("invalid type properly returns error", {
+    expect_warning(
+        object = rheroicon(
+            name = "academic_cap",
+            type = "circle"
+        )
+    )
+})
 
 #' Class evaluation
 #'

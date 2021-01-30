@@ -3,7 +3,7 @@
 #' Run the rheroicons gallery and search for icons. Click on an icon
 #' name to copy the function to the clipboard.
 #'
-#' @param ... additional options passed down to runApp
+#' @param ... additional options passed down to \code{shiny::runApp}
 #'
 #' @examples
 #' \dontrun{
@@ -28,7 +28,7 @@ launch_gallery <- function(...) {
     ns <- shiny::NS(id)
     shiny::tags$li(
         id = ns("icon"),
-        class = "icon-item",
+        class = paste0("icon-item set-", set),
         shiny::tags$button(
             id = ns("icon-copy"),
             class = "icon-name icon-button",
@@ -58,7 +58,10 @@ launch_gallery <- function(...) {
     ns <- shiny::NS(id)
 
     # define elements
-    parent <- shiny::tags$ul(id = ns("icon-set"), class = "icon-list")
+    parent <- shiny::tags$ul(
+        id = ns("icon-set"),
+        class = paste0("icon-list set-", set)
+    )
     children <- list()
 
     # outline icons
