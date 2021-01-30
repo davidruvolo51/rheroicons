@@ -5,7 +5,7 @@
 
 # rheroicons
 
-The `rheroicons` packages brings to the [Heroicons](https://github.com/refactoringui/heroicons) icon library, developed by [Adam Wathan](https://github.com/adamwathan) and [Steve Schoger](https://github.com/sschoger), as R functions for use in your R-based web projects.
+The `rheroicons` packages brings to the [Heroicons](https://github.com/tailwindlabs/heroicons) icon library, developed by [Adam Wathan](https://github.com/adamwathan) and [Steve Schoger](https://github.com/sschoger), as R functions for use in your R-based web projects.
 
 All icons are rendered as inline SVG icons. Therefore, no CSS or JavaScript dependencies are loaded into your Shiny application or other web document at runtime!
 
