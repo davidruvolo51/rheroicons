@@ -21,6 +21,7 @@
 #' usethis::use_github_action_check_standard()
 #' usethis::use_news_md()
 #' usethis::use_testthat()
+#' usethis::use_mit_license("David Ruvolo")
 
 #'//////////////////////////////////////
 
@@ -87,6 +88,7 @@ usethis::use_build_ignore(
         ".babelrc",
         ".gitignore",
         "cran-comments.md",
+        "LICENSE.md",
         "package.json",
         "pkgbump.config.json",
         "postcss.config.js",

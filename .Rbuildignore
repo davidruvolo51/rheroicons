@@ -14,3 +14,4 @@
 ^rheroicons\.code-workspace$
 ^webpack\.config\.js$
 ^yarn\.lock$
+^LICENSE\.md$
