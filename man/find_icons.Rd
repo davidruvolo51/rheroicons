@@ -22,3 +22,7 @@ find_icons(query = "chevron|arrow")
 find_icons(query = "down|up|left|right")
 
 }
+\references{
+\url{https://heroicons.com}
+\url{https://github.com/tailwindlabs/heroicons}
+}

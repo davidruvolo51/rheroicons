@@ -39,6 +39,6 @@ rheroicon(name = "academic_cap", classnames = "education-icons")
 
 }
 \references{
-\url{https://github.com/tailwindlabs/heroicons}
 \url{https://heroicons.com}
+\url{https://github.com/tailwindlabs/heroicons}
 }

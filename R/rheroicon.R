@@ -25,8 +25,8 @@
 #' @return Returns an SVG string
 #'
 #' @references
-#' \url{https://github.com/tailwindlabs/heroicons}
 #' \url{https://heroicons.com}
+#' \url{https://github.com/tailwindlabs/heroicons}
 #'
 #' @export
 rheroicon <- function(name, type = "outline", classnames = NULL)  {
