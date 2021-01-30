@@ -1,5 +1,5 @@
 Package: rheroicons
-Title: A zero dependency SVG icon library for use in R web-based projects
+Title: A Zero Dependency SVG Icon Library for Use in R Web-Based Projects
 Version: 0.3.0
 Authors@R: c(
     person(
