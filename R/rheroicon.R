@@ -1,35 +1,48 @@
 #' An inline SVG icon from Heroicons
 #'
-#' Render an icon by name. Use `launch_gallery` to view the icons
-#' available in this package or visit the Heroicons icon gallery
-#' (see referenced urls).
+#' Render an icon by name. Run 'launch_gallery' to view all available icons
+#' or search for icons using the 'find_icons' function.
 #'
 #' @param name an icon name
-#' @param type render a "solid" or "outline" icon (default: "outline")
-#' @param classnames a string containing one or more CSS classes (optional)
+#' @param type render a 'solid' or 'outline' icon (default: 'outline')
+#' @param class a string containing one or more CSS classes (optional)
 #'
 #' @section Styling Icons with CSS class names:
 #'
 #' Icons are rendered from SVG strings. All icons have three CSS classes
-#' defined: global ("rheroicons"), icon style ("rheroicons_outline" or
-#' "rheroicons_solid"), and icon name ("rheroicons_academic_cap").
-#' Use any of combination of these classes to style icons via CSS.
-#' Alternatively, you can pass your own classes using the \code{classnames}
-#' argument.
+#' defined: global, icon style, and icon name.
+#'
+#' \itemize {
+#'   \item{global}{All icons are returned with the css class 'rheroicons'}
+#'   \item{icon style}{
+#'      All icons have a solid and an outlined version.
+#'      The icon style CSS class is determined by the value entered for 'type'.
+#'      Icons can have 'rheroicons_outline' of 'rheroicons_solid'.
+#'   }
+#'   \item{icon name}{
+#'     The icon name is also passed into the list of css class. These
+#'     are always structured in the following format: 'rheroicons_[iconname]'.
+#'     If the icon is 'thumb_down', the css class would be
+#'     'rheroicons_thumb_down'.
+#'   }
+#' }
+#'
+#' Use any of combination of these classes to style icons via CSS. In addition,
+#' you apply your own css classes using the 'class' argument.
 #'
 #' @examples
 #' rheroicon(name = "academic_cap")
 #' rheroicon(name = "academic_cap", type = "solid")
-#' rheroicon(name = "academic_cap", classnames = "education-icons")
+#' rheroicon(name = "academic_cap", class = "education-icons")
 #'
-#' @return Returns an SVG string
+#' @return An string containing the SVG markup of an icon
 #'
 #' @references
 #' \url{https://heroicons.com}
 #' \url{https://github.com/tailwindlabs/heroicons}
 #'
 #' @export
-rheroicon <- function(name, type = "outline", classnames = NULL)  {
+rheroicon <- function(name, type = "outline", class = NULL)  {
 
     icon <- rheroicons[[name]]
 
@@ -49,10 +62,10 @@ rheroicon <- function(name, type = "outline", classnames = NULL)  {
         svg <- icon$icons[[type]]
 
         # append class attribute if applicable
-        if (!is.null(classnames)) {
+        if (!is.null(class)) {
             svg <- .set__classnames(
                 svg = svg,
-                class = classnames
+                class = class
             )
         }
 

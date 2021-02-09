@@ -1,9 +1,9 @@
-#' rheroicons gallery
+#' Icon gallery
 #'
-#' Run the rheroicons gallery and search for icons. Click on an icon
-#' name to copy the function to the clipboard.
+#' Run the gallery to view and search for icons. Click on an icon
+#' name to copy the relevant code to the clipboard.
 #'
-#' @param ... additional options passed down to \code{shiny::runApp}
+#' @param ... additional options passed down to 'runApp'
 #'
 #' @examples
 #' if (interactive()) {
