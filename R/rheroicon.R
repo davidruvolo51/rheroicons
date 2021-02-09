@@ -5,37 +5,37 @@
 #'
 #' @param name an icon name
 #' @param type render a 'solid' or 'outline' icon (default: 'outline')
-#' @param class a string containing one or more CSS classes (optional)
+#' @param class a string containing one or more 'CSS' classes (optional)
 #'
-#' @section Styling Icons with CSS class names:
+#' @section Styling Icons with 'CSS' class names:
 #'
-#' Icons are rendered from SVG strings. All icons have three CSS classes
+#' Icons are rendered from 'SVG' strings. All icons have three 'CSS' classes
 #' defined: global, icon style, and icon name.
 #'
-#' \itemize {
-#'   \item{global}{All icons are returned with the css class 'rheroicons'}
+#' \describe{
+#'   \item{global}{All icons are returned with the 'CSS' class 'rheroicons'}
 #'   \item{icon style}{
 #'      All icons have a solid and an outlined version.
-#'      The icon style CSS class is determined by the value entered for 'type'.
-#'      Icons can have 'rheroicons_outline' of 'rheroicons_solid'.
+#'      The icon style 'CSS' class is determined by the value entered for
+#'      'type'. Icons can have 'rheroicons_outline' of 'rheroicons_solid'.
 #'   }
 #'   \item{icon name}{
-#'     The icon name is also passed into the list of css class. These
-#'     are always structured in the following format: 'rheroicons_[iconname]'.
-#'     If the icon is 'thumb_down', the css class would be
+#'     The icon name is also passed into the list of 'CSS' class. These
+#'     are always structured in the following format: 'rheroicons_icon'.
+#'     If the icon is 'thumb_down', the 'CSS' class would be
 #'     'rheroicons_thumb_down'.
 #'   }
 #' }
 #'
-#' Use any of combination of these classes to style icons via CSS. In addition,
-#' you apply your own css classes using the 'class' argument.
+#' Use any of combination of these classes to style icons via 'CSS'.
+#' In addition, you apply your own 'CSS' classes using the 'class' argument.
 #'
 #' @examples
 #' rheroicon(name = "academic_cap")
 #' rheroicon(name = "academic_cap", type = "solid")
 #' rheroicon(name = "academic_cap", class = "education-icons")
 #'
-#' @return An string containing the SVG markup of an icon
+#' @return An string containing the 'SVG' markup of an icon
 #'
 #' @references
 #' \url{https://heroicons.com}

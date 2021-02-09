@@ -3,9 +3,7 @@
 #' You can search for icons by querying the icon set. For example, if you would
 #' like to find icons that are arrows and chevrons, then type in you query as a
 #' regexp: 'arrows|chevrons'. Alternatively, if you would like to view all icon
-#' names, leave the value for 'query' blank. Queries are passed down to the
-#' function 'str_subset' from the stringr package. Therefore, you can run more
-#' complex queries.
+#' names, leave the value for 'query' blank.
 #'
 #' @param query a string containing a search term
 #'

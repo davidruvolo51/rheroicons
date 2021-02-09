@@ -4,38 +4,51 @@
 \alias{rheroicon}
 \title{An inline SVG icon from Heroicons}
 \usage{
-rheroicon(name, type = "outline", classnames = NULL)
+rheroicon(name, type = "outline", class = NULL)
 }
 \arguments{
 \item{name}{an icon name}
 
-\item{type}{render a "solid" or "outline" icon (default: "outline")}
+\item{type}{render a 'solid' or 'outline' icon (default: 'outline')}
 
-\item{classnames}{a string containing one or more CSS classes (optional)}
+\item{class}{a string containing one or more 'CSS' classes (optional)}
 }
 \value{
-Returns an SVG string
+An string containing the 'SVG' markup of an icon
 }
 \description{
-Render an icon by name. Use \code{launch_gallery} to view the icons
-available in this package or visit the Heroicons icon gallery
-(see referenced urls).
+Render an icon by name. Run 'launch_gallery' to view all available icons
+or search for icons using the 'find_icons' function.
 }
-\section{Styling Icons with CSS class names}{
+\section{Styling Icons with 'CSS' class names}{
 
 
-Icons are rendered from SVG strings. All icons have three CSS classes
-defined: global ("rheroicons"), icon style ("rheroicons_outline" or
-"rheroicons_solid"), and icon name ("rheroicons_academic_cap").
-Use any of combination of these classes to style icons via CSS.
-Alternatively, you can pass your own classes using the \code{classnames}
-argument.
+Icons are rendered from 'SVG' strings. All icons have three 'CSS' classes
+defined: global, icon style, and icon name.
+
+\describe{
+\item{global}{All icons are returned with the 'CSS' class 'rheroicons'}
+\item{icon style}{
+All icons have a solid and an outlined version.
+The icon style 'CSS' class is determined by the value entered for
+'type'. Icons can have 'rheroicons_outline' of 'rheroicons_solid'.
+}
+\item{icon name}{
+The icon name is also passed into the list of 'CSS' class. These
+are always structured in the following format: 'rheroicons_icon'.
+If the icon is 'thumb_down', the 'CSS' class would be
+'rheroicons_thumb_down'.
+}
+}
+
+Use any of combination of these classes to style icons via 'CSS'.
+In addition, you apply your own 'CSS' classes using the 'class' argument.
 }
 
 \examples{
 rheroicon(name = "academic_cap")
 rheroicon(name = "academic_cap", type = "solid")
-rheroicon(name = "academic_cap", classnames = "education-icons")
+rheroicon(name = "academic_cap", class = "education-icons")
 
 }
 \references{

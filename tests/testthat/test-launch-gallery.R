@@ -2,9 +2,9 @@
 #' FILE: test-launch-gallery.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2021-01-30
-#' MODIFIED: 2021-01-30
+#' MODIFIED: 2021-02-9
 #' PURPOSE: unit tests for launch gallery
-#' STATUS: in.progress
+#' STATUS: working; ongoing
 #' PACKAGES: usethis; rheroicons; shiny
 #' COMMENTS: NA
 #'////////////////////////////////////////////////////////////////////////////

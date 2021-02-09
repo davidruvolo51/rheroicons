@@ -3,7 +3,7 @@
 #' Run the gallery to view and search for icons. Click on an icon
 #' name to copy the relevant code to the clipboard.
 #'
-#' @param ... additional options passed down to 'runApp'
+#' @param ... additional 'shiny' options
 #'
 #' @examples
 #' if (interactive()) {
@@ -229,7 +229,7 @@ launch_gallery <- function(...) {
                             rheroicon(
                                 name = "chevron_down",
                                 type = "outline",
-                                classnames = "select-input-parent-icon"
+                                class = "select-input-parent-icon"
                             )
                         ),
                         shiny::tags$ol(
@@ -247,7 +247,7 @@ launch_gallery <- function(...) {
                                     rheroicon(
                                         name = "check_circle",
                                         type = "solid",
-                                        classnames = "selected-icon"
+                                        class = "selected-icon"
                                     ),
                                     "Outline"
                                 )
@@ -263,7 +263,7 @@ launch_gallery <- function(...) {
                                     rheroicon(
                                         name = "check_circle",
                                         type = "solid",
-                                        classnames = "selected-icon"
+                                        class = "selected-icon"
                                     ),
                                     "Solid"
                                 )
