@@ -6,9 +6,11 @@
 #' @param ... additional options passed down to \code{shiny::runApp}
 #'
 #' @examples
-#' \dontrun{
+#' if (interactive()) {
 #'   rheroicons::launch_gallery()
 #' }
+#'
+#' @return A shiny app containing the icon gallery
 #'
 #' @export
 launch_gallery <- function(...) {
