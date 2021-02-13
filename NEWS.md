@@ -1,3 +1,11 @@
+# rheroicons 0.3.1
+
+This is a minor package update.
+
+* fixed package descriptions (description, single quotes throughout)
+* fixed `launch_gallery` docs (missing `\value`)
+* fixed `launch_gallery` example so that it uses `if (interactive())`
+
 # rheroicons 0.3.0
 
 * Prepared package for CRAN submission
