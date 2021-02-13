@@ -11,3 +11,7 @@
 
 devtools::load_all()
 launch_gallery(options = list(port = 9000, launch.browser = TRUE))
+
+#" find icons tests
+find_icons(query = "circle")
+find_icons(query = "(\\_down)$")

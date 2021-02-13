@@ -2,9 +2,9 @@
 #' FILE: test-launch-gallery.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2021-01-30
-#' MODIFIED: 2021-01-30
+#' MODIFIED: 2021-02-13
 #' PURPOSE: unit tests for launch gallery
-#' STATUS: in.progress
+#' STATUS: working; ongoing
 #' PACKAGES: usethis; rheroicons; shiny
 #' COMMENTS: NA
 #'////////////////////////////////////////////////////////////////////////////
@@ -95,15 +95,5 @@ test_that("UI function returns expected markup", {
             "div",
             "script"
         )
-    )
-})
-
-#' .server()
-#' This isn't really a test, but it maybe check to see the
-#' server function returns something
-test_that("Server returns R6 Shiny Observer", {
-    expect_equal(
-        object = class(.server()),
-        expected = c("Observer", "R6")
     )
 })

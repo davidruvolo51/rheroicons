@@ -1,8 +1,7 @@
 #' Process CSS Classes
 #'
-#' In the `rheroicon` function, the optional function `class` can be
-#' used add custom CSS classes to an icon. This may be useful for
-#' customizing the appearance of icons.
+#' In the main icon function, the optional argument 'class' can be
+#' used add custom CSS classes to an icon.
 #'
 #' @param svg a string containing the SVG markup of an icon
 #' @param class a string containing one or more CSS classes

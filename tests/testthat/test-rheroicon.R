@@ -2,9 +2,9 @@
 #' FILE: test-rheroicon.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-09-06
-#' MODIFIED: 2020-09-06
+#' MODIFIED: 2021-02-09
 #' PURPOSE: tests for the function `rheroicon`
-#' STATUS: in.progress
+#' STATUS: working; ongoing
 #' PACKAGES: usethis; rheroicons;
 #' COMMENTS: NA
 #' ////////////////////////////////////////////////////////////////////////////
@@ -78,7 +78,7 @@ test_that("icon type", {
 test_that("classnames", {
     expect_equal(
         object = stringr::str_extract(
-            string = rheroicon(name = "map", classnames = "my-icons"),
+            string = rheroicon(name = "map", class = "my-icons"),
             pattern = "class=.([\\w\\s-])+."
         ),
         expected = "class=\"rheroicons rheroicons_outline rheroicons_map my-icons\"",

@@ -4,5 +4,19 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"markdownlint.config": {
+			"MD041": false
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"davidanson.vscode-markdownlint",
+			"shd101wyy.markdown-preview-enhanced",
+			"fcrespo82.markdown-table-formatter",
+			"alanwalk.markdown-toc",
+			"ikuyadeu.r",
+			"reditorsupport.r-lsp"
+		]
+	}
 }

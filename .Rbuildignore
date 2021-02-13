@@ -15,3 +15,4 @@
 ^webpack\.config\.js$
 ^yarn\.lock$
 ^LICENSE\.md$
+^CRAN-RELEASE$

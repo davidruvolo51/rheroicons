@@ -2,19 +2,22 @@
 % Please edit documentation in R/launch_gallery.R
 \name{launch_gallery}
 \alias{launch_gallery}
-\title{rheroicons gallery}
+\title{Icon gallery}
 \usage{
 launch_gallery(...)
 }
 \arguments{
-\item{...}{additional options passed down to \code{shiny::runApp}}
+\item{...}{additional 'shiny' options}
+}
+\value{
+A 'shiny' app containing the icon gallery
 }
 \description{
-Run the rheroicons gallery and search for icons. Click on an icon
-name to copy the function to the clipboard.
+Run the gallery to view and search for icons. Click on an icon
+name to copy the 'R' code to the clipboard.
 }
 \examples{
-\dontrun{
+if (interactive()) {
   rheroicons::launch_gallery()
 }
 

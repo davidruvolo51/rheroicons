@@ -1,18 +1,42 @@
-#' rheroicons gallery
+#' Icon gallery
 #'
-#' Run the rheroicons gallery and search for icons. Click on an icon
-#' name to copy the function to the clipboard.
+#' Run the gallery to view and search for icons. Click on an icon
+#' name to copy the 'R' code to the clipboard.
 #'
-#' @param ... additional options passed down to \code{shiny::runApp}
+#' @param ... additional 'shiny' options
 #'
 #' @examples
-#' \dontrun{
+#' if (interactive()) {
 #'   rheroicons::launch_gallery()
 #' }
 #'
+#' @return A 'shiny' app containing the icon gallery
+#'
 #' @export
 launch_gallery <- function(...) {
-    shiny::shinyApp(ui = .ui, server = .server, ...)
+    shiny::shinyApp(
+        ui = .ui,
+        server = function(input, output, session) {
+            outline_gallery <- .gallery__list("outline-icons", "outline")
+            solid_gallery <- .gallery__list("solid-icons", "solid")
+
+            shiny::observe({
+                shiny::req(input$iconSet)
+
+                if (input$iconSet == "outline") {
+                    output$icons <- shiny::renderUI({
+                        outline_gallery
+                    })
+                }
+                if (input$iconSet == "solid") {
+                    output$icons <- shiny::renderUI({
+                        solid_gallery
+                    })
+                }
+            })
+        },
+        ...
+    )
 }
 
 #' gallery icon list element
@@ -227,7 +251,7 @@ launch_gallery <- function(...) {
                             rheroicon(
                                 name = "chevron_down",
                                 type = "outline",
-                                classnames = "select-input-parent-icon"
+                                class = "select-input-parent-icon"
                             )
                         ),
                         shiny::tags$ol(
@@ -245,7 +269,7 @@ launch_gallery <- function(...) {
                                     rheroicon(
                                         name = "check_circle",
                                         type = "solid",
-                                        classnames = "selected-icon"
+                                        class = "selected-icon"
                                     ),
                                     "Outline"
                                 )
@@ -261,7 +285,7 @@ launch_gallery <- function(...) {
                                     rheroicon(
                                         name = "check_circle",
                                         type = "solid",
-                                        classnames = "selected-icon"
+                                        class = "selected-icon"
                                     ),
                                     "Solid"
                                 )
@@ -296,31 +320,4 @@ launch_gallery <- function(...) {
         ),
         shiny::tags$script(src = "rheroicons/rheroicons.min.js")
     )
-}
-
-
-#' rheroicons server
-#'
-#' @param input required shiny object
-#' @param output required shiny object
-#' @param session required shiny object
-#'
-#' @noRd
-.server <- function(input, output, session) {
-
-    outline_gallery <- .gallery__list("outline-icons", "outline")
-    solid_gallery <- .gallery__list("solid-icons", "solid")
-
-    shiny::observe({
-        if (input$iconSet == "outline") {
-            output$icons <- shiny::renderUI({
-                outline_gallery
-            })
-        }
-        if (input$iconSet == "solid") {
-            output$icons <- shiny::renderUI({
-                solid_gallery
-            })
-        }
-    })
 }
