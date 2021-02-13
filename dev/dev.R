@@ -2,7 +2,7 @@
 #' FILE: dev.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-08-07
-#' MODIFIED: 2021-01-30
+#' MODIFIED: 2021-02-13
 #' PURPOSE: package management
 #' STATUS: ongoing
 #' PACKAGES: usethis; pkgbump
@@ -56,7 +56,7 @@ devtools::check()
 #' cran checks
 covr::package_coverage()
 covr::report()
-devtools::check()
+devtools::check(cran = TRUE, env_vars = c(NOT_CRAN = FALSE), manual = TRUE)
 devtools::spell_check()
 devtools::run_examples()
 devtools::test()
@@ -67,7 +67,7 @@ devtools::check_win_devel()
 #' pkgbump configuration
 #' remotes::install_github("davidruvolo51/pkgbump")
 pkgbump::set_pkgbump(files = c("package.json", "DESCRIPTION"))
-pkgbump::pkgbump(version = "0.3.0")
+pkgbump::pkgbump(version = "0.3.1")
 
 #' ~ 2d ~
 # ignore files
@@ -97,3 +97,11 @@ usethis::use_build_ignore(
         "yarn.lock"
     )
 )
+
+#' ~ 2e ~
+#' Release / Submit Package
+#' Run the following code only if all checks have passed. This includes
+#' all checks in 2B and 2C, as well as GitHub Actions. Push to GitHub
+#' after `check_win_*` tests have been run and you have received the
+#' confirmation email.
+devtools::release()

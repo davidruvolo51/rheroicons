@@ -1,6 +1,6 @@
 Package: rheroicons
-Title: A Zero Dependency 'SVG' Icon Library
-Version: 0.3.0
+Title: A Zero Dependency 'SVG' Icon Library for 'Shiny'
+Version: 0.3.1
 Authors@R: c(
     person(
         given = "David",
@@ -19,7 +19,9 @@ Authors@R: c(
         role = c("ctb", "cph"),
         comment = "Author of heroicons library")
     )
-Description: Render and customize 'SVG' icons in 'shiny' without 'CSS' or 'JavaScript' dependencies
+Description: An implementation of the 'Heroicons' icon library for 'shiny'
+    applications and other 'R' web-based projects. You can search, render,
+    and customize icons without 'CSS' or 'JavaScript' dependencies.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
