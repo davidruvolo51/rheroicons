@@ -10,11 +10,11 @@ launch_gallery(...)
 \item{...}{additional 'shiny' options}
 }
 \value{
-A shiny app containing the icon gallery
+A 'shiny' app containing the icon gallery
 }
 \description{
 Run the gallery to view and search for icons. Click on an icon
-name to copy the relevant code to the clipboard.
+name to copy the 'R' code to the clipboard.
 }
 \examples{
 if (interactive()) {

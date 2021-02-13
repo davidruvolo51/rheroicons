@@ -1,7 +1,7 @@
 #' Icon gallery
 #'
 #' Run the gallery to view and search for icons. Click on an icon
-#' name to copy the relevant code to the clipboard.
+#' name to copy the 'R' code to the clipboard.
 #'
 #' @param ... additional 'shiny' options
 #'
@@ -10,11 +10,33 @@
 #'   rheroicons::launch_gallery()
 #' }
 #'
-#' @return A shiny app containing the icon gallery
+#' @return A 'shiny' app containing the icon gallery
 #'
 #' @export
 launch_gallery <- function(...) {
-    shiny::shinyApp(ui = .ui, server = .server, ...)
+    shiny::shinyApp(
+        ui = .ui,
+        server = function(input, output, session) {
+            outline_gallery <- .gallery__list("outline-icons", "outline")
+            solid_gallery <- .gallery__list("solid-icons", "solid")
+
+            shiny::observe({
+                shiny::req(input$iconSet)
+
+                if (input$iconSet == "outline") {
+                    output$icons <- shiny::renderUI({
+                        outline_gallery
+                    })
+                }
+                if (input$iconSet == "solid") {
+                    output$icons <- shiny::renderUI({
+                        solid_gallery
+                    })
+                }
+            })
+        },
+        ...
+    )
 }
 
 #' gallery icon list element
@@ -298,31 +320,4 @@ launch_gallery <- function(...) {
         ),
         shiny::tags$script(src = "rheroicons/rheroicons.min.js")
     )
-}
-
-
-#' rheroicons server
-#'
-#' @param input required shiny object
-#' @param output required shiny object
-#' @param session required shiny object
-#'
-#' @noRd
-.server <- function(input, output, session) {
-
-    outline_gallery <- .gallery__list("outline-icons", "outline")
-    solid_gallery <- .gallery__list("solid-icons", "solid")
-
-    shiny::observe({
-        if (input$iconSet == "outline") {
-            output$icons <- shiny::renderUI({
-                outline_gallery
-            })
-        }
-        if (input$iconSet == "solid") {
-            output$icons <- shiny::renderUI({
-                solid_gallery
-            })
-        }
-    })
 }
