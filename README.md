@@ -1,6 +1,7 @@
 <!-- badges: start -->
 ![version](https://img.shields.io/github/package-json/v/davidruvolo51/rheroicons/prod?color=%2326709e)
 [![R build status](https://github.com/davidruvolo51/rheroicons/workflows/R-CMD-check/badge.svg)](https://github.com/davidruvolo51/rheroicons/actions)
+[![CRAN](https://www.r-pkg.org/badges/version/rheroicons)](https://cran.r-project.org/package=rheroicons)
   <!-- badges: end -->
 
 # rheroicons
@@ -11,10 +12,17 @@ All icons are rendered as inline SVG icons. Therefore, no CSS or JavaScript depe
 
 ## Install
 
-Use `devtools` or `remotes` to install the `rheroicons`.
+Install the stable version from CRAN.
 
 ```r
-devtools::install_github("davidruvolo51/rheroicons")
+install.packages("rheroicons")
+```
+
+Use `devtools` or `remotes` to install the development version.
+
+```r
+# latest dev release
+remotes::install_github("davidruvolo51/rheroicons@*release")
 ```
 
 ## Getting Started
