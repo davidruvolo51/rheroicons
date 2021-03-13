@@ -3,8 +3,7 @@
 [![R build status](https://github.com/davidruvolo51/rheroicons/workflows/R-CMD-check/badge.svg)](https://github.com/davidruvolo51/rheroicons/actions)
 [![CRAN](https://www.r-pkg.org/badges/version/rheroicons)](https://cran.r-project.org/package=rheroicons)
 [![CRAN Monthly Downloads](https://cranlogs.r-pkg.org/badges/rheroicons)](https://cranlogs.r-pkg.org/badges/rheroicons)
-
-[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg))](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
   <!-- badges: end -->
 
 # rheroicons
