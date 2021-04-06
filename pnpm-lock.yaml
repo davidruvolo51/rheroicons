@@ -5,7 +5,7 @@ devDependencies:
   babel-loader: 8.2.2_33e77a109b1e91c7a8de8d1fb809034a
   clean-webpack-plugin: 3.0.0_webpack@5.28.0
   css-loader: 5.2.0_webpack@5.28.0
-  heroicons: 0.4.2
+  heroicons: 1.0.0
   html-webpack-plugin: 4.5.2_webpack@5.28.0
   mini-css-extract-plugin: 1.3.9_webpack@5.28.0
   optimize-css-assets-webpack-plugin: 5.0.4_webpack@5.28.0
@@ -2957,10 +2957,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
-  /heroicons/0.4.2:
+  /heroicons/1.0.0:
     dev: true
     resolution:
-      integrity: sha512-24Bc6LKmamKHzGiNC80/r9v/7pQrma2V5KlaLUHGoarqm+hggmxnngU+RjHQT8sANWPa5FWKLftn4fpmvry/7w==
+      integrity: sha512-APdX3PsNWCaT08osUV0oIFOS0ly8jT+fFsqvriQcMsSjbhd3TZqVh/Wy1XuYaCDd8GzKdkjbfzuCJJMIP/Z88w==
   /hex-color-regex/1.1.0:
     dev: true
     resolution:
@@ -6285,7 +6285,7 @@ specifiers:
   babel-loader: ^8.2.2
   clean-webpack-plugin: ^3.0.0
   css-loader: ^5.0.1
-  heroicons: ^0.4.2
+  heroicons: ^1.0.0
   html-webpack-plugin: ^4.5.1
   mini-css-extract-plugin: ^1.3.4
   optimize-css-assets-webpack-plugin: ^5.0.4

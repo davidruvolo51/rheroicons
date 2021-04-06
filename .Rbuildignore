@@ -16,3 +16,4 @@
 ^yarn\.lock$
 ^LICENSE\.md$
 ^CRAN-RELEASE$
+^pnpm-lock\.yaml$
