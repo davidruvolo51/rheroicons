@@ -2,7 +2,7 @@
 #' FILE: dev.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-08-07
-#' MODIFIED: 2021-02-13
+#' MODIFIED: 2021-04-06
 #' PURPOSE: package management
 #' STATUS: ongoing
 #' PACKAGES: usethis; pkgbump
@@ -67,7 +67,7 @@ devtools::check_win_devel()
 #' pkgbump configuration
 #' remotes::install_github("davidruvolo51/pkgbump")
 pkgbump::set_pkgbump(files = c("package.json", "DESCRIPTION"))
-pkgbump::pkgbump(version = "0.3.1")
+pkgbump::pkgbump(version = "0.3.2")
 
 #' ~ 2d ~
 # ignore files
@@ -94,6 +94,7 @@ usethis::use_build_ignore(
         "postcss.config.js",
         "rheroicons.code-workspace",
         "webpack.config.js",
+        "pnpm-lock.yaml",
         "yarn.lock"
     )
 )

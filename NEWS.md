@@ -1,3 +1,7 @@
+# rheroicons 0.3.2
+
+* Upgraded to Heroicons `v1.0` (released on 29 March 2021). This brings fixes to several icons.
+
 # rheroicons 0.3.1
 
 This is a minor package update.
