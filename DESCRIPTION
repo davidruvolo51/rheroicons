@@ -1,6 +1,6 @@
 Package: rheroicons
 Title: A Zero Dependency 'SVG' Icon Library for 'Shiny'
-Version: 0.3.1
+Version: 0.3.2
 Authors@R: c(
     person(
         given = "David",
