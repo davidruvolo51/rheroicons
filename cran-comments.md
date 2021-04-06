@@ -1,14 +1,5 @@
 # CRAN Comments
 
-## Resubmission
-
-This is a resubmission. In this version, I have:
-
-- revised the package description so that the phrase 'this package' is no longer used
-- revised documentation so that all references to tools are wrapped in single quotes rather than double quotes
-- added missing `value` tags for the function `launch_gallery` and revised existing value tags to clearly document what each function returns
-- changed `\dontRun` to `if (interactive())` in the documentation for `launch_gallery`
-
 ## Test environments
 
 - local OS X install, R 4.0.3
