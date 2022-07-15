@@ -1,3 +1,5 @@
+^renv$
+^renv\.lock$
 ^node_modules$
 ^inst/rheroicons-gallery/rsconnect$
 ^yarn-error\.log$
@@ -17,3 +19,5 @@
 ^LICENSE\.md$
 ^CRAN-RELEASE$
 ^pnpm-lock\.yaml$
+^\.lintr$
+^\.Rprofile$
