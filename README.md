@@ -53,6 +53,9 @@ rheroicons::find_icons(query = "chevron|arrow")
 
 # find icons with `down`, `up`, `left`, OR `right` in the name
 rheroicons::find_icons(query = "down|up|left|right")
+
+# find icons that end with '_down' using regex
+rheroicons::find_icons(query = "(\\_down)$")
 ```
 
 ### Rendering Icons
