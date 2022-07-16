@@ -1,3 +1,8 @@
+# rheroicons 0.4.0
+
+* Upgraded to Heroicons `v1.0.6` (released on 02 March 2022) that includes new icons and updates to existing ones.
+* Improved error handling in the function `rheroicon`. Missing values or incorrect values throw a warning message rather than stopping the application. This allows the application to continue to run while you test different icons.
+
 # rheroicons 0.3.2
 
 * Upgraded to Heroicons `v1.0` (released on 29 March 2021). This brings fixes to several icons.

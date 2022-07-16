@@ -1,6 +1,6 @@
 Package: rheroicons
 Title: A Zero Dependency 'SVG' Icon Library for 'Shiny'
-Version: 0.3.2
+Version: 0.4.0
 Authors@R: c(
     person(
         given = "David",
@@ -25,9 +25,9 @@ Description: An implementation of the 'Heroicons' icon library for 'shiny'
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.0
 Imports: 
-    htmltools (>= 0.5.0),
+    htmltools (>= 0.5.2),
     shiny (>= 1.5.0),
     stringr
 Suggests:
