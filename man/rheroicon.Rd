@@ -4,7 +4,7 @@
 \alias{rheroicon}
 \title{An inline SVG icon from Heroicons}
 \usage{
-rheroicon(name, type = "outline", class = NULL)
+rheroicon(name = NULL, type = "outline", class = NULL)
 }
 \arguments{
 \item{name}{an icon name}
