@@ -42,30 +42,29 @@
 #' \url{https://github.com/tailwindlabs/heroicons}
 #'
 #' @export
-rheroicon <- function(name, type = "outline", class = NULL)  {
-  icon <- rheroicons[[name]]
+rheroicon <- function(name = NULL, type = "outline", class = NULL)  {
+  validIconTypes <- c("outline", "solid")
+  iconIsValid <- !is.null(name) && name %in% names(rheroicons)
+  typeIsValid <- !is.null(type) && type %in% validIconTypes
 
-  # warn if icon does not exist
-  if (is.null(icon)) {
-    warning("Icon does not exist")
+  if (!iconIsValid) {
+    icon <- ifelse(is.null(name), "NULL", name)
+    warning("Icon name '", icon,"' cannot be found")
+  }
+  if (!typeIsValid) {
+    iconType <- ifelse(is.null(type), "NULL", type)
+    warning("Icon type '", iconType,"' is invalid. Use 'outline' or 'solid'")
   }
 
-  # throw error if input value for "type" is invalid
-  valid_types <- c("outline", "solid")
-  if (!type %in% valid_types) {
-    warning("Icon type is invalid. Use 'outline' or 'solid'")
-  }
-
-  # process only if icon exists
-  if (length(icon) && (type %in% valid_types)) {
+  
+  if (iconIsValid && typeIsValid) {
+    icon <- rheroicons[[name]]
     svg <- icon$icons[[type]]
 
-    # append class attribute if applicable
     if (!is.null(class)) {
       svg <- .set__classnames(svg = svg, class = class)
     }
 
-    # return element as html
     htmltools::HTML(svg)
   }
 }
