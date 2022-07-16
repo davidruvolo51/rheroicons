@@ -2,7 +2,7 @@
 #' FILE: dev.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-08-07
-#' MODIFIED: 2021-04-06
+#' MODIFIED: 2022-07-15
 #' PURPOSE: package management
 #' STATUS: ongoing
 #' PACKAGES: usethis; pkgbump
@@ -67,7 +67,7 @@ devtools::check_win_devel()
 #' pkgbump configuration
 #' remotes::install_github("davidruvolo51/pkgbump")
 pkgbump::set_pkgbump(files = c("package.json", "DESCRIPTION"))
-pkgbump::pkgbump(version = "0.3.2")
+pkgbump::pkgbump(version = "0.4.0")
 
 #' ~ 2d ~
 # ignore files
@@ -82,6 +82,8 @@ usethis::use_build_ignore(
     files = c(
         ignore,
         ".github",
+        ".lintr",
+        ".Rprofile",
         "config",
         "dev",
         "inst/rheroicons-gallery",
@@ -92,6 +94,7 @@ usethis::use_build_ignore(
         "package.json",
         "pkgbump.config.json",
         "postcss.config.js",
+        "renv.lock",
         "rheroicons.code-workspace",
         "webpack.config.js",
         "pnpm-lock.yaml",
