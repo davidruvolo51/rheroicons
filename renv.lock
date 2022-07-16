@@ -77,6 +77,14 @@
         "sys"
       ]
     },
+    "assertthat": {
+      "Package": "assertthat",
+      "Version": "0.2.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "50c838a310445e954bc13f26f26a6ecf",
+      "Requirements": []
+    },
     "base64enc": {
       "Package": "base64enc",
       "Version": "0.1-3",
@@ -569,6 +577,14 @@
         "askpass"
       ]
     },
+    "parsedate": {
+      "Package": "parsedate",
+      "Version": "1.3.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "4fe511a06367943d4372478cd1c4b395",
+      "Requirements": []
+    },
     "pillar": {
       "Package": "pillar",
       "Version": "1.7.0",
@@ -735,6 +751,14 @@
         "xopen"
       ]
     },
+    "rematch": {
+      "Package": "rematch",
+      "Version": "1.0.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "c66b930d20bb6d858cd18e1cebcfae5c",
+      "Requirements": []
+    },
     "rematch2": {
       "Package": "rematch2",
       "Version": "2.1.2",
@@ -769,6 +793,35 @@
       "Hash": "ae34cd56890607370665bee5bd17812f",
       "Requirements": [
         "lazyeval"
+      ]
+    },
+    "rhub": {
+      "Package": "rhub",
+      "Version": "1.1.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "977cce19c029acc6d88a1c861f224819",
+      "Requirements": [
+        "R6",
+        "assertthat",
+        "callr",
+        "cli",
+        "crayon",
+        "desc",
+        "digest",
+        "httr",
+        "jsonlite",
+        "parsedate",
+        "pillar",
+        "prettyunits",
+        "processx",
+        "rappdirs",
+        "rcmdcheck",
+        "rematch",
+        "tibble",
+        "uuid",
+        "whoami",
+        "withr"
       ]
     },
     "rlang": {
@@ -1045,6 +1098,14 @@
       "Hash": "c9c462b759a5cc844ae25b5942654d13",
       "Requirements": []
     },
+    "uuid": {
+      "Package": "uuid",
+      "Version": "1.1-0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "f1cb46c157d080b729159d407be83496",
+      "Requirements": []
+    },
     "vctrs": {
       "Package": "vctrs",
       "Version": "0.4.1",
@@ -1080,6 +1141,17 @@
       "Repository": "CRAN",
       "Hash": "ca970b96d894e90397ed20637a0c1bbe",
       "Requirements": []
+    },
+    "whoami": {
+      "Package": "whoami",
+      "Version": "1.3.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "ef0f4d9b8f2cc2ebeccae1d725b8a023",
+      "Requirements": [
+        "httr",
+        "jsonlite"
+      ]
     },
     "withr": {
       "Package": "withr",
