@@ -64,8 +64,7 @@ get_files <- function(path) {
             "<svg class=\"rheroicons rheroicons_",
             type,
             " rheroicons_",
-            icon, "\" ",
-            "aria-hidden=\"true\" "
+            icon, "\" "
         )
     )
 }
