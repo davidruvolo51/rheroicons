@@ -4,16 +4,18 @@
 #' CREATED: 2022-09-28
 #' MODIFIED: 2022-09-28
 #' PURPOSE: convert heroicons into an R object
-#' STATUS: in.progress
-#' PACKAGES: NA
+#' STATUS: stable
+#' PACKAGES: os, datetime, tqdm, json, re, sys
 #' COMMENTS: NA
 #'////////////////////////////////////////////////////////////////////////////
 
-from os import path, listdir
+from os import getcwd, path, listdir
 from datetime import datetime
 from tqdm import tqdm
 import json
 import re
+import sys
+sys.path.append(getcwd())
 
 def parseSvgContent(content, type, name):
   """Format SVG markup

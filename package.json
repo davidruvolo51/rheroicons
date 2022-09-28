@@ -5,6 +5,7 @@
   "description": "Heroicons for R",
   "license": "MIT",
   "scripts": {
+    "heroicons:convert": "python3 rheroicons/convert.py",
     "shiny": "Rscript -e \"shiny::runApp(appDir = './inst/rheroicons-demo', port = 8000, launch.browser = FALSE)\"",
     "start": "webpack-dev-server --watch --env dev",
     "build": "webpack --env prod",
