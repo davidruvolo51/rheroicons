@@ -10,7 +10,9 @@
 #'////////////////////////////////////////////////////////////////////////////
 
 from os import path, listdir
+from datetime import datetime
 from tqdm import tqdm
+import json
 import re
 
 def parseSvgContent(content, type, name):
@@ -74,7 +76,23 @@ for entrypoint in tqdm(entrypoints, desc='Building svg files'):
         'name': file.replace('.svg', '')
       })
   
-# convert icons
+# ~ 2 ~
+# Convert Icons
+# For each svg file, read the svg markup and clean for use in R.
+# Make sure all line breaks are removed and strings are trimmed.
+# Add the following attributes to the begining of the svg
+# string: width, height, and class. After each file is processed,
+# add it to the main rheroicons list by icon name. Nest each icon
+# style by icon name using the following format.
+# <rheroicons>
+#   <icon>
+#     <icon_style>
+#       <icon_style_svg>
+#   ....
+#
+# Save prepared data to json format and integrate into the R
+# package in the dev/dev.R script.
+
 rheroicons = {}
 for svg in tqdm(svgfiles):
   with open(svg['path'], 'r') as file:
@@ -93,3 +111,12 @@ for svg in tqdm(svgfiles):
   else:
     rheroicons[svg['name']][svg['type']] = svgmarkup
 
+# check markup to validate structure
+# rheroicons['academic-cap']
+
+# save file
+date = datetime.now().strftime('%y-%m-%d')
+outputfile = f"dev/prepared-data/rheroicons.{date}.json"
+with open(outputfile, 'w') as f:
+  json.dump(rheroicons, f,ensure_ascii=False, indent=2)
+f.close()
