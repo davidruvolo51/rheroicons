@@ -2,7 +2,7 @@
 #' FILE: convert.py
 #' AUTHOR: David Ruvolo
 #' CREATED: 2022-09-28
-#' MODIFIED: 2022-09-28
+#' MODIFIED: 2022-09-29
 #' PURPOSE: convert heroicons into an R object
 #' STATUS: stable
 #' PACKAGES: os, datetime, tqdm, json, re, sys
@@ -117,7 +117,7 @@ for svg in tqdm(svgfiles):
 # rheroicons['academic-cap']
 
 # save file
-date = datetime.now().strftime('%y-%m-%d')
+date = datetime.now().strftime('%Y-%m-%d')
 outputfile = f"dev/prepared-data/rheroicons.{date}.json"
 with open(outputfile, 'w') as f:
   json.dump(rheroicons, f,ensure_ascii=False, indent=2)

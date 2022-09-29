@@ -29,7 +29,7 @@
 #' SVG Processing
 
 #' load conversion tools
-source("dev/convert.R")
+rheroicons <- rjson::fromJSON(file="dev/prepared-data/rheroicons.2022-09-28.json")
 
 #' update internal data object
 usethis::use_data(rheroicons, internal = TRUE, overwrite = TRUE)
@@ -72,31 +72,31 @@ pkgbump::pkgbump(version = "0.3.2")
 #' ~ 2d ~
 # ignore files
 ignore <- c(
-    "node_modules",
-    "inst/rheroicons-gallery/rsconnect",
-    "yarn-error.log"
+  "node_modules",
+  "inst/rheroicons-gallery/rsconnect",
+  "yarn-error.log"
 )
 
 usethis::use_git_ignore(ignore)
 usethis::use_build_ignore(
-    files = c(
-        ignore,
-        ".github",
-        "config",
-        "dev",
-        "inst/rheroicons-gallery",
-        ".babelrc",
-        ".gitignore",
-        "cran-comments.md",
-        "LICENSE.md",
-        "package.json",
-        "pkgbump.config.json",
-        "postcss.config.js",
-        "rheroicons.code-workspace",
-        "webpack.config.js",
-        "pnpm-lock.yaml",
-        "yarn.lock"
-    )
+  files = c(
+      ignore,
+      ".github",
+      "config",
+      "dev",
+      "inst/rheroicons-gallery",
+      ".babelrc",
+      ".gitignore",
+      "cran-comments.md",
+      "LICENSE.md",
+      "package.json",
+      "pkgbump.config.json",
+      "postcss.config.js",
+      "rheroicons.code-workspace",
+      "webpack.config.js",
+      "pnpm-lock.yaml",
+      "yarn.lock"
+  )
 )
 
 #' ~ 2e ~
