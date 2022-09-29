@@ -43,34 +43,23 @@
 #'
 #' @export
 rheroicon <- function(name, type = "outline", class = NULL)  {
+  valid_types <- c("outline", "solid", "mini")
+  icon <- rheroicons[[name]]
 
-    icon <- rheroicons[[name]]
+  if (is.null(icon)) {
+    msg <- paste0("Icon ", name, " does not exist")
+    warning(msg)
+  }
 
-    # warn if icon does not exist
-    if (is.null(icon)) {
-        warning("Icon does not exist")
+  if (!type %in% valid_types) {
+    warning("Icon type is invalid. Use 'outline','solid', or 'mini'.")
+  }
+
+  if (length(icon) && (type %in% valid_types)) {
+    svg <- icon[[type]]
+    if (!is.null(class)) {
+      svg <- .set__classnames(svg = svg, class = class)
     }
-
-    # throw error if input value for "type" is invalid
-    valid_types <- c("outline", "solid")
-    if (!type %in% valid_types) {
-        warning("Icon type is invalid. Use 'outline' or 'solid'")
-    }
-
-    # process only if icon exists
-    if (length(icon) && (type %in% valid_types)) {
-        svg <- icon$icons[[type]]
-
-        # append class attribute if applicable
-        if (!is.null(class)) {
-            svg <- .set__classnames(
-                svg = svg,
-                class = class
-            )
-        }
-
-        # return element as html
-        htmltools::HTML(svg)
-    }
-
+    htmltools::HTML(svg)
+  }
 }
