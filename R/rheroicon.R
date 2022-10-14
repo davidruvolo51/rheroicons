@@ -42,14 +42,11 @@
 #' \url{https://github.com/tailwindlabs/heroicons}
 #'
 #' @export
-rheroicon <- function(name, type = "outline", class = NULL)  {
+rheroicon <- function(name=NULL, type = "outline", class = NULL)  {
+  stopifnot("Icon NULL does not exist" = !is.null(name))
+  
   valid_types <- c("outline", "solid", "mini")
   icon <- rheroicons[[name]]
-
-  if (is.null(icon)) {
-    msg <- paste0("Icon ", name, " does not exist")
-    warning(msg)
-  }
 
   if (!type %in% valid_types) {
     warning("Icon type is invalid. Use 'outline','solid', or 'mini'.")
