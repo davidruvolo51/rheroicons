@@ -114,7 +114,7 @@ launch_gallery <- function(...) {
       ),
       shiny::tags$link(
         rel = "stylesheet",
-        href = "rheroicons/rheroicons.min.css"
+        href = "rheroicons/rheroicons.css"
       ),
       shiny::tags$title("rheroicons")
     ),
@@ -271,15 +271,15 @@ launch_gallery <- function(...) {
     shiny::tags$div(
       id = "status-success",
       class = "status-box",
-      rheroicon(name = "thumb-up", type = "outline"),
+      rheroicon(name = "hand-thumb-up", type = "outline"),
       shiny::tags$p("Successfully copied icon!")
     ),
     shiny::tags$div(
       id = "status-failed",
       class = "status-box",
       rheroicon(name = "exclamation-circle", type = "outline"),
-      shiny::tags$p("Copy Failed")
+      shiny::tags$p("Unable to copy icon code")
     ),
-    shiny::tags$script(src = "rheroicons/rheroicons.min.js")
+    shiny::tags$script(src = "rheroicons/rheroicons.js")
   )
 }
