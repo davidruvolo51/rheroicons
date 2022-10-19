@@ -2,7 +2,7 @@
 #' FILE: dev.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2020-08-07
-#' MODIFIED: 2021-04-06
+#' MODIFIED: 2022-10-19
 #' PURPOSE: package management
 #' STATUS: ongoing
 #' PACKAGES: usethis; pkgbump
@@ -29,7 +29,7 @@
 #' SVG Processing
 
 #' load conversion tools
-rheroicons <- rjson::fromJSON(file="dev/prepared-data/rheroicons.2022-09-28.json")
+rheroicons <- rjson::fromJSON(file="dev/prepared-data/rheroicons.2022-10-19.json")
 
 #' update internal data object
 usethis::use_data(rheroicons, internal = TRUE, overwrite = TRUE)
@@ -72,6 +72,8 @@ pkgbump::pkgbump(version = "0.3.2")
 #' ~ 2d ~
 # ignore files
 ignore <- c(
+  "__pycache__",
+  "downloads",
   "node_modules",
   "inst/rheroicons-gallery/rsconnect",
   "yarn-error.log"
@@ -80,22 +82,24 @@ ignore <- c(
 usethis::use_git_ignore(ignore)
 usethis::use_build_ignore(
   files = c(
-      ignore,
-      ".github",
-      "config",
-      "dev",
-      "inst/rheroicons-gallery",
-      ".babelrc",
-      ".gitignore",
-      "cran-comments.md",
-      "LICENSE.md",
-      "package.json",
-      "pkgbump.config.json",
-      "postcss.config.js",
-      "rheroicons.code-workspace",
-      "webpack.config.js",
-      "pnpm-lock.yaml",
-      "yarn.lock"
+    ignore,
+    ".github",
+    "config",
+    "CRAN-SUBMISSION",
+    "dev",
+    "inst/rheroicons-gallery",
+    ".babelrc",
+    ".gitignore",
+    "cran-comments.md",
+    "LICENSE.md",
+    "package.json",
+    "pkgbump.config.json",
+    "src",
+    "rheroicons.code-workspace",
+    "webpack.config.js",
+    "pnpm-lock.yaml",
+    "yarn.lock",
+    "vite.config.js"
   )
 )
 
