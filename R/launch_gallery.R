@@ -181,6 +181,7 @@ launch_gallery <- function(...) {
         ),
       ),
       shiny::tags$section(
+        id="section-instructions",
         class = "section",
         shiny::tags$h2("Available Icons"),
         shiny::tags$p(
@@ -258,14 +259,14 @@ launch_gallery <- function(...) {
                     type = "solid",
                     class = "selected-icon"
                   ),
-                  "Mini"
+                  "Mini (20x20)"
                 )
               )
             )
           )
-        ),
-        shiny::uiOutput("icons")
+        )
       ),
+      shiny::uiOutput("icons"),
       shiny::tags$textarea(id = "icon-clipboard", class = "visually-hidden")
     ),
     shiny::tags$div(

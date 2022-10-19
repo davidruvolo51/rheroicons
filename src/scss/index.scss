@@ -1,5 +1,5 @@
-@import './palette_20.scss';
-@import './base.scss';
+@import "./palette_20.scss";
+@import "./base.scss";
 
 .visually-hidden {
   position: absolute;
@@ -18,7 +18,6 @@
   left: 0;
   width: 100%;
   background-color: $light-blue-900;
-  // background: linear-gradient(25deg, $light-blue-900 75%, $light-blue-600 50%);
   color: $light-blue-050;
   z-index: 3;
 
@@ -146,7 +145,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 14px;
+    gap: 1em;
 
     .icon-item {
       border: 1px solid transparent;
@@ -192,7 +191,7 @@
   }
 }
 
-$breakpoint: 1272px;
+$breakpoint: 1024px;
 @media (min-width: $breakpoint) {
   .main {
     .header {
@@ -201,10 +200,9 @@ $breakpoint: 1272px;
 
     .section {
       max-width: $breakpoint;
-      text-align: center;
-      
+
       #iconSet {
-        margin: 14px auto;
+        margin-top: 14px;
       }
     }
 
@@ -368,6 +366,16 @@ $breakpoint: 1272px;
   }
 }
 
+#section-instructions {
+  background-color: #ffffff;
+}
+
 #iconSet {
   width: 325px;
+}
+
+#icons {
+  box-sizing: border-box;
+  padding: 2em;
+  background-color: $cool-grey-800;
 }
