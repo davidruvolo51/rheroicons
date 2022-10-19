@@ -2,7 +2,7 @@
 #' FILE: convert.py
 #' AUTHOR: David Ruvolo
 #' CREATED: 2022-09-28
-#' MODIFIED: 2022-10-14
+#' MODIFIED: 2022-10-19
 #' PURPOSE: convert heroicons into an R object
 #' STATUS: stable
 #' PACKAGES: os, datetime, tqdm, json, re, sys
@@ -44,7 +44,7 @@ def parseSvgContent(content, type, name):
 # folder. The SVG files will be located in the following location:
 # downloads/tailwindlabs-heroicons-<release>/optimized/*
 
-# from rheroicons.api.github import github
+# from dev.api.github import github
 # gh = github(owner='tailwindlabs', repo='heroicons')
 # gh.listReleases()
 # gh.downloadRelease(outDir='downloads')
