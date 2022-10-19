@@ -5,7 +5,7 @@
   "description": "Heroicons for R",
   "license": "MIT",
   "scripts": {
-    "heroicons:convert": "python3 rheroicons/convert.py",
+    "heroicons:convert": "python3 dev/convert.py",
     "shiny": "Rscript -e \"shiny::runApp(appDir = './inst/rheroicons-gallery', port = 8000, launch.browser = FALSE)\"",
     "dev": "vite build --watch",
     "build": "vite build",
