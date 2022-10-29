@@ -14,17 +14,6 @@
 #' install.packages("usethis")
 #' remotes::install_github("r-lib/revdepcheck")
 
-#' init primary files
-#' usethis::use_namespace()
-#' usethis::use_description()
-#' usethis::use_travis()
-#' usethis::use_github_action_check_standard()
-#' usethis::use_news_md()
-#' usethis::use_testthat()
-#' usethis::use_mit_license("David Ruvolo")
-
-#'//////////////////////////////////////
-
 #' ~ 1 ~
 #' SVG Processing
 
@@ -63,11 +52,15 @@ devtools::test()
 devtools::check_win_release()
 devtools::check_win_devel()
 
+#' ~ 2d ~
+#' Check downsteam dependencies (if any)
+revdepcheck::revdep_check(num_workers = 4)
+
 #' ~ 2c ~
 #' pkgbump configuration
 #' remotes::install_github("davidruvolo51/pkgbump")
 pkgbump::set_pkgbump(files = c("package.json", "DESCRIPTION"))
-pkgbump::pkgbump(version = "0.3.2")
+pkgbump::pkgbump(version = "1.0.0")
 
 #' ~ 2d ~
 # ignore files

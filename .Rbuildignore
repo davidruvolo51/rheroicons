@@ -27,3 +27,5 @@
 ^src$
 ^vite\.config\.js$
 ^CRAN-SUBMISSION$
+^\.pkgbump\.json$
+^revdep$
