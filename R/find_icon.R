@@ -21,6 +21,6 @@
 #' \url{https://github.com/tailwindlabs/heroicons}
 #'
 #' @export
-find_icons <- function(query = "") {
+find_icons <- function(query = ".") {
     stringr::str_subset(string = names(rheroicons), pattern = query)
 }
