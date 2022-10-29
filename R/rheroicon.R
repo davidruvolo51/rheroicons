@@ -3,8 +3,8 @@
 #' Render an icon by name. Run 'launch_gallery' to view all available icons
 #' or search for icons using the 'find_icons' function.
 #'
-#' @param name an icon name
-#' @param type render a 'solid' or 'outline' icon (default: 'outline')
+#' @param name string containing the name of an icon
+#' @param type render icon by style; either 'solid', 'outline', or 'mini' (default: 'outline')
 #' @param class a string containing one or more 'CSS' classes (optional)
 #'
 #' @section Styling Icons with 'CSS' class names:
@@ -17,13 +17,14 @@
 #'   \item{icon style}{
 #'      All icons have a solid and an outlined version.
 #'      The icon style 'CSS' class is determined by the value entered for
-#'      'type'. Icons can have 'rheroicons_outline' of 'rheroicons_solid'.
+#'      'type'. Icons can have 'rheroicons-outline', 'rheroicons-solid', or
+#'      'rheroicons-mini'.
 #'   }
 #'   \item{icon name}{
 #'     The icon name is also passed into the list of 'CSS' class. These
-#'     are always structured in the following format: 'rheroicons_icon'.
-#'     If the icon is 'thumb_down', the 'CSS' class would be
-#'     'rheroicons_thumb_down'.
+#'     are always structured in the following format: 'rheroicons-icon'.
+#'     If the icon is 'hand-thumb-down', the 'CSS' class would be
+#'     'rheroicons-hand-thumb-down'.
 #'   }
 #' }
 #'
@@ -31,9 +32,9 @@
 #' In addition, you apply your own 'CSS' classes using the 'class' argument.
 #'
 #' @examples
-#' rheroicon(name = "academic_cap")
-#' rheroicon(name = "academic_cap", type = "solid")
-#' rheroicon(name = "academic_cap", class = "education-icons")
+#' rheroicon(name = "face-smile")
+#' rheroicon(name = "face-smile", type = "solid")
+#' rheroicon(name = "face-smile", class = "my-icon-set")
 #'
 #' @return An string containing the 'SVG' markup of an icon
 #'
@@ -42,29 +43,21 @@
 #' \url{https://github.com/tailwindlabs/heroicons}
 #'
 #' @export
-rheroicon <- function(name = NULL, type = "outline", class = NULL)  {
-  validIconTypes <- c("outline", "solid")
-  iconIsValid <- !is.null(name) && name %in% names(rheroicons)
-  typeIsValid <- !is.null(type) && type %in% validIconTypes
-
-  if (!iconIsValid) {
-    icon <- ifelse(is.null(name), "NULL", name)
-    warning("Icon name '", icon,"' cannot be found")
-  }
-  if (!typeIsValid) {
-    iconType <- ifelse(is.null(type), "NULL", type)
-    warning("Icon type '", iconType,"' is invalid. Use 'outline' or 'solid'")
-  }
-
+rheroicon <- function(name=NULL, type = "outline", class = NULL)  {
+  stopifnot("Icon NULL does not exist" = !is.null(name))
   
-  if (iconIsValid && typeIsValid) {
-    icon <- rheroicons[[name]]
-    svg <- icon$icons[[type]]
+  valid_types <- c("outline", "solid", "mini")
+  icon <- rheroicons[[name]]
 
+  if (!type %in% valid_types) {
+    warning("Icon type is invalid. Use 'outline','solid', or 'mini'.")
+  }
+
+  if (length(icon) && (type %in% valid_types)) {
+    svg <- icon[[type]]
     if (!is.null(class)) {
       svg <- .set__classnames(svg = svg, class = class)
     }
-
     htmltools::HTML(svg)
   }
 }

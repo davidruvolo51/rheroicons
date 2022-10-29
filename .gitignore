@@ -4,3 +4,6 @@ node_modules
 inst/rheroicons-gallery/rsconnect
 yarn-error.log
 CRAN-RELEASE
+downloads/
+__pycache__
+downloads

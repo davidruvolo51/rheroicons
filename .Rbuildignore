@@ -19,5 +19,14 @@
 ^LICENSE\.md$
 ^CRAN-RELEASE$
 ^pnpm-lock\.yaml$
+^rheroicons/$
+^downloads/$
+^__pycache__$
+^downloads$
+^src$
+^vite\.config\.js$
+^CRAN-SUBMISSION$
+^\.pkgbump\.json$
+^revdep$
 ^\.lintr$
 ^\.Rprofile$

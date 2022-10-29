@@ -1,14 +1,15 @@
 {
   "name": "rheroicons",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "author": "dcruvolo",
   "description": "Heroicons for R",
   "license": "MIT",
   "scripts": {
-    "shiny": "Rscript -e \"shiny::runApp(appDir = './inst/rheroicons-demo', port = 8000, launch.browser = FALSE)\"",
-    "start": "webpack-dev-server --watch --env dev",
-    "build": "webpack --env prod",
-    "deploy": "Rscript -e \"rsconnect::deployApp(appDir = 'inst/rheroicons-gallery', account = 'davidruvolo')\""
+    "heroicons:convert": "python3 dev/convert.py",
+    "shiny": "Rscript -e \"shiny::runApp(appDir = './inst/rheroicons-gallery', port = 8000, launch.browser = FALSE)\"",
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -24,24 +25,9 @@
     "heroicons"
   ],
   "devDependencies": {
-    "@babel/core": "^7.18.6",
-    "@babel/preset-env": "^7.18.6",
-    "autoprefixer": "9.8.6",
-    "babel-loader": "^8.2.5",
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^5.2.7",
-    "heroicons": "^1.0.6",
-    "html-webpack-plugin": "^4.5.2",
-    "mini-css-extract-plugin": "^1.6.2",
-    "optimize-css-assets-webpack-plugin": "^5.0.8",
-    "postcss-loader": "^4.3.0",
-    "postcss-modules": "^4.3.1",
-    "sass": "^1.53.0",
-    "sass-loader": "^10.3.1",
-    "terser-webpack-plugin": "^5.3.3",
-    "webpack": "^5.73.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^3.11.3",
-    "webpack-merge": "^5.8.0"
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.18",
+    "sass": "^1.55.0",
+    "vite": "^3.1.0"
   }
 }

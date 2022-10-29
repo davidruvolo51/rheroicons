@@ -2,7 +2,7 @@
 #' FILE: test-find-icon.R
 #' AUTHOR: David Ruvolo
 #' CREATED: 2021-01-27
-#' MODIFIED: 2021-01-27
+#' MODIFIED: 2022-10-14
 #' PURPOSE: `find_icon` tests
 #' STATUS: working
 #' PACKAGES: testthat
@@ -24,12 +24,12 @@ test_that("entire icon list prints correctly", {
 #' Query returns expected icons
 test_that("query returns expected icons", {
     expect_equal(
-        object = find_icons(query = "chevron_double"),
+        object = find_icons(query = "chevron-double"),
         expected = c(
-            "chevron_double_down",
-            "chevron_double_left",
-            "chevron_double_right",
-            "chevron_double_up"
+            "chevron-double-down",
+            "chevron-double-left",
+            "chevron-double-right",
+            "chevron-double-up"
         )
     )
 })

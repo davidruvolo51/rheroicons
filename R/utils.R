@@ -10,17 +10,14 @@
 .set__classnames <- function(svg, class) {
 
   # extract SVG's css classes
-  css <- stringr::str_extract(
-    string = svg,
-    pattern = "class=.([\\w\\s]+)."
-  )
+  css <- stringr::str_extract(string = svg, pattern = "class=.([\\w\\s-]+).")
 
   # extract positions of \"
   css_pos <- stringr::str_locate_all(string = css, pattern = "\"")[[1]]
 
-  # define new css
+  # set new class attribute definition
   new_css <- paste0(
-    stringr::str_sub(css, start = 1, end = css_pos[2, 2] - 1),
+    stringr::str_sub(css, start = 1, end = css_pos[[2]] - 1),
     " ",
     class,
     "\""

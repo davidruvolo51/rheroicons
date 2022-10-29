@@ -4,7 +4,7 @@
 \alias{find_icons}
 \title{Find available icons}
 \usage{
-find_icons(query = "")
+find_icons(query = ".")
 }
 \arguments{
 \item{query}{a string containing a search term}
@@ -22,8 +22,8 @@ names, leave the value for 'query' blank.
 find_icons(query = "chevron")
 find_icons(query = "chevron|arrow")
 find_icons(query = "down|up|left|right")
-find_icons(query = "_circle_")
-find_icons(query = "(\\\\_down)$")
+find_icons(query = "-circle")
+find_icons(query = "(-down)$")
 
 }
 \references{

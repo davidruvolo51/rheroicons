@@ -17,17 +17,15 @@ launch_gallery <- function(...) {
   shiny::shinyApp(
     ui = .ui,
     server = function(input, output, session) {
-      outline_gallery <- .gallery__list("outline-icons", "outline")
-      solid_gallery <- .gallery__list("solid-icons", "solid")
+      galleries <- list(
+        outline = .gallery__list("outline-icons", "outline"),
+        solid = .gallery__list("solid-icons", "solid"),
+        mini =.gallery__list("mini-icons", "mini")
+      )
 
       shiny::observe({
         shiny::req(input$iconSet)
-
-        if (input$iconSet == "outline") {
-          output$icons <- shiny::renderUI({ outline_gallery })
-        } else {
-          output$icons <- shiny::renderUI({ solid_gallery })
-        }
+        output$icons <- shiny::renderUI({ galleries[[input$iconSet]] })
       })
     },
     ...
@@ -75,36 +73,21 @@ launch_gallery <- function(...) {
 #' @noRd
 .gallery__list <- function(id, set) {
   ns <- shiny::NS(id)
-
-  # define elements
+ 
   parent <- shiny::tags$ul(
     id = ns("icon-set"),
     class = paste0("icon-list set-", set)
   )
+
   children <- list()
-
-  if (set == "outline") {
-    lapply(seq_len(length(rheroicons)), function(d) {
-      html <- as.character(rheroicons[[d]]$icons$outline)
-      children[[d]] <<- .gallery__list__element(
-        id = names(rheroicons[d]),
-        set = "outline",
-        icon = html
-      )
-    })
-  }
-
-  if (set == "solid") {
-    lapply(seq_len(length(rheroicons)), function(d) {
-      html <- as.character(rheroicons[[d]]$icons$solid)
-      children[[d]] <<- .gallery__list__element(
-        id = names(rheroicons[d]),
-        set = "solid",
-        icon = html
-      )
-    })
-  }
-
+  lapply(seq_len(length(rheroicons)), function(d) {
+    html <- as.character(rheroicons[[d]][[set]])
+    children[[d]] <<- .gallery__list__element(
+      id = names(rheroicons[d]),
+      set = set,
+      icon = html
+    )
+  })
   parent$children <- children
   return(parent)
 }
@@ -115,28 +98,23 @@ launch_gallery <- function(...) {
 #'
 #' @noRd
 .ui <- function() {
+
   shiny::addResourcePath(
     prefix = "rheroicons",
-    directoryPath = system.file(
-        "gallery-assets/public",
-        package = "rheroicons"
-    )
+    directoryPath = system.file("gallery-assets/public", package = "rheroicons")
   )
 
   shiny::tagList(
     shiny::tags$head(
       shiny::tags$meta(charset = "utf-8"),
-      shiny::tags$meta(
-        `http-quiv` = "x-ua-compatible",
-        content = "ie=edge"
-      ),
+      shiny::tags$meta(`http-quiv` = "x-ua-compatible", content = "ie=edge"),
       shiny::tags$meta(
         name = "viewport",
         content = "width=device-width, initial-scale=1"
       ),
       shiny::tags$link(
         rel = "stylesheet",
-        href = "rheroicons/rheroicons.min.css"
+        href = "rheroicons/rheroicons.css"
       ),
       shiny::tags$title("rheroicons")
     ),
@@ -149,7 +127,7 @@ launch_gallery <- function(...) {
           class = "menu-item",
           shiny::tags$p(
             class = "menu-link",
-            rheroicon(name = "photograph", type = "outline"),
+            rheroicon(name = "camera", type = "outline"),
             "rheroicons"
           )
         ),
@@ -184,27 +162,26 @@ launch_gallery <- function(...) {
       shiny::tags$header(
         class = "header",
         shiny::tags$h1(
-          rheroicon(name = "photograph", type = "outline"),
+          rheroicon(name = "camera", type = "outline"),
           "rheroicons"
         ),
         shiny::tags$p(
           "The", shiny::tags$strong("rheroicons"), "package",
-          "brings the fantastic SVG icon collection",
+          "brings the fantastic SVG",
+          "icon collection",
           shiny::tags$a(
-            href = "https://github.com/refactoringui/heroicons",
+            href = "https://github.com/tailwindlabs/heroicons",
             "heroicons"
           ),
           "to R for use in your R-based web projects."
         ),
         shiny::tags$cite(
           "by",
-          shiny::tags$a(
-            href = "https://github.com/davidruvolo51",
-            "@dcruvolo"
-          )
+          shiny::tags$a(href = "https://github.com/davidruvolo51", "@dcruvolo")
         ),
       ),
       shiny::tags$section(
+        id="section-instructions",
         class = "section",
         shiny::tags$h2("Available Icons"),
         shiny::tags$p(
@@ -226,12 +203,9 @@ launch_gallery <- function(...) {
               id = "icon-set",
               class = "select-input-parent",
               `data-group` = "iconSet",
-              shiny::tags$span(
-                class = "select-input-selected",
-                "-- Choose --"
-              ),
+              shiny::tags$span(class = "select-input-selected", "-- Choose --"),
               rheroicon(
-                name = "chevron_down",
+                name = "chevron-down",
                 type = "outline",
                 class = "select-input-parent-icon"
               )
@@ -249,7 +223,7 @@ launch_gallery <- function(...) {
                   `data-group` = "iconSet",
                   `data-value` = "outline",
                   rheroicon(
-                    name = "check_circle",
+                    name = "check-circle",
                     type = "solid",
                     class = "selected-icon"
                   ),
@@ -265,41 +239,48 @@ launch_gallery <- function(...) {
                   `data-group` = "iconSet",
                   `data-value` = "solid",
                   rheroicon(
-                    name = "check_circle",
+                    name = "check-circle",
                     type = "solid",
                     class = "selected-icon"
                   ),
                   "Solid"
                 )
+              ),
+              shiny::tags$li(
+                class = "select-input-option",
+                `data-group` = "iconSet",
+                shiny::tags$button(
+                  id = "set-option-c",
+                  class = "select-input-option-button",
+                  `data-group` = "iconSet",
+                  `data-value` = "mini",
+                  rheroicon(
+                    name = "check-circle",
+                    type = "solid",
+                    class = "selected-icon"
+                  ),
+                  "Mini (20x20)"
+                )
               )
             )
           )
-        ),
-        shiny::uiOutput("icons")
+        )
       ),
-      shiny::tags$textarea(
-        id = "icon-clipboard",
-        class = "visually-hidden"
-      )
+      shiny::uiOutput("icons"),
+      shiny::tags$textarea(id = "icon-clipboard", class = "visually-hidden")
     ),
     shiny::tags$div(
       id = "status-success",
       class = "status-box",
-      rheroicon(
-        name = "thumb_up",
-        type = "outline"
-      ),
+      rheroicon(name = "hand-thumb-up", type = "outline"),
       shiny::tags$p("Successfully copied icon!")
     ),
     shiny::tags$div(
       id = "status-failed",
       class = "status-box",
-      rheroicon(
-        name = "exclamation",
-        type = "outline"
-      ),
-      shiny::tags$p("Copy Failed")
+      rheroicon(name = "exclamation-circle", type = "outline"),
+      shiny::tags$p("Unable to copy icon code")
     ),
-    shiny::tags$script(src = "rheroicons/rheroicons.min.js")
+    shiny::tags$script(src = "rheroicons/rheroicons.js")
   )
 }

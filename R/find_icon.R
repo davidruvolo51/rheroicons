@@ -11,8 +11,8 @@
 #' find_icons(query = "chevron")
 #' find_icons(query = "chevron|arrow")
 #' find_icons(query = "down|up|left|right")
-#' find_icons(query = "_circle_")
-#' find_icons(query = "(\\_down)$")
+#' find_icons(query = "-circle")
+#' find_icons(query = "(-down)$")
 #'
 #' @return An array of icon names
 #'
@@ -21,6 +21,6 @@
 #' \url{https://github.com/tailwindlabs/heroicons}
 #'
 #' @export
-find_icons <- function(query = "") {
-  stringr::str_subset(string = names(rheroicons), pattern = query)
+find_icons <- function(query = ".") {
+    stringr::str_subset(string = names(rheroicons), pattern = query)
 }
