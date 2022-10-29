@@ -21,7 +21,6 @@
 ^pnpm-lock\.yaml$
 ^rheroicons/$
 ^downloads/$
-^downloads/$
 ^__pycache__$
 ^downloads$
 ^src$
@@ -29,3 +28,5 @@
 ^CRAN-SUBMISSION$
 ^\.pkgbump\.json$
 ^revdep$
+^\.lintr$
+^\.Rprofile$
