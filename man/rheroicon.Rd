@@ -7,9 +7,9 @@
 rheroicon(name = NULL, type = "outline", class = NULL)
 }
 \arguments{
-\item{name}{an icon name}
+\item{name}{string containing the name of an icon}
 
-\item{type}{render a 'solid' or 'outline' icon (default: 'outline')}
+\item{type}{render icon by style; either 'solid', 'outline', or 'mini' (default: 'outline')}
 
 \item{class}{a string containing one or more 'CSS' classes (optional)}
 }
@@ -31,13 +31,14 @@ defined: global, icon style, and icon name.
 \item{icon style}{
 All icons have a solid and an outlined version.
 The icon style 'CSS' class is determined by the value entered for
-'type'. Icons can have 'rheroicons_outline' of 'rheroicons_solid'.
+'type'. Icons can have 'rheroicons-outline', 'rheroicons-solid', or
+'rheroicons-mini'.
 }
 \item{icon name}{
 The icon name is also passed into the list of 'CSS' class. These
-are always structured in the following format: 'rheroicons_icon'.
-If the icon is 'thumb_down', the 'CSS' class would be
-'rheroicons_thumb_down'.
+are always structured in the following format: 'rheroicons-icon'.
+If the icon is 'hand-thumb-down', the 'CSS' class would be
+'rheroicons-hand-thumb-down'.
 }
 }
 
@@ -46,9 +47,9 @@ In addition, you apply your own 'CSS' classes using the 'class' argument.
 }
 
 \examples{
-rheroicon(name = "academic_cap")
-rheroicon(name = "academic_cap", type = "solid")
-rheroicon(name = "academic_cap", class = "education-icons")
+rheroicon(name = "face-smile")
+rheroicon(name = "face-smile", type = "solid")
+rheroicon(name = "face-smile", class = "my-icon-set")
 
 }
 \references{

@@ -11,8 +11,8 @@
 #' find_icons(query = "chevron")
 #' find_icons(query = "chevron|arrow")
 #' find_icons(query = "down|up|left|right")
-#' find_icons(query = "-circle-")
-#' find_icons(query = "(\\-down)$")
+#' find_icons(query = "-circle")
+#' find_icons(query = "(-down)$")
 #'
 #' @return An array of icon names
 #'
