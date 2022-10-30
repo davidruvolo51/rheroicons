@@ -2,7 +2,7 @@
 ![version](https://img.shields.io/github/package-json/v/davidruvolo51/rheroicons?color=%2326709e)
 [![R build status](https://github.com/davidruvolo51/rheroicons/workflows/R-CMD-check/badge.svg)](https://github.com/davidruvolo51/rheroicons/actions)
 [![CRAN](https://www.r-pkg.org/badges/version/rheroicons)](https://cran.r-project.org/package=rheroicons)
-![GitHub package dependency version](https://img.shields.io/github/package-json/dependency-version/davidruvolo51/rheroicons/dev/heroicons)
+[![GitHub package dependency version](https://img.shields.io/badge/Heroicons-2.0.12-blue)](https://github.com/tailwindlabs/heroicons/releases/tag/v2.0.12)
 [![CRAN Monthly Downloads](https://cranlogs.r-pkg.org/badges/rheroicons)](https://cranlogs.r-pkg.org/badges/rheroicons)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
   <!-- badges: end -->
