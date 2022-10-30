@@ -245,7 +245,6 @@
         "miniUI",
         "pkgbuild",
         "pkgdown",
-        "pkgload",
         "profvis",
         "rcmdcheck",
         "remotes",
@@ -656,23 +655,6 @@
         "yaml"
       ]
     },
-    "pkgload": {
-      "Package": "pkgload",
-      "Version": "1.3.1",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "3c0918b1792c75de2e640d1d8d12dead",
-      "Requirements": [
-        "cli",
-        "crayon",
-        "desc",
-        "fs",
-        "glue",
-        "rlang",
-        "rprojroot",
-        "withr"
-      ]
-    },
     "praise": {
       "Package": "praise",
       "Version": "1.0.0",
@@ -870,7 +852,6 @@
         "desc",
         "digest",
         "knitr",
-        "pkgload",
         "purrr",
         "rlang",
         "stringi",
@@ -1053,7 +1034,6 @@
         "jsonlite",
         "lifecycle",
         "magrittr",
-        "pkgload",
         "praise",
         "processx",
         "ps",
