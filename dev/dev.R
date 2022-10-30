@@ -56,13 +56,13 @@ devtools::check_win_devel()
 
 #' ~ 2d ~
 #' Check downsteam dependencies (if any)
-revdepcheck::revdep_check(num_workers = 4)
+# revdepcheck::revdep_check(num_workers = 4)
 
 #' ~ 2c ~
 #' pkgbump configuration
 #' remotes::install_github("davidruvolo51/pkgbump")
-pkgbump::set_pkgbump(files = c("package.json", "DESCRIPTION"))
-pkgbump::pkgbump(version = "1.0.0")
+# pkgbump::set_pkgbump(files = c("package.json", "DESCRIPTION"))
+# pkgbump::pkgbump(version = "1.0.0")
 
 #' ~ 2d ~
 # ignore files
